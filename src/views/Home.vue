@@ -153,7 +153,7 @@
           </p>
         </el-card>
         <el-card class="box-card2">
-          <el-link target="_blank" href="https://atcoder.jp/users/aya-se"
+          <el-link target="_blank" href="https://www.kaggle.com/ayasse"
             ><h3>Kaggle</h3></el-link
           >
           <p>
@@ -377,7 +377,7 @@
           <el-button
             type="primary"
             class="button"
-            @click="onClick('https://atcoder.jp/users/aya_se')"
+            @click="onClick('https://www.kaggle.com/ayasse')"
             >Website</el-button
           >
         </el-card>
