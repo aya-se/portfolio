@@ -1,35 +1,71 @@
 <template>
-  <div class="home">
-    <div class="tab">
-      <el-menu mode="horizontal">
-        <h1>
-          <el-menu-item index="1">
-            <h1>aya_se's portfolio</h1>
-          </el-menu-item>
-        </h1>
-        <el-menu-item index="2"
-          ><a class="link-content" @click="clickSmoothScroll('#about')">
+  <div id="home">
+    <header id="tab" class="tab" data-scroll-header>
+      <a
+        class="link-content"
+        href="#home"
+        v-smooth-scroll="{ duration: 800, offset: -100 }"
+      >
+        <h1>aya_se's portfolio</h1></a
+      >
+      <el-menu mode="horizontal" collapse-transition>
+        <el-menu-item index="2" class="menu-item"
+          ><a
+            class="link-content"
+            href="#about"
+            v-smooth-scroll="{ duration: 800, offset: -170 }"
+          >
             About</a
           ></el-menu-item
         >
-        <el-menu-item index="3"
-          ><a class="link-content" @click="clickSmoothScroll('#history')">
+        <el-menu-item index="3" class="menu-item"
+          ><a
+            class="link-content"
+            href="#account"
+            v-smooth-scroll="{ duration: 800, offset: -170 }"
+          >
+            Account</a
+          ></el-menu-item
+        >
+        <el-menu-item index="4" class="menu-item"
+          ><a
+            class="link-content"
+            href="#history"
+            v-smooth-scroll="{ duration: 800, offset: -170 }"
+          >
             History</a
           ></el-menu-item
         >
-        <el-menu-item index="4"
-          ><a class="link-content" @click="clickSmoothScroll('#skill')">
+        <el-menu-item index="5" class="menu-item"
+          ><a
+            class="link-content"
+            href="#skill"
+            v-smooth-scroll="{ duration: 800, offset: -170 }"
+          >
             Skill</a
           ></el-menu-item
         >
-        <el-menu-item index="5"
-          ><a class="link-content" @click="clickSmoothScroll('#work')">
+        <el-menu-item index="6" class="menu-item"
+          ><a
+            class="link-content"
+            href="#work"
+            v-smooth-scroll="{ duration: 800, offset: -170 }"
+          >
             Work</a
           ></el-menu-item
         >
+        <el-menu-item index="7" class="menu-item"
+          ><a
+            class="link-content"
+            href="#contact"
+            v-smooth-scroll="{ duration: 800, offset: -170 }"
+          >
+            Contact</a
+          ></el-menu-item
+        >
       </el-menu>
-    </div>
-    <img src="../assets/icon.png" />
+    </header>
+    <img class="top-icon" src="../assets/icon.png" />
     <transition name="el-fade-in-linear">
       <div id="about">
         <h1><i class="el-icon-info" /> About</h1>
@@ -53,12 +89,85 @@
         </el-card>
         <el-card class="box-card">
           <h3>
+            <label for="hobby"><i class="el-icon-s-platform" /> 趣味</label>
+          </h3>
+          <p id="hobby">
+            DTM, 競技プログラミング, Minecraft, Youtube
+          </p>
+        </el-card>
+        <el-card class="box-card">
+          <h3>
+            <label for="certification"
+              ><i class="el-icon-success" /> 資格</label
+            >
+          </h3>
+          <p id="certification">
+            英検2級, 基本情報技術者, G検定, PAST上級
+          </p>
+        </el-card>
+        <el-card class="box-card">
+          <h3>
             <label for="interest"
-              ><i class="el-icon-star-off" /> 趣味・関心</label
+              ><i class="el-icon-star-off" /> 興味・関心</label
             >
           </h3>
           <p id="interest">
-            DTM, 機械学習, 競技プログラミング, Youtube etc.
+            機械学習, 自然言語処理, アルゴリズム etc.
+          </p>
+        </el-card>
+      </div>
+    </transition>
+    <transition name="el-fade-in-linear">
+      <div id="account">
+        <h1><i class="el-icon-menu" /> Account</h1>
+        <el-card class="box-card2">
+          <el-link target="_blank" href="https://twitter.com/Hakuba_snow"
+            ><h3>Twitter</h3></el-link
+          >
+          <p>
+            <img class="box-image" src="../assets/twitter.png" />
+          </p>
+        </el-card>
+        <el-card class="box-card2">
+          <el-link target="_blank" href="https://github.com/aya-se"
+            ><h3>GitHub</h3></el-link
+          >
+          <p>
+            <img class="box-image" src="../assets/github.png" />
+          </p>
+        </el-card>
+        <el-card class="box-card2">
+          <el-link target="_blank" href="https://qiita.com/aya_se"
+            ><h3>Qiita</h3></el-link
+          >
+          <p>
+            <img class="box-image" src="../assets/qiita.png" />
+          </p>
+        </el-card>
+        <el-card class="box-card2">
+          <el-link target="_blank" href="https://atcoder.jp/users/aya_se"
+            ><h3>AtCoder</h3></el-link
+          >
+          <p>
+            <img class="box-image" src="../assets/atcoder.png" />
+          </p>
+        </el-card>
+        <el-card class="box-card2">
+          <el-link target="_blank" href="https://atcoder.jp/users/aya-se"
+            ><h3>Kaggle</h3></el-link
+          >
+          <p>
+            <img class="box-image" src="../assets/kaggle.png" />
+          </p>
+        </el-card>
+        <el-card class="box-card2">
+          <el-link
+            target="_blank"
+            href="https://www.youtube.com/channel/UCW4FH8oKhHE8vIRnr0StJ8g"
+            ><h3>Youtube</h3></el-link
+          >
+          <p>
+            <img class="box-image" src="../assets/youtube.png" />
           </p>
         </el-card>
       </div>
@@ -148,6 +257,162 @@
         </el-card>
       </div>
     </transition>
+    <transition name="el-fade-in-linear">
+      <div id="work">
+        <h1><i class="el-icon-s-claim" /> Work</h1>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
+          <h3>ポートフォリオサイト</h3>
+          <p>
+            このWebサイトです。<br />Vue.jsを用いて制作しました。<br />Elementやsmoothscrollerなどを用いています。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/portfolio.png"
+            />
+          </p>
+          <el-button type="primary" class="button" @click="onClick()"
+            >Website</el-button
+          >
+          <el-button
+            type="info"
+            class="button"
+            @click="onClick('https://github.com/aya-se/portfolio')"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
+          <el-tag effect="plain" type="primary" class="tag">Go</el-tag>
+          <el-tag effect="plain" type="danger" class="tag">MySQL</el-tag>
+          <h3>Twitterクローン</h3>
+          <p>
+            Twitterを模したWebアプリです。<br />Vue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/logo.png"
+            />
+          </p>
+          <el-button type="primary" class="button" @click="onClick()"
+            >Website</el-button
+          >
+          <el-button
+            type="info"
+            class="button"
+            @click="onClick('https://github.com/aya-se/naro-portal-client')"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
+          <h3>自作曲の紹介Webサイト</h3>
+          <p>
+            趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。まだ作ってません。てへぺろ。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/logo.png"
+            />
+          </p>
+          <el-button type="primary" class="button" @click="onClick()"
+            >Website</el-button
+          >
+          <el-button
+            type="info"
+            class="button"
+            @click="onClick('https://github.com/aya-se/portfolio')"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="primary" class="tag">C++</el-tag>
+          <h3>AtCoder (競技プログラミング)</h3>
+          <p>
+            制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1498(水)です(PASTは88点・上級)。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/atcoder.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="button"
+            @click="onClick('https://atcoder.jp/users/aya_se')"
+            >Website</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="danger" class="tag">Python</el-tag>
+          <el-tag effect="plain" type="warning" class="tag">Pandas</el-tag>
+          <el-tag effect="plain" type="warning" class="tag"
+            >scikit-learn</el-tag
+          >
+          <el-tag effect="plain" type="warning" class="tag">TensorFlow</el-tag>
+          <h3>Kaggle (分析コンペ)</h3>
+          <p>
+            データ分析のコンペに参加しようと思っています。Titanicのチュートリアルをやりたいと思っています。まだやってません。てへぺろ。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/kaggle.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="button"
+            @click="onClick('https://atcoder.jp/users/aya_se')"
+            >Website</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="primary" class="tag">C++</el-tag>
+          <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
+          <h3>Qiita (記事投稿)</h3>
+          <p>
+            今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。まだほとんど書いてません。てへぺろ。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/qiita.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="button"
+            @click="onClick('https://qiita.com/aya_se')"
+            >Website</el-button
+          >
+        </el-card>
+      </div>
+    </transition>
+    <transition name="el-fade-in-linear">
+      <div id="contact">
+        <h1><i class="el-icon-s-comment" /> Contact</h1>
+        GmailもしくはTwitterがおそらく一番反応早いと思うので、載せておきます。
+        <p><b>Gmail： </b>kakkeno1@gmail.com</p>
+        <p><b>Twitter： </b>@Hakuba_snow</p>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -164,14 +429,20 @@ export default {
           color: "gray"
         },
         {
-          content: "東京工業大学に入学する",
+          content: "東京工業大学 情報理工学院に入学する",
           timestamp: "2019年4月初旬",
           size: "large",
           color: "gray"
         },
         {
           content: "地元の個別指導塾で塾講師のバイトを始める (~2020年1月)",
-          timestamp: "2019年8月下旬",
+          timestamp: "2019年8月上旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "基本情報技術者試験に合格する",
+          timestamp: "2019年10月初旬",
           size: "large",
           color: "gray"
         },
@@ -188,14 +459,20 @@ export default {
           color: "gray"
         },
         {
-          content: "東京工業大学 情報工学系に進学する",
-          timestamp: "2019年4月初旬",
+          content: "G検定に合格する",
+          timestamp: "2020年3月上旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "東京工業大学 情報理工学院 情報工学系に進学する",
+          timestamp: "2020年4月初旬",
           size: "large",
           color: "gray"
         },
         {
           content: "当ポートフォリオを開設する",
-          timestamp: "2019年8月下旬",
+          timestamp: "2020年8月下旬",
           size: "large",
           color: "gray"
         }
@@ -204,19 +481,36 @@ export default {
   },
   components: {},
   methods: {
-    clickSmoothScroll(x) {
-      event.preventDefault();
-      this.$SmoothScroll(document.querySelector(x), 800, null, null, "y");
+    onClick(url) {
+      window.open(url, "_blank");
     }
   }
 };
 </script>
 <style>
-#tab-menu {
-  margin: auto;
+.tab {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 100;
+  background-color: white;
+}
+.menu-item {
+  width: 16.6667vw;
+}
+.top-icon {
+  margin-top: 150px;
 }
 .link-content {
   size: 50px;
+  text-decoration: none;
+  color: #2c3e50;
+}
+.link-content:visited {
+  color: #2c3e50;
+}
+.link-content:hover {
+  color: #00acee;
 }
 .box-card {
   display: inline-block;
@@ -230,13 +524,27 @@ export default {
   height: 260px;
   margin: 10px;
 }
+.box-card3 {
+  display: inline-block;
+  width: 400px;
+  height: 450px;
+  margin: 10px;
+}
 .box-image {
   height: 160px;
 }
 .timeline {
-  width: 800px;
+  width: 100vw;
   height: 100px;
   font-size: 20px;
   margin: auto;
+}
+.tag {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+.button {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 </style>

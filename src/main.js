@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./plugins/element.js";
-import smoothScroll from "vue-smoothscroll";
+import smoothScroll from "vue2-smooth-scroll";
 
 Vue.config.productionTip = false;
 Vue.use(smoothScroll);
