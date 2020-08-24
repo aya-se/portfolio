@@ -497,6 +497,9 @@ export default {
 };
 </script>
 <style>
+#home {
+  overflow: hidden;
+}
 .tab {
   position: fixed;
   top: 0px;
@@ -504,9 +507,17 @@ export default {
   z-index: 100;
   background-color: white;
 }
-.menu-item {
-  width: 16.666%;
-  padding: auto;
+@media screen and (max-width: 10000px) {
+  .menu-item {
+    width: 16.6666%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-item {
+    width: 33.3333%;
+    overflow: hidden;
+  }
 }
 .top-icon {
   margin-top: 150px;
