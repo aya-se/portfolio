@@ -570,10 +570,11 @@ export default {
   height: 160px;
 }
 .timeline {
-  width: 100%;
+  width: auto;
   height: auto;
   font-size: 20px;
   padding-top: 20px;
+  margin-right: 20px;
 }
 .tag {
   margin-left: 5px;
