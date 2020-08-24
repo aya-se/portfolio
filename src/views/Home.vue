@@ -274,7 +274,10 @@
               src="../assets/portfolio.png"
             />
           </p>
-          <el-button type="primary" class="button" @click="onClick()"
+          <el-button
+            type="primary"
+            class="button"
+            @click="onClick('https://aya-se.netlify.app/')"
             >Website</el-button
           >
           <el-button
@@ -300,14 +303,20 @@
               src="../assets/logo.png"
             />
           </p>
-          <el-button type="primary" class="button" @click="onClick()"
+          <el-button type="primary" class="button" disabled @click="onClick()"
             >Website</el-button
           >
           <el-button
             type="info"
             class="button"
             @click="onClick('https://github.com/aya-se/naro-portal-client')"
-            >GitHub</el-button
+            >GitHub①</el-button
+          >
+          <el-button
+            type="info"
+            class="button"
+            @click="onClick('https://github.com/aya-se/naro-portal-server')"
+            >GitHub②</el-button
           >
         </el-card>
         <el-card class="box-card3">
@@ -364,7 +373,7 @@
           <el-tag effect="plain" type="warning" class="tag">TensorFlow</el-tag>
           <h3>Kaggle (分析コンペ)</h3>
           <p>
-            データ分析のコンペに参加しようと思っています。Titanicのチュートリアルをやりたいと思っています。まだやってません。てへぺろ。
+            データ分析のコンペに参加しようと思っています。Titanicのチュートリアルをやりました。今後はコンペに参加していきたいと思います。
           </p>
           <p>
             <img
@@ -491,18 +500,18 @@ export default {
 .tab {
   position: fixed;
   top: 0px;
-  width: 100vw;
+  width: 100%;
   z-index: 100;
   background-color: white;
 }
 .menu-item {
-  width: 16.6667vw;
+  width: 16.666%;
+  padding: auto;
 }
 .top-icon {
   margin-top: 150px;
 }
 .link-content {
-  size: 50px;
   text-decoration: none;
   color: #2c3e50;
 }
@@ -534,14 +543,14 @@ export default {
   height: 160px;
 }
 .timeline {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   font-size: 20px;
   margin: auto;
 }
 .tag {
-  margin-left: 7.5px;
-  margin-right: 7.5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .button {
   margin-left: 10px;
