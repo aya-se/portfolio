@@ -1,19 +1,12 @@
 <template>
   <div id="home">
     <header id="tab" class="tab" data-scroll-header>
-      <a
-        class="link-content"
-        href="#home"
-        v-smooth-scroll="{ duration: 800, offset: -100 }"
-      >
-        <h1>aya_se's portfolio</h1></a
-      >
       <el-menu mode="horizontal" collapse-transition>
         <el-menu-item index="2" class="menu-item"
           ><a
             class="link-content"
             href="#about"
-            v-smooth-scroll="{ duration: 800, offset: -170 }"
+            v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
             About</a
           ></el-menu-item
@@ -22,7 +15,7 @@
           ><a
             class="link-content"
             href="#account"
-            v-smooth-scroll="{ duration: 800, offset: -170 }"
+            v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
             Account</a
           ></el-menu-item
@@ -31,7 +24,7 @@
           ><a
             class="link-content"
             href="#history"
-            v-smooth-scroll="{ duration: 800, offset: -170 }"
+            v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
             History</a
           ></el-menu-item
@@ -40,7 +33,7 @@
           ><a
             class="link-content"
             href="#skill"
-            v-smooth-scroll="{ duration: 800, offset: -170 }"
+            v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
             Skill</a
           ></el-menu-item
@@ -49,7 +42,7 @@
           ><a
             class="link-content"
             href="#work"
-            v-smooth-scroll="{ duration: 800, offset: -170 }"
+            v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
             Work</a
           ></el-menu-item
@@ -58,13 +51,20 @@
           ><a
             class="link-content"
             href="#contact"
-            v-smooth-scroll="{ duration: 800, offset: -170 }"
+            v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
             Contact</a
           ></el-menu-item
         >
       </el-menu>
     </header>
+    <a
+      class="link-content"
+      href="#home"
+      v-smooth-scroll="{ duration: 800, offset: -100 }"
+    >
+      <h1>aya_se's portfolio</h1></a
+    >
     <img class="top-icon" src="../assets/icon.png" />
     <transition name="el-fade-in-linear">
       <div id="about">
@@ -422,6 +422,13 @@
         <p><b>Twitter： </b>@Hakuba_snow</p>
       </div>
     </transition>
+    <a
+      class="link-content"
+      href="#home"
+      v-smooth-scroll="{ duration: 800, offset: -100 }"
+    >
+      <h2>aya_se's portfolio</h2></a
+    >
   </div>
 </template>
 
@@ -518,9 +525,6 @@ export default {
     width: 16.6666%;
     overflow: hidden;
   }
-}
-.top-icon {
-  margin-top: 150px;
 }
 .link-content {
   text-decoration: none;
