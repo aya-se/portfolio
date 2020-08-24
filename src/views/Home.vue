@@ -507,15 +507,15 @@ export default {
   z-index: 100;
   background-color: white;
 }
-@media screen and (max-width: 10000px) {
+@media screen and (max-width: 640px) {
   .menu-item {
-    width: 16.6666%;
+    width: 33.3333%;
     overflow: hidden;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 640px) {
   .menu-item {
-    width: 33.3333%;
+    width: 16.6666%;
     overflow: hidden;
   }
 }
@@ -532,22 +532,38 @@ export default {
 .link-content:hover {
   color: #00acee;
 }
-.box-card {
-  display: inline-block;
-  width: 400px;
-  height: 150px;
-  margin: 10px;
+@media screen and (max-width: 480px) {
+  .box-card {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+  }
+  .box-card3 {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .box-card {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+  }
+  .box-card3 {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+  }
 }
 .box-card2 {
   display: inline-block;
   width: 260px;
-  height: 260px;
-  margin: 10px;
-}
-.box-card3 {
-  display: inline-block;
-  width: 400px;
-  height: 450px;
+  height: auto;
   margin: 10px;
 }
 .box-image {
@@ -555,13 +571,14 @@ export default {
 }
 .timeline {
   width: 100%;
-  height: 100px;
+  height: auto;
   font-size: 20px;
-  margin: auto;
+  padding-top: 20px;
 }
 .tag {
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 .button {
   margin-left: 10px;
