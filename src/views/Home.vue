@@ -63,7 +63,7 @@
       href="#home"
       v-smooth-scroll="{ duration: 800, offset: -100 }"
     >
-      <h1>aya_se's portfolio</h1></a
+      <h1 id="top-title">aya_se's portfolio</h1></a
     >
     <img class="top-icon" src="../assets/icon.png" />
     <transition name="el-fade-in-linear">
@@ -515,6 +515,9 @@ export default {
   background-color: white;
 }
 @media screen and (max-width: 640px) {
+  #top-title {
+    padding-top: 50px;
+  }
   .menu-item {
     width: 33.3333%;
     overflow: hidden;
