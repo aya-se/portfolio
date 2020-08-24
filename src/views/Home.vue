@@ -276,13 +276,13 @@
           </p>
           <el-button
             type="primary"
-            class="button"
+            class="web-button"
             @click="onClick('https://aya-se.netlify.app/')"
             >Website</el-button
           >
           <el-button
             type="info"
-            class="button"
+            class="web-button"
             @click="onClick('https://github.com/aya-se/portfolio')"
             >GitHub</el-button
           >
@@ -308,13 +308,13 @@
           >
           <el-button
             type="info"
-            class="button"
+            class="web-button"
             @click="onClick('https://github.com/aya-se/naro-portal-client')"
             >GitHub①</el-button
           >
           <el-button
             type="info"
-            class="button"
+            class="web-button"
             @click="onClick('https://github.com/aya-se/naro-portal-server')"
             >GitHub②</el-button
           >
@@ -338,7 +338,7 @@
           >
           <el-button
             type="info"
-            class="button"
+            class="web-button"
             @click="onClick('https://github.com/aya-se/portfolio')"
             >GitHub</el-button
           >
@@ -359,7 +359,7 @@
           </p>
           <el-button
             type="primary"
-            class="button"
+            class="web-button"
             @click="onClick('https://atcoder.jp/users/aya_se')"
             >Website</el-button
           >
@@ -385,7 +385,7 @@
           </p>
           <el-button
             type="primary"
-            class="button"
+            class="web-button"
             @click="onClick('https://www.kaggle.com/ayasse')"
             >Website</el-button
           >
@@ -407,7 +407,7 @@
           </p>
           <el-button
             type="primary"
-            class="button"
+            class="web-button"
             @click="onClick('https://qiita.com/aya_se')"
             >Website</el-button
           >
@@ -588,9 +588,7 @@ export default {
   margin-right: 5px;
   margin-top: 5px;
 }
-.button {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 5px;
+.web-button {
+  margin-bottom: 5px !important;
 }
 </style>
