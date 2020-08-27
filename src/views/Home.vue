@@ -323,23 +323,26 @@
           <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
           <h3>自作曲の紹介Webサイト</h3>
           <p>
-            趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。まだ作ってません。てへぺろ。
+            趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。独自の試聴プレイヤーやタグなどによる検索機能にこだわりました。
           </p>
           <p>
             <img
               class="box-image"
               id="vue"
               alt="vue logo"
-              src="../assets/logo.png"
+              src="../assets/ayase-music.png"
             />
           </p>
-          <el-button type="primary" class="button" @click="onClick()"
+          <el-button
+            type="primary"
+            class="button"
+            @click="onClick('https://ayase-music.netlify.app/')"
             >Website</el-button
           >
           <el-button
             type="info"
             class="web-button"
-            @click="onClick('https://github.com/aya-se/portfolio')"
+            @click="onClick('https://github.com/aya-se/my-music')"
             >GitHub</el-button
           >
         </el-card>
