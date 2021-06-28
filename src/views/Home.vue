@@ -207,9 +207,14 @@
         </el-card>
         <el-card class="box-card2">
           <h3>
-            <label for="go">Go</label>
+            <label for="firebase">Firebase</label>
           </h3>
-          <img class="box-image" id="go" alt="Go logo" src="../assets/go.png" />
+          <img
+            class="box-image"
+            id="firebase"
+            alt="Firebase logo"
+            src="../assets/firebase.png"
+          />
         </el-card>
         <el-card class="box-card2">
           <h3>
@@ -336,7 +341,7 @@
           <el-button
             type="primary"
             class="button"
-            @click="onClick('https://ayase-music.netlify.app/')"
+            @click="onClick('https://ayase-music.vercel.app/')"
             >Website</el-button
           >
           <el-button
@@ -347,10 +352,38 @@
           >
         </el-card>
         <el-card class="box-card3">
+          <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
+          <el-tag effect="plain" type="warning" class="tag">Firebase</el-tag>
+          <h3>ウマ娘レースプランナー(仮)</h3>
+          <p>
+            ウマ娘のレース一覧の閲覧、レース計画のレコメンド(実装中)ができるサイトを目指しています。Googleアカウントごとの進捗管理が可能です。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/umamusume-trophies.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="button"
+            @click="onClick('https://umamusume-trophies.vercel.app/')"
+            >Website</el-button
+          >
+          <el-button
+            type="info"
+            class="web-button"
+            @click="onClick('https://github.com/aya-se/umamusume-trophies')"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
           <el-tag effect="plain" type="primary" class="tag">C++</el-tag>
           <h3>AtCoder (競技プログラミング)</h3>
           <p>
-            制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1498(水)です(PASTは88点・上級)。
+            制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1761(青)です(PASTは88点・上級)。
           </p>
           <p>
             <img
@@ -368,15 +401,38 @@
           >
         </el-card>
         <el-card class="box-card3">
+          <el-tag effect="plain" type="primary" class="tag">C++</el-tag>
+          <el-tag effect="plain" type="info" class="tag">Vim Snippet</el-tag>
+          <h3>cpp-snippets</h3>
+          <p>
+            競技プログラミングのコンテストで用いる典型的なデータ構造・アルゴリズム・関数をVisual
+            Studioのスニペットとして整備したものです。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/github.png"
+            />
+          </p>
+          <el-button
+            type="info"
+            class="web-button"
+            @click="onClick('https://github.com/aya-se/cpp-snippets')"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
           <el-tag effect="plain" type="danger" class="tag">Python</el-tag>
           <el-tag effect="plain" type="warning" class="tag">Pandas</el-tag>
           <el-tag effect="plain" type="warning" class="tag"
             >scikit-learn</el-tag
           >
-          <el-tag effect="plain" type="warning" class="tag">TensorFlow</el-tag>
+          <el-tag effect="plain" type="warning" class="tag">PyTorch</el-tag>
           <h3>Kaggle (分析コンペ)</h3>
           <p>
-            データ分析のコンペに参加しようと思っています。Titanicのチュートリアルをやりました。今後はコンペに参加していきたいと思います。
+            データ分析のコンペに参加しようと思っています。Titanicのチュートリアル等をやりました。今後はコンペに参加していきたいと思います。
           </p>
           <p>
             <img
@@ -389,7 +445,7 @@
           <el-button
             type="primary"
             class="web-button"
-            @click="onClick('https://www.kaggle.com/ayasse')"
+            @click="onClick('https://qiita.com/aya_se')"
             >Website</el-button
           >
         </el-card>
@@ -398,7 +454,7 @@
           <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
           <h3>Qiita (記事投稿)</h3>
           <p>
-            今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。まだほとんど書いてません。てへぺろ。
+            今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。まだほとんど書いていません。
           </p>
           <p>
             <img
@@ -412,6 +468,27 @@
             type="primary"
             class="web-button"
             @click="onClick('https://qiita.com/aya_se')"
+            >Website</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="info" class="tag">その他</el-tag>
+          <h3>東京工業大学デジタル創作同好会traP</h3>
+          <p>
+            大学で所属しているサークルです。主に趣味のDTMや競技プログラミング等を中心に活動しています。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/traP.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="web-button"
+            @click="onClick('https://trap.jp/')"
             >Website</el-button
           >
         </el-card>
@@ -490,8 +567,62 @@ export default {
           color: "gray"
         },
         {
+          content: "PAST(アルゴリズム実技検定)上級を取得する",
+          timestamp: "2021年6月上旬",
+          size: "large",
+          color: "gray"
+        },
+        {
           content: "当ポートフォリオを開設する",
           timestamp: "2020年8月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "自作曲公開Webサイトを制作開始する",
+          timestamp: "2020年8月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "ICPC国内予選に参加する(チーム戦)",
+          timestamp: "2020年11月上旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "AtCoderのレートが青色(1600)に到達する",
+          timestamp: "2020年12月中旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "GCI2020-winterを修了する",
+          timestamp: "2021年3月上旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "SkillUpAI長期インターンシップに参加する(E資格取得挑戦)",
+          timestamp: "2021年3月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "M3(同人音楽即売会)に参加する",
+          timestamp: "2021年4月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "東京海上日動システムズのインターン(1Day)に参加する",
+          timestamp: "2021年5月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "ウマ娘レースプランナー(α版)サイトを制作開始する",
+          timestamp: "2021年6月中旬",
           size: "large",
           color: "gray"
         }
