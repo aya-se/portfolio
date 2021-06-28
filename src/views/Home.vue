@@ -8,7 +8,7 @@
             href="#about"
             v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
-            About</a
+            <b>About</b></a
           ></el-menu-item
         >
         <el-menu-item index="3" class="menu-item"
@@ -17,7 +17,7 @@
             href="#account"
             v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
-            Account</a
+            <b>Account</b></a
           ></el-menu-item
         >
         <el-menu-item index="4" class="menu-item"
@@ -26,7 +26,7 @@
             href="#history"
             v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
-            History</a
+            <b>History</b></a
           ></el-menu-item
         >
         <el-menu-item index="5" class="menu-item"
@@ -35,7 +35,7 @@
             href="#skill"
             v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
-            Skill</a
+            <b>Skill</b></a
           ></el-menu-item
         >
         <el-menu-item index="6" class="menu-item"
@@ -44,7 +44,7 @@
             href="#work"
             v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
-            Work</a
+            <b>Work</b></a
           ></el-menu-item
         >
         <el-menu-item index="7" class="menu-item"
@@ -53,7 +53,7 @@
             href="#contact"
             v-smooth-scroll="{ duration: 800, offset: -120 }"
           >
-            Contact</a
+            <b>Contact</b></a
           ></el-menu-item
         >
       </el-menu>
