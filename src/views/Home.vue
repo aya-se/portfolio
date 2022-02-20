@@ -207,6 +207,28 @@
         </el-card>
         <el-card class="box-card2">
           <h3>
+            <label for="react">React.js</label>
+          </h3>
+          <img
+            class="box-image"
+            id="react"
+            alt="react logo"
+            src="../assets/react.png"
+          />
+        </el-card>
+        <el-card class="box-card2">
+          <h3>
+            <label for="next">Next.js</label>
+          </h3>
+          <img
+            class="box-image"
+            id="next"
+            alt="next logo"
+            src="../assets/next.png"
+          />
+        </el-card>
+        <el-card class="box-card2">
+          <h3>
             <label for="firebase">Firebase</label>
           </h3>
           <img
@@ -218,13 +240,24 @@
         </el-card>
         <el-card class="box-card2">
           <h3>
-            <label for="javaScript">Java Script</label>
+            <label for="javaScript">JavaScript</label>
           </h3>
           <img
             class="box-image"
             id="javaScript"
             alt="javaScript logo"
             src="../assets/javascript.png"
+          />
+        </el-card>
+        <el-card class="box-card2">
+          <h3>
+            <label for="javaScript">TypeScript</label>
+          </h3>
+          <img
+            class="box-image"
+            id="typeScript"
+            alt="typeScript logo"
+            src="../assets/typescript.png"
           />
         </el-card>
         <el-card class="box-card2">
@@ -354,9 +387,9 @@
         <el-card class="box-card3">
           <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
           <el-tag effect="plain" type="warning" class="tag">Firebase</el-tag>
-          <h3>ウマ娘レースプランナー(仮)</h3>
+          <h3>ウマ娘レースプランナー</h3>
           <p>
-            ウマ娘のレース一覧の閲覧、レース計画のレコメンド(実装中)ができるサイトを目指しています。Googleアカウントごとの進捗管理が可能です。
+            ウマ娘のレース一覧の閲覧、レース計画のレコメンドができるサイトです。Googleアカウントごとの進捗管理が可能です。
           </p>
           <p>
             <img
@@ -376,6 +409,60 @@
             type="info"
             class="web-button"
             @click="onClick('https://github.com/aya-se/umamusume-trophies')"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="success" class="tag">Vue.js</el-tag>
+          <el-tag effect="plain" type="primary" class="tag">Go</el-tag>
+          <el-tag effect="plain" type="danger" class="tag">MySQL</el-tag>
+          <h3>One Poll</h3>
+          <p>
+            大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/one-poll.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="web-button"
+            @click="onClick('https://one-poll.mazrean.com/')"
+            >Website</el-button
+          >
+          <el-button type="info" class="web-button" disabled @click="onClick()"
+            >GitHub</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="primary" class="tag">React.js</el-tag>
+          <el-tag effect="plain" type="primary" class="tag">Next.js</el-tag>
+          <h3>Wordle Blob Solver</h3>
+          <p>
+            『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="vue"
+              alt="vue logo"
+              src="../assets/wordle-solver-blob.png"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="web-button"
+            @click="onClick('https://wordle-solver-ayase.vercel.app/')"
+            >Website</el-button
+          >
+          <el-button
+            type="info"
+            class="web-button"
+            @click="onClick('https://github.com/aya-se/wordle-solver')"
             >GitHub</el-button
           >
         </el-card>
@@ -519,110 +606,124 @@ export default {
     return {
       activities: [
         {
-          content: "開成中学・高等学校を卒業する",
-          timestamp: "2019年3月初旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "東京工業大学 情報理工学院に入学する",
+          content: "東京工業大学 情報理工学院に入学",
           timestamp: "2019年4月初旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "地元の個別指導塾で塾講師のバイトを始める (~2020年1月)",
-          timestamp: "2019年8月上旬",
+          content: "地元の個別指導塾で塾講師のバイトを開始",
+          timestamp: "2019年8月上旬～2020年1月上旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "基本情報技術者試験に合格する",
+          content: "基本情報技術者試験に合格",
           timestamp: "2019年10月初旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "AtCoderのレートが水色(1200)に到達する",
+          content: "AtCoderのレートが水色(1200)に到達",
           timestamp: "2019年11月下旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "教育系の会社で事務(データ分析・資料作成等)のバイトを始める",
-          timestamp: "2019年12月上旬",
+          content: "教育系の会社で事務(データ分析・資料作成等)のバイトを開始",
+          timestamp: "2019年12月上旬～現在",
           size: "large",
           color: "gray"
         },
         {
-          content: "G検定に合格する",
+          content: "G検定に合格",
           timestamp: "2020年3月上旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "東京工業大学 情報理工学院 情報工学系に進学する",
+          content: "東京工業大学 情報理工学院 情報工学系に進学",
           timestamp: "2020年4月初旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "PAST(アルゴリズム実技検定)上級を取得する",
+          content: "PAST(アルゴリズム実技検定)上級を取得",
           timestamp: "2021年6月上旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "当ポートフォリオを開設する",
+          content: "当ポートフォリオサイトを開設",
           timestamp: "2020年8月下旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "自作曲公開Webサイトを制作開始する",
+          content: "『自作曲公開Webサイト』を制作開始",
           timestamp: "2020年8月下旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "ICPC国内予選に参加する(チーム戦)",
+          content: "ICPC国内予選に参加(チーム戦)",
           timestamp: "2020年11月上旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "AtCoderのレートが青色(1600)に到達する",
+          content: "AtCoderのレートが青色(1600)に到達",
           timestamp: "2020年12月中旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "GCI2020-winterを修了する",
+          content: "GCI2020-winterを修了",
           timestamp: "2021年3月上旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "SkillUpAI長期インターンシップに参加する(E資格取得挑戦)",
-          timestamp: "2021年3月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "M3(同人音楽即売会)に参加する",
+          content: "M3(同人音楽即売会)に参加",
           timestamp: "2021年4月下旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "東京海上日動システムズのインターン(1Day)に参加する",
+          content: "東京海上日動システムズのインターン(1Day)に参加",
           timestamp: "2021年5月下旬",
           size: "large",
           color: "gray"
         },
         {
-          content: "ウマ娘レースプランナー(α版)サイトを制作開始する",
-          timestamp: "2021年6月中旬",
+          content: "『ウマ娘レースプランナー』を制作",
+          timestamp: "2021年8月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "Mynavi Engineer Internship 2021(4Day)に参加 (最優秀賞)",
+          timestamp: "2021年9月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content:
+            "『One Poll』を大学の講義でチーム開発 (主にフロントエンド担当)",
+          timestamp: "2021年12月上旬～2022年1月下旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "『Wordle Blob Solver』を製作開始",
+          timestamp: "2022年2月上旬",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content:
+            "株式会社マイナビ就業型インターンシップ(フロントエンド)に参加",
+          timestamp: "2022年2月上旬～3月下旬(予定)",
           size: "large",
           color: "gray"
         }
