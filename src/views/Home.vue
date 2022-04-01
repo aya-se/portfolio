@@ -6,7 +6,7 @@
           ><a
             class="link-content"
             href="#about"
-            v-smooth-scroll="{ duration: 800, offset: -120 }"
+            v-smooth-scroll="{ duration: 800, offset: -80 }"
           >
             <b>About</b></a
           ></el-menu-item
@@ -15,7 +15,7 @@
           ><a
             class="link-content"
             href="#account"
-            v-smooth-scroll="{ duration: 800, offset: -120 }"
+            v-smooth-scroll="{ duration: 800, offset: -80 }"
           >
             <b>Account</b></a
           ></el-menu-item
@@ -24,7 +24,7 @@
           ><a
             class="link-content"
             href="#history"
-            v-smooth-scroll="{ duration: 800, offset: -120 }"
+            v-smooth-scroll="{ duration: 800, offset: -80 }"
           >
             <b>History</b></a
           ></el-menu-item
@@ -33,7 +33,7 @@
           ><a
             class="link-content"
             href="#skill"
-            v-smooth-scroll="{ duration: 800, offset: -120 }"
+            v-smooth-scroll="{ duration: 800, offset: -80 }"
           >
             <b>Skill</b></a
           ></el-menu-item
@@ -42,7 +42,7 @@
           ><a
             class="link-content"
             href="#work"
-            v-smooth-scroll="{ duration: 800, offset: -120 }"
+            v-smooth-scroll="{ duration: 800, offset: -80 }"
           >
             <b>Work</b></a
           ></el-menu-item
@@ -51,7 +51,7 @@
           ><a
             class="link-content"
             href="#contact"
-            v-smooth-scroll="{ duration: 800, offset: -120 }"
+            v-smooth-scroll="{ duration: 800, offset: -80 }"
           >
             <b>Contact</b></a
           ></el-menu-item
@@ -567,8 +567,8 @@
           <p>
             <img
               class="box-image"
-              id="vue"
-              alt="vue logo"
+              id="traP"
+              alt="traP logo"
               src="../assets/traP.png"
             />
           </p>
@@ -576,6 +576,28 @@
             type="primary"
             class="web-button"
             @click="onClick('https://trap.jp/')"
+            >Website</el-button
+          >
+        </el-card>
+        <el-card class="box-card3">
+          <el-tag effect="plain" type="primary" class="tag">NLP</el-tag>
+          <el-tag effect="plain" type="info" class="tag">その他</el-tag>
+          <h3>岡崎研究室 (Okazaki Lab)</h3>
+          <p>
+            大学の学士特定課題研究で所属している研究室です。自然言語処理(NLP)の勉強・研究を進めていく予定です。
+          </p>
+          <p>
+            <img
+              class="box-image"
+              id="lab"
+              alt="lab logo"
+              src="../assets/okazaki-lab.svg"
+            />
+          </p>
+          <el-button
+            type="primary"
+            class="web-button"
+            @click="onClick('https://www.nlp.c.titech.ac.jp/index.ja.html')"
             >Website</el-button
           >
         </el-card>
@@ -631,7 +653,7 @@ export default {
         },
         {
           content: "教育系の会社で事務(データ分析・資料作成等)のバイトを開始",
-          timestamp: "2019年12月上旬～現在",
+          timestamp: "2019年12月上旬～2022年3月下旬",
           size: "large",
           color: "gray"
         },
@@ -723,7 +745,13 @@ export default {
         {
           content:
             "株式会社マイナビ就業型インターンシップ(フロントエンド)に参加",
-          timestamp: "2022年2月上旬～3月下旬(予定)",
+          timestamp: "2022年2月上旬～6月下旬(予定)",
+          size: "large",
+          color: "gray"
+        },
+        {
+          content: "大学の学士特定課題研究で岡崎研究室(Okazaki Lab)に配属",
+          timestamp: "2022年4月上旬",
           size: "large",
           color: "gray"
         }
@@ -748,6 +776,13 @@ export default {
   width: 100%;
   z-index: 100;
   background-color: white;
+}
+.top-icon {
+  border-radius: 3rem;
+  transition: 0.3s all ease;
+}
+.top-icon:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 640px) {
   #top-title {
@@ -825,5 +860,8 @@ export default {
 }
 .web-button {
   margin-bottom: 5px !important;
+}
+#lab {
+  width: 90%;
 }
 </style>
