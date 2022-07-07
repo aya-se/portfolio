@@ -1,63 +1,6 @@
 <template>
   <div id="home">
-    <header id="tab" class="tab" data-scroll-header>
-      <el-menu mode="horizontal" collapse-transition>
-        <el-menu-item index="2" class="menu-item"
-          ><a
-            class="link-content"
-            href="#about"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            <b>About</b></a
-          ></el-menu-item
-        >
-        <el-menu-item index="3" class="menu-item"
-          ><a
-            class="link-content"
-            href="#account"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            <b>Account</b></a
-          ></el-menu-item
-        >
-        <el-menu-item index="4" class="menu-item"
-          ><a
-            class="link-content"
-            href="#history"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            <b>History</b></a
-          ></el-menu-item
-        >
-        <el-menu-item index="5" class="menu-item"
-          ><a
-            class="link-content"
-            href="#skill"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            <b>Skill</b></a
-          ></el-menu-item
-        >
-        <el-menu-item index="6" class="menu-item"
-          ><a
-            class="link-content"
-            href="#work"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            <b>Work</b></a
-          ></el-menu-item
-        >
-        <el-menu-item index="7" class="menu-item"
-          ><a
-            class="link-content"
-            href="#contact"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            <b>Contact</b></a
-          ></el-menu-item
-        >
-      </el-menu>
-    </header>
+    <CustomHeader />
     <a
       class="link-content"
       href="#home"
@@ -91,9 +34,7 @@
           <h3>
             <label for="hobby"><i class="el-icon-s-platform" /> 趣味</label>
           </h3>
-          <p id="hobby">
-            DTM, 競技プログラミング, Minecraft, Youtube
-          </p>
+          <p id="hobby">DTM, 競技プログラミング, Minecraft, Youtube</p>
         </el-card>
         <el-card class="box-card">
           <h3>
@@ -101,9 +42,7 @@
               ><i class="el-icon-success" /> 資格</label
             >
           </h3>
-          <p id="certification">
-            英検2級, 基本情報技術者, G検定, PAST上級
-          </p>
+          <p id="certification">英検2級, 基本情報技術者, G検定, PAST上級</p>
         </el-card>
         <el-card class="box-card">
           <h3>
@@ -111,9 +50,7 @@
               ><i class="el-icon-star-off" /> 興味・関心</label
             >
           </h3>
-          <p id="interest">
-            機械学習, 自然言語処理, アルゴリズム etc.
-          </p>
+          <p id="interest">機械学習, 自然言語処理, アルゴリズム etc.</p>
         </el-card>
       </div>
     </transition>
@@ -606,7 +543,6 @@
     <transition name="el-fade-in-linear">
       <div id="contact">
         <h1><i class="el-icon-s-comment" /> Contact</h1>
-        GmailもしくはTwitterがおそらく一番反応早いと思うので、載せておきます。
         <p><b>Gmail： </b>kakkeno1@gmail.com</p>
         <p><b>Twitter： </b>@Hakuba_snow</p>
       </div>
@@ -622,8 +558,10 @@
 </template>
 
 <script>
-export default {
-  name: "Home",
+import { defineComponent } from "vue";
+import CustomHeader from "@/components/Header.vue";
+export default defineComponent({
+  name: "HomeView",
   data() {
     return {
       activities: [
@@ -758,13 +696,13 @@ export default {
       ]
     };
   },
-  components: {},
+  components: { CustomHeader },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
     }
   }
-};
+});
 </script>
 <style>
 #home {
