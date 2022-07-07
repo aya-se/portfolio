@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Vue.js",
+    "level": 2,
+    "text": "主に個人開発のWebアプリで利用したことがあります。", 
+    "image": "logo.png"
+  },
+  {
+    "title": "React.js",
+    "level": 2,
+    "text": "個人開発やインターンシップの開発で利用したことがあります。", 
+    "image": "react.png"
+  },
+  {
+    "title": "Next.js",
+    "level": 2,
+    "text": "個人開発やインターンシップの開発で利用したことがあります。", 
+    "image": "next.png"
+  },
+  {
+    "title": "Firebase",
+    "level": 2,
+    "text": "個人開発のWebアプリで利用したことがあります。", 
+    "image": "firebase.png"
+  },
+  {
+    "title": "JavaScript",
+    "level": 2,
+    "text": "Webアプリ開発全般で利用しています。", 
+    "image": "javascript.png"
+  },
+  {
+    "title": "TypeScript",
+    "level": 2,
+    "text": "Webアプリ開発全般で利用しています。", 
+    "image": "typescript.png"
+  },
+  {
+    "title": "C++",
+    "level": 2,
+    "text": "競技プログラミングで利用しています。", 
+    "image": "cpp.png"
+  },
+  {
+    "title": "Python",
+    "level": 2,
+    "text": "主に研究で利用しています。", 
+    "image": "python.png"
+  },
+  {
+    "title": "SQL",
+    "level": 2,
+    "text": "主にインターンシップの開発で利用したことがあります。", 
+    "image": "sql.png"
+  }
+]

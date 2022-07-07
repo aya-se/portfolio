@@ -37,120 +37,29 @@
       <el-timeline>
         <el-timeline-item
           class="timeline"
-          v-for="(activity, index) in activities"
+          v-for="(item, index) in activities"
           :key="index"
-          :icon="activity.icon"
-          :type="activity.type"
-          :color="activity.color"
-          :size="activity.size"
-          :timestamp="activity.timestamp"
+          :icon="item.icon"
+          :type="item.type"
+          :color="item.color"
+          :size="item.size"
+          :timestamp="item.timestamp"
         >
-          {{ activity.content }}
+          {{ item.content }}
         </el-timeline-item>
       </el-timeline>
     </div>
 
     <div id="skill">
       <h1><i class="el-icon-s-opportunity" /> Skill</h1>
-      <el-card class="box-card2">
-        <h3>
-          <label for="vue">Vue.js</label>
-        </h3>
-        <img
-          class="box-image"
-          id="vue"
-          alt="vue logo"
-          src="../assets/logo.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="react">React.js</label>
-        </h3>
-        <img
-          class="box-image"
-          id="react"
-          alt="react logo"
-          src="../assets/react.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="next">Next.js</label>
-        </h3>
-        <img
-          class="box-image"
-          id="next"
-          alt="next logo"
-          src="../assets/next.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="firebase">Firebase</label>
-        </h3>
-        <img
-          class="box-image"
-          id="firebase"
-          alt="Firebase logo"
-          src="../assets/firebase.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="javaScript">JavaScript</label>
-        </h3>
-        <img
-          class="box-image"
-          id="javaScript"
-          alt="javaScript logo"
-          src="../assets/javascript.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="javaScript">TypeScript</label>
-        </h3>
-        <img
-          class="box-image"
-          id="typeScript"
-          alt="typeScript logo"
-          src="../assets/typescript.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="Cpp">C++</label>
-        </h3>
-        <img
-          class="box-image"
-          id="cpp"
-          alt="cpp logo"
-          src="../assets/cpp.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="python">Python</label>
-        </h3>
-        <img
-          class="box-image"
-          id="python"
-          alt="python logo"
-          src="../assets/python.png"
-        />
-      </el-card>
-      <el-card class="box-card2">
-        <h3>
-          <label for="sql">SQL</label>
-        </h3>
-        <img
-          class="box-image"
-          id="sql"
-          alt="sql logo"
-          src="../assets/sql.png"
-        />
-      </el-card>
+      <SkillCard
+        v-for="(item, index) in skills"
+        :key="index"
+        :title="item.title"
+        :level="item.level"
+        :text="item.text"
+        :image="item.image"
+      />
     </div>
 
     <div id="work">
@@ -479,19 +388,22 @@ import { defineComponent } from "vue";
 import CustomHeader from "@/components/Header.vue";
 import AboutCard from "@/components/AboutCard.vue";
 import AccountCard from "@/components/AccountCard.vue";
+import SkillCard from "@/components/SkillCard.vue";
 import activities from "@/data/activities.json";
 import abouts from "@/data/abouts.json";
 import accounts from "@/data/accounts.json";
+import skills from "@/data/skills.json";
 export default defineComponent({
   name: "HomeView",
   data() {
     return {
       abouts: abouts,
       activities: activities,
-      accounts: accounts
+      accounts: accounts,
+      skills: skills
     };
   },
-  components: { CustomHeader, AboutCard, AccountCard },
+  components: { CustomHeader, AboutCard, AccountCard, SkillCard },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
