@@ -1,0 +1,171 @@
+[
+  {
+    "title": "ポートフォリオサイト",
+    "text": "このWebサイトです。\nVue.jsを用いて制作しました。\nElementやsmoothscrollerなどを用いています。",
+    "tags": [
+      {"name": "Vue.js", "type": "success"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://aya-se.vercel.app/"},
+      {"name": "GitHub", "link": "https://github.com/aya-se/portfolio"}
+    ],
+    "image": "portfolio.png"
+  },
+  {
+    "title": "Twitterクローン",
+    "text": "Twitterを模したWebアプリです。\nVue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。",
+    "tags": [
+      {"name": "Vue.js", "type": "success"},
+      {"name": "Go", "type": "primary"},
+      {"name": "MySQL", "type": "danger"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": ""},
+      {"name": "GitHub①", "link": "https://github.com/aya-se/naro-portal-client"},
+      {"name": "GitHub②", "link": "https://github.com/aya-se/naro-portal-server"}
+    ],
+    "image": "twitter.png"
+  },
+  {
+    "title": "自作曲の紹介Webサイト",
+    "text": "趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。独自の試聴プレイヤーやタグなどによる検索機能にこだわりました。",
+    "tags": [
+      {"name": "Vue.js","type": "success"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "http://ayase-music.vercel.app/"},
+      {"name": "GitHub", "link": "https://github.com/aya-se/my-music"}
+    ],
+    "image": "ayase-music.png"
+  },
+  {
+    "title": "ウマ娘レースプランナー",
+    "text": "ウマ娘のレース一覧の閲覧、レース計画のレコメンドができるサイトです。Googleアカウントごとの進捗管理が可能です。",
+    "tags": [
+      {"name": "Vue.js", "type": "success"},
+      {"name": "Firebase", "type": "warning"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://umamusume-trophies.vercel.app/"},
+      {"name": "GitHub", "link": "https://github.com/aya-se/umamusume-trophies"}
+    ],
+    "image": "umamusume-trophies.png"
+  },
+  {
+    "title": "One Poll",
+    "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
+    "tags": [
+      {"name": "Vue.js", "type": "success"},
+      {"name": "Go", "type": "primary"},
+      {"name": "MySQL", "type": "danger"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://one-poll.mazrean.com/"},
+      {"name": "GitHub", "link": ""}
+    ],
+    "image": "one-poll.png"
+  },
+  {
+    "title": "Wordle Blob Solver",
+    "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。",
+    "tags": [
+      {"name": "React.js", "type": "primary"},
+      {"name": "Next.js", "type": "primary"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://wordle-solver-ayase.vercel.app/"},
+      {"name": "GitHub", "link": "https://github.com/aya-se/wordle-solver"}
+    ],
+    "image": "wordle-solver-blob.png"
+  },
+   {
+    "title": "100knock Translation",
+    "text": "自然言語処理100本ノックで作成した自作の機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
+    "tags": [
+      {"name": "Next.js", "type": "primary"},
+      {"name": "FastAPI", "type": "success"},
+      {"name": "fairseq", "type": "warning"},
+      {"name": "自然言語処理", "type": "danger"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://100knock-translation.vercel.app/"},
+      {"name": "GitHub①", "link": "https://github.com/aya-se/100knock-translation"},
+      {"name": "GitHub②", "link": "https://github.com/aya-se/100knock-translation-backend"}
+    ],
+    "image": "wordle-solver-blob.png"
+  },
+  {
+    "title": "AtCoder (競技プログラミング)",
+    "text": "制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1761(青)です(PASTは88点・上級)。",
+    "tags": [
+      {"name": "C++", "type": "primary"},
+      {"name": "競技プログラミング", "type": "info"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://atcoder.jp/users/aya_se"}
+    ],
+    "image": "atcoder.png"
+  },
+  {
+    "title": "cpp-snippets",
+    "text": "競技プログラミングのコンテストで用いる典型的なデータ構造・アルゴリズム・関数をVisual Studioのスニペットとして整備したものです。",
+    "tags": [
+      {"name": "C++", "type": "primary"},
+      {"name": "Vim Snippet", "type": "info"},
+      {"name": "競技プログラミング", "type": "info"}
+    ],
+    "buttons": [
+      {"name": "GitHub", "link": "https://github.com/aya-se/cpp-snippets"}
+    ],
+    "image": "github.png"
+  },
+  {
+    "title": "Kaggle (分析コンペ)",
+    "text": "データ分析のコンペに参加しようと思っています。Titanicのチュートリアル等をやりました。今後はコンペに参加していきたいと思います。",
+    "tags": [
+      {"name": "Python", "type": "danger"},
+      {"name": "Pandas", "type": "warning"},
+      {"name": "scikit-learn", "type":"warning"},
+      {"name": "PyTorch", "type": "warning"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://www.kaggle.com/ayasse"}
+    ],
+    "image": "kaggle.png"
+  },
+  {
+    "title": "Qiita (記事投稿)",
+    "text": "今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。まだほとんど書いていません。",
+    "tags": [
+      {"name": "その他", "type": "info"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://qiita.com/aya_se"}
+    ],
+    "image": "qiita.png"
+  },
+  {
+    "title": "東京工業大学デジタル創作同好会traP",
+    "text": "大学で所属しているサークルです。主に趣味のDTMや競技プログラミング等を中心に活動しています。",
+    "tags": [
+      {"name": "その他", "type": "info"}
+    ],
+    "buttons": [
+      {"name": "Website①", "link": "https://trap.jp/"},
+      {"name": "Website②", "link": "https://trap.jp/author/aya_se/"}
+    ],
+    "image": "traP.png"
+  },
+  {
+    "title": "岡崎研究室 (Okazaki Lab)",
+    "text": "大学の学士特定課題研究で所属している研究室です。自然言語処理(NLP)の勉強・研究を進めていく予定です。",
+    "tags": [
+       {"name": "自然言語処理", "type": "danger"},
+      {"name": "その他", "type": "info"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://www.nlp.c.titech.ac.jp/index.ja.html"}
+    ],
+    "image": "okazaki-lab.svg"
+  }
+]

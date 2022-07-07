@@ -1,5 +1,5 @@
 <template>
-  <el-card class="box-card">
+  <el-card class="about-card">
     <h3>
       <span> <i :class="'el-icon-' + icon" /> {{ title }} </span>
     </h3>
@@ -21,7 +21,7 @@ export default defineComponent({
 
 <style>
 @media screen and (max-width: 480px) {
-  .box-card {
+  .about-card {
     display: inline-block;
     width: 90%;
     height: auto;
@@ -29,7 +29,7 @@ export default defineComponent({
   }
 }
 @media screen and (min-width: 480px) {
-  .box-card {
+  .about-card {
     display: inline-block;
     width: 400px;
     height: auto;
