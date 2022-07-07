@@ -47,7 +47,8 @@
     ],
     "buttons": [
       {"name": "Website", "link": "https://umamusume-trophies.vercel.app/"},
-      {"name": "GitHub", "link": "https://github.com/aya-se/umamusume-trophies"}
+      {"name": "GitHub", "link": "https://github.com/aya-se/umamusume-trophies"},
+      {"name": "Blog", "link": "https://trap.jp/post/1367/"}
     ],
     "image": "umamusume-trophies.png"
   },
@@ -78,9 +79,9 @@
     ],
     "image": "wordle-solver-blob.png"
   },
-   {
+  {
     "title": "100knock Translation",
-    "text": "自然言語処理100本ノックで作成した自作の機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
+    "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
     "tags": [
       {"name": "Next.js", "type": "primary"},
       {"name": "FastAPI", "type": "success"},
@@ -92,7 +93,33 @@
       {"name": "GitHub①", "link": "https://github.com/aya-se/100knock-translation"},
       {"name": "GitHub②", "link": "https://github.com/aya-se/100knock-translation-backend"}
     ],
-    "image": "wordle-solver-blob.png"
+    "image": "100knock-translation.png"
+  },
+  {
+    "title": "マイナビジョブサーチ",
+    "text": "株式会社マイナビの総合求人検索サービスです。長期インターンシップで、フロントエンドの開発に参加しました。",
+    "tags": [
+      {"name": "React.js", "type": "primary"},
+      {"name": "Next.js", "type": "primary"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://jobsearch.mynavi.jp/"}
+    ],
+    "image": "mynavi-jobsearch.svg"
+  },
+  {
+    "title": "ISUCON",
+    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12 (2022年) にチーム『Fine Tuning』で初出場予定です。",
+    "tags": [
+      {"name": "Go", "type": "primary"},
+      {"name": "SQL", "type": "danger"},
+      {"name": "nginx", "type": "info"},
+      {"name": "Ubuntu", "type": "info"}
+    ],
+    "buttons": [
+      {"name": "Website", "link": "https://isucon.net/"}
+    ],
+    "image": "isucon.png"
   },
   {
     "title": "AtCoder (競技プログラミング)",
@@ -102,7 +129,8 @@
       {"name": "競技プログラミング", "type": "info"}
     ],
     "buttons": [
-      {"name": "Website", "link": "https://atcoder.jp/users/aya_se"}
+      {"name": "Website", "link": "https://atcoder.jp/users/aya_se"},
+      {"name": "Blog", "link": "https://qiita.com/aya_se/items/3c8446cd2f64d5a272a2"}
     ],
     "image": "atcoder.png"
   },
@@ -151,8 +179,8 @@
       {"name": "その他", "type": "info"}
     ],
     "buttons": [
-      {"name": "Website①", "link": "https://trap.jp/"},
-      {"name": "Website②", "link": "https://trap.jp/author/aya_se/"}
+      {"name": "Website", "link": "https://trap.jp/"},
+      {"name": "Blog", "link": "https://trap.jp/author/aya_se/"}
     ],
     "image": "traP.png"
   },

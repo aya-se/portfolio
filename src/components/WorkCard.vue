@@ -18,7 +18,15 @@
     <el-button
       v-for="(item, index) in buttons"
       :key="index"
-      :type="item.name.includes('Website') ? 'primary' : 'info'"
+      :type="
+        item.name.includes('Website')
+          ? 'primary'
+          : item.name.includes('Blog')
+          ? 'success'
+          : item.name.includes('Demo')
+          ? 'danger'
+          : 'info'
+      "
       :disabled="item.link === ''"
       class="work-button"
       @click="onClick(item.link)"
