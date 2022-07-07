@@ -1,0 +1,32 @@
+[
+  {
+    "title": "氏名",
+    "text": "服部翔 (Kakeru Hattori)",
+    "icon": "edit"
+  },
+  {
+    "title": "学校",
+    "text": "東京工業大学 情報理工学院 情報工学系",
+    "icon": "school"
+  },
+  {
+    "title": "生年月日",
+    "text": "2000年7月29日",
+    "icon": "date"
+  },
+  {
+    "title": "趣味",
+    "text": "DTM, 競技プログラミング, Minecraft, Youtube",
+    "icon": "s-platform"
+  },
+  {
+    "title": "資格",
+    "text": "英検2級, 基本情報技術者, G検定, PAST上級",
+    "icon": "success"
+  },
+  {
+    "title": "興味・関心",
+    "text": "機械学習, 自然言語処理, アルゴリズム etc.",
+    "icon": "star-off"
+  }
+]

@@ -1,0 +1,39 @@
+<template>
+  <el-card class="box-card">
+    <h3>
+      <span> <i :class="'el-icon-' + icon" /> {{ title }} </span>
+    </h3>
+    <p id="name">{{ text }}</p>
+  </el-card>
+</template>
+
+<script>
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "AboutCardComponent",
+  props: {
+    title: String,
+    text: String,
+    icon: String
+  }
+});
+</script>
+
+<style>
+@media screen and (max-width: 480px) {
+  .box-card {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .box-card {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+  }
+}
+</style>

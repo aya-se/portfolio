@@ -61,9 +61,6 @@
 
 <script>
 export default {
-  name: "HeaderComponent",
-  props: {
-    msg: String
-  }
+  name: "HeaderComponent"
 };
 </script>

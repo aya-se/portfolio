@@ -11,6 +11,13 @@
     <img class="top-icon" src="../assets/icon.png" />
     <transition name="el-fade-in-linear">
       <div id="about">
+        <AboutCard
+          v-for="(about, index) in abouts"
+          :key="index"
+          :title="about.title"
+          :text="about.text"
+          :icon="about.icon"
+        />
         <h1><i class="el-icon-info" /> About</h1>
         <el-card class="box-card">
           <h3>
@@ -560,143 +567,18 @@
 <script>
 import { defineComponent } from "vue";
 import CustomHeader from "@/components/Header.vue";
+import AboutCard from "@/components/AboutCard.vue";
+import activities from "@/data/activities.json";
+import abouts from "@/data/abouts.json";
 export default defineComponent({
   name: "HomeView",
   data() {
     return {
-      activities: [
-        {
-          content: "東京工業大学 情報理工学院に入学",
-          timestamp: "2019年4月初旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "地元の個別指導塾で塾講師のバイトを開始",
-          timestamp: "2019年8月上旬～2020年1月上旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "基本情報技術者試験に合格",
-          timestamp: "2019年10月初旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "AtCoderのレートが水色(1200)に到達",
-          timestamp: "2019年11月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "教育系の会社で事務(データ分析・資料作成等)のバイトを開始",
-          timestamp: "2019年12月上旬～2022年3月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "G検定に合格",
-          timestamp: "2020年3月上旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "東京工業大学 情報理工学院 情報工学系に進学",
-          timestamp: "2020年4月初旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "PAST(アルゴリズム実技検定)上級を取得",
-          timestamp: "2021年6月上旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "当ポートフォリオサイトを開設",
-          timestamp: "2020年8月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "『自作曲公開Webサイト』を制作開始",
-          timestamp: "2020年8月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "ICPC国内予選に参加(チーム戦)",
-          timestamp: "2020年11月上旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "AtCoderのレートが青色(1600)に到達",
-          timestamp: "2020年12月中旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "GCI2020-winterを修了",
-          timestamp: "2021年3月上旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "M3(同人音楽即売会)に参加",
-          timestamp: "2021年4月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "東京海上日動システムズのインターン(1Day)に参加",
-          timestamp: "2021年5月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "『ウマ娘レースプランナー』を制作",
-          timestamp: "2021年8月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "Mynavi Engineer Internship 2021(4Day)に参加 (最優秀賞)",
-          timestamp: "2021年9月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content:
-            "『One Poll』を大学の講義でチーム開発 (主にフロントエンド担当)",
-          timestamp: "2021年12月上旬～2022年1月下旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "『Wordle Blob Solver』を製作開始",
-          timestamp: "2022年2月上旬",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content:
-            "株式会社マイナビ就業型インターンシップ(フロントエンド)に参加",
-          timestamp: "2022年2月上旬～6月下旬(予定)",
-          size: "large",
-          color: "gray"
-        },
-        {
-          content: "大学の学士特定課題研究で岡崎研究室(Okazaki Lab)に配属",
-          timestamp: "2022年4月上旬",
-          size: "large",
-          color: "gray"
-        }
-      ]
+      abouts: abouts,
+      activities: activities
     };
   },
-  components: { CustomHeader },
+  components: { CustomHeader, AboutCard },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
