@@ -1,56 +1,74 @@
 [
   {
-    "title": "Vue.js",
-    "level": 2,
-    "text": "主に個人開発のWebアプリで利用したことがあります。", 
-    "image": "logo.png"
-  },
-  {
-    "title": "React.js",
-    "level": 2,
-    "text": "個人開発やインターンシップの開発で利用したことがあります。", 
-    "image": "react.png"
-  },
-  {
-    "title": "Next.js",
-    "level": 2,
-    "text": "個人開発やインターンシップの開発で利用したことがあります。", 
-    "image": "next.png"
-  },
-  {
-    "title": "Firebase",
-    "level": 2,
-    "text": "個人開発のWebアプリで利用したことがあります。", 
-    "image": "firebase.png"
-  },
-  {
     "title": "JavaScript",
-    "level": 2,
-    "text": "Webアプリ開発全般で利用しています。", 
+    "level": 3,
+    "text": "Webアプリ開発全般で利用しています。個人開発での採用がメインです。", 
     "image": "javascript.png"
   },
   {
     "title": "TypeScript",
-    "level": 2,
-    "text": "Webアプリ開発全般で利用しています。", 
+    "level": 3,
+    "text": "Webアプリ開発全般で利用しています。チーム開発での採用が多いです。", 
     "image": "typescript.png"
-  },
-  {
-    "title": "C++",
-    "level": 2,
-    "text": "競技プログラミングで利用しています。", 
-    "image": "cpp.png"
   },
   {
     "title": "Python",
     "level": 2,
-    "text": "主に研究で利用しています。", 
+    "text": "主に研究で機械学習モデルを動かす際に利用しています。", 
     "image": "python.png"
+  },
+  {
+    "title": "C++",
+    "level": 2,
+    "text": "競技プログラミングで利用しています。開発では利用していません。", 
+    "image": "cpp.png"
+  },
+   {
+    "title": "Go",
+    "level": 1,
+    "text": "個人のWebアプリ開発で利用した経験があります。", 
+    "image": "go.png"
   },
   {
     "title": "SQL",
     "level": 2,
-    "text": "主にインターンシップの開発で利用したことがあります。", 
+    "text": "チーム開発・アルバイトの業務・ISUCONなどで利用した経験があります。", 
     "image": "sql.png"
+  },
+  {
+    "title": "Vue.js",
+    "level": 2,
+    "text": "主に個人のWebアプリ開発で利用した経験があります。", 
+    "image": "logo.png"
+  },
+  {
+    "title": "React.js",
+    "level": 3,
+    "text": "個人やインターンシップのWebアプリ開発で利用した経験があります。", 
+    "image": "react.png"
+  },
+  {
+    "title": "Next.js",
+    "level": 3,
+    "text": "個人やインターンシップのWebアプリ開発で利用した経験があります。", 
+    "image": "next.png"
+  },
+  {
+    "title": "FastAPI",
+    "level": 1,
+    "text": "個人のWebアプリ開発で利用した経験があります。", 
+    "image": "fastapi.png"
+  },
+  {
+    "title": "PyTorch",
+    "level": 2,
+    "text": "主に研究で機械学習モデルを動かす際に利用しています。", 
+    "image": "pytorch.png"
+  },
+  {
+    "title": "Firebase",
+    "level": 1,
+    "text": "個人のWebアプリ開発で利用した経験があります。", 
+    "image": "firebase.png"
   }
 ]

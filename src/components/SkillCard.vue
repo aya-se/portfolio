@@ -1,8 +1,15 @@
 <template>
   <el-card class="skill-card">
+    <el-rate
+      :model-value="level"
+      disabled
+      :max="3"
+      :colors="['hotpink', 'hotpink', 'red']"
+    />
     <h3>
       {{ title }}
     </h3>
+    <p class="skill-text">{{ text }}</p>
     <img class="skill-image" :src="require(`@/assets/${image}`)" />
   </el-card>
 </template>
@@ -27,7 +34,12 @@ export default defineComponent({
   height: auto;
   margin: 10px;
 }
+
 .skill-image {
-  height: 160px;
+  height: 100px;
+}
+
+.skill-text {
+  height: 80px;
 }
 </style>

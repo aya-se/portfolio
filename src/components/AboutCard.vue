@@ -3,7 +3,7 @@
     <h3>
       <span> <i :class="'el-icon-' + icon" /> {{ title }} </span>
     </h3>
-    <p id="name">{{ text }}</p>
+    <p>{{ text }}</p>
   </el-card>
 </template>
 
