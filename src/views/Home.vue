@@ -11,6 +11,7 @@
     <img class="top-icon" src="../assets/icon.png" />
     <transition name="el-fade-in-linear">
       <div id="about">
+        <h1><i class="el-icon-info" /> About</h1>
         <AboutCard
           v-for="(about, index) in abouts"
           :key="index"
@@ -18,47 +19,6 @@
           :text="about.text"
           :icon="about.icon"
         />
-        <h1><i class="el-icon-info" /> About</h1>
-        <el-card class="box-card">
-          <h3>
-            <label for="name"><i class="el-icon-edit" /> 氏名</label>
-          </h3>
-          <p id="name">服部翔 (Kakeru Hattori)</p>
-        </el-card>
-        <el-card class="box-card">
-          <h3>
-            <label for="school"><i class="el-icon-school" /> 学校</label>
-          </h3>
-          <p id="school">東京工業大学 情報理工学院 情報工学系</p>
-        </el-card>
-        <el-card class="box-card">
-          <h3>
-            <label for="school"><i class="el-icon-date" /> 生年月日</label>
-          </h3>
-          <p id="school">2000年7月29日</p>
-        </el-card>
-        <el-card class="box-card">
-          <h3>
-            <label for="hobby"><i class="el-icon-s-platform" /> 趣味</label>
-          </h3>
-          <p id="hobby">DTM, 競技プログラミング, Minecraft, Youtube</p>
-        </el-card>
-        <el-card class="box-card">
-          <h3>
-            <label for="certification"
-              ><i class="el-icon-success" /> 資格</label
-            >
-          </h3>
-          <p id="certification">英検2級, 基本情報技術者, G検定, PAST上級</p>
-        </el-card>
-        <el-card class="box-card">
-          <h3>
-            <label for="interest"
-              ><i class="el-icon-star-off" /> 興味・関心</label
-            >
-          </h3>
-          <p id="interest">機械学習, 自然言語処理, アルゴリズム etc.</p>
-        </el-card>
       </div>
     </transition>
     <transition name="el-fade-in-linear">
