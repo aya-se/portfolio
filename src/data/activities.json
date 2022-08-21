@@ -145,13 +145,19 @@
   },
   {
     "content": "ISUCON12 予選に参加",
-    "timestamp": "2022年7月下旬 (予定)",
+    "timestamp": "2022年7月下旬",
     "size": "large",
     "color": "gray"
   },
   {
-    "content": "日本経済新聞社 短期インターンシップ2022 (5Days) に参加",
-    "timestamp": "2022年8月中旬 (予定)",
+    "content": "日本経済新聞社 短期インターンシップ 2022 (5Days) に参加",
+    "timestamp": "2022年8月中旬",
+    "size": "large",
+    "color": "gray"
+  },
+  {
+    "content": "ヤフー株式会社 2022 Summer Internship (長期) に参加",
+    "timestamp": "2022年8月下旬～9月下旬",
     "size": "large",
     "color": "gray"
   }

@@ -112,15 +112,15 @@ export default defineComponent({
       activities: activities,
       accounts: accounts,
       skills: skills,
-      works: works
+      works: works,
     };
   },
   components: { CustomHeader, AboutCard, AccountCard, SkillCard, WorkCard },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
-    }
-  }
+    },
+  },
 });
 </script>
 <style>
