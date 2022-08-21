@@ -8,7 +8,7 @@
     >
       <h1 id="top-title">aya_se's portfolio</h1></a
     >
-    <img class="top-icon" src="../assets/icon.png" />
+    <img class="top-icon" src="../assets/hattori.jpg" />
 
     <div id="about">
       <h1><i class="el-icon-info" /> About</h1>
@@ -137,6 +137,8 @@ export default defineComponent({
 .top-icon {
   border-radius: 3rem;
   transition: 0.3s all ease;
+  width: 400px;
+  height: 400px;
 }
 .top-icon:hover {
   opacity: 0.7;

@@ -2,12 +2,10 @@
   {
     "title": "ポートフォリオサイト",
     "text": "このWebサイトです。\nVue.jsを用いて制作しました。\nElementやsmoothscrollerなどを用いています。",
-    "tags": [
-      {"name": "Vue.js", "type": "success"}
-    ],
+    "tags": [{ "name": "Vue.js", "type": "success" }],
     "buttons": [
-      {"name": "Website", "link": "https://aya-se.vercel.app/"},
-      {"name": "GitHub", "link": "https://github.com/aya-se/portfolio"}
+      { "name": "Website", "link": "https://aya-se.vercel.app/" },
+      { "name": "GitHub", "link": "https://github.com/aya-se/portfolio" }
     ],
     "image": "portfolio.png"
   },
@@ -15,26 +13,30 @@
     "title": "Twitterクローン",
     "text": "Twitterを模したWebアプリです。\nVue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。",
     "tags": [
-      {"name": "Vue.js", "type": "success"},
-      {"name": "Go", "type": "primary"},
-      {"name": "MySQL", "type": "danger"}
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Go", "type": "primary" },
+      { "name": "MySQL", "type": "danger" }
     ],
     "buttons": [
-      {"name": "Website", "link": ""},
-      {"name": "GitHub①", "link": "https://github.com/aya-se/naro-portal-client"},
-      {"name": "GitHub②", "link": "https://github.com/aya-se/naro-portal-server"}
+      { "name": "Website", "link": "" },
+      {
+        "name": "GitHub①",
+        "link": "https://github.com/aya-se/naro-portal-client"
+      },
+      {
+        "name": "GitHub②",
+        "link": "https://github.com/aya-se/naro-portal-server"
+      }
     ],
     "image": "twitter.png"
   },
   {
     "title": "自作曲の紹介Webサイト",
     "text": "趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。独自の試聴プレイヤーやタグなどによる検索機能にこだわりました。",
-    "tags": [
-      {"name": "Vue.js","type": "success"}
-    ],
+    "tags": [{ "name": "Vue.js", "type": "success" }],
     "buttons": [
-      {"name": "Website", "link": "http://ayase-music.vercel.app/"},
-      {"name": "GitHub", "link": "https://github.com/aya-se/my-music"}
+      { "name": "Website", "link": "http://ayase-music.vercel.app/" },
+      { "name": "GitHub", "link": "https://github.com/aya-se/my-music" }
     ],
     "image": "ayase-music.png"
   },
@@ -42,13 +44,16 @@
     "title": "ウマ娘レースプランナー",
     "text": "ウマ娘のレース一覧の閲覧、レース計画のレコメンドができるサイトです。Googleアカウントごとの進捗管理が可能です。",
     "tags": [
-      {"name": "Vue.js", "type": "success"},
-      {"name": "Firebase", "type": "warning"}
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Firebase", "type": "warning" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://umamusume-trophies.vercel.app/"},
-      {"name": "GitHub", "link": "https://github.com/aya-se/umamusume-trophies"},
-      {"name": "Blog", "link": "https://trap.jp/post/1367/"}
+      { "name": "Website", "link": "https://umamusume-trophies.vercel.app/" },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/aya-se/umamusume-trophies"
+      },
+      { "name": "Blog", "link": "https://trap.jp/post/1367/" }
     ],
     "image": "umamusume-trophies.png"
   },
@@ -56,13 +61,13 @@
     "title": "One Poll",
     "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
     "tags": [
-      {"name": "Vue.js", "type": "success"},
-      {"name": "Go", "type": "primary"},
-      {"name": "MySQL", "type": "danger"}
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Go", "type": "primary" },
+      { "name": "MySQL", "type": "danger" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://one-poll.mazrean.com/"},
-      {"name": "GitHub", "link": ""}
+      { "name": "Website", "link": "https://one-poll.mazrean.com/" },
+      { "name": "GitHub", "link": "" }
     ],
     "image": "one-poll.png"
   },
@@ -70,12 +75,12 @@
     "title": "Wordle Blob Solver",
     "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。",
     "tags": [
-      {"name": "React.js", "type": "primary"},
-      {"name": "Next.js", "type": "primary"}
+      { "name": "React.js", "type": "primary" },
+      { "name": "Next.js", "type": "primary" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://wordle-solver-ayase.vercel.app/"},
-      {"name": "GitHub", "link": "https://github.com/aya-se/wordle-solver"}
+      { "name": "Website", "link": "https://wordle-solver-ayase.vercel.app/" },
+      { "name": "GitHub", "link": "https://github.com/aya-se/wordle-solver" }
     ],
     "image": "wordle-solver-blob.png"
   },
@@ -83,15 +88,21 @@
     "title": "100knock Translation",
     "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
     "tags": [
-      {"name": "Next.js", "type": "primary"},
-      {"name": "FastAPI", "type": "success"},
-      {"name": "fairseq", "type": "warning"},
-      {"name": "自然言語処理", "type": "danger"}
+      { "name": "Next.js", "type": "primary" },
+      { "name": "FastAPI", "type": "success" },
+      { "name": "fairseq", "type": "warning" },
+      { "name": "自然言語処理", "type": "danger" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://100knock-translation.vercel.app/"},
-      {"name": "GitHub①", "link": "https://github.com/aya-se/100knock-translation"},
-      {"name": "GitHub②", "link": "https://github.com/aya-se/100knock-translation-backend"}
+      { "name": "Website", "link": "https://100knock-translation.vercel.app/" },
+      {
+        "name": "GitHub①",
+        "link": "https://github.com/aya-se/100knock-translation"
+      },
+      {
+        "name": "GitHub②",
+        "link": "https://github.com/aya-se/100knock-translation-backend"
+      }
     ],
     "image": "100knock-translation.png"
   },
@@ -99,38 +110,52 @@
     "title": "マイナビジョブサーチ",
     "text": "株式会社マイナビの総合求人検索サービスです。長期インターンシップで、フロントエンドの開発に参加しました。",
     "tags": [
-      {"name": "React.js", "type": "primary"},
-      {"name": "Next.js", "type": "primary"}
+      { "name": "React.js", "type": "primary" },
+      { "name": "Next.js", "type": "primary" }
     ],
-    "buttons": [
-      {"name": "Website", "link": "https://jobsearch.mynavi.jp/"}
-    ],
+    "buttons": [{ "name": "Website", "link": "https://jobsearch.mynavi.jp/" }],
     "image": "mynavi-jobsearch.svg"
   },
   {
-    "title": "ISUCON",
-    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12 (2022年) にチーム『Fine Tuning』で初出場予定です。",
+    "title": "NIKKEI Frontier",
+    "text": "日経の短期インターンで制作したWebサービスです。自然言語処理を活用し、セレンディピティを考慮した記事推薦とその可視化を行いました。",
     "tags": [
-      {"name": "Go", "type": "primary"},
-      {"name": "SQL", "type": "danger"},
-      {"name": "nginx", "type": "info"},
-      {"name": "Ubuntu", "type": "info"}
+      { "name": "Next.js", "type": "primary" },
+      { "name": "FastAPI", "type": "success" },
+      { "name": "BigQuery", "type": "primary" },
+      { "name": "自然言語処理", "type": "danger" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://isucon.net/"}
+      { "name": "GitHub", "link": "" },
+      { "name": "Website", "link": "" }
     ],
+    "image": "nikkei-frontier.png"
+  },
+  {
+    "title": "ISUCON",
+    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12にチーム『Fine Tuning』で初出場し、5412点でした (学生19位)。",
+    "tags": [
+      { "name": "Go", "type": "primary" },
+      { "name": "SQL", "type": "danger" },
+      { "name": "nginx", "type": "info" },
+      { "name": "Ubuntu", "type": "info" }
+    ],
+    "buttons": [{ "name": "Website", "link": "https://isucon.net/" }],
     "image": "isucon.png"
   },
   {
     "title": "AtCoder (競技プログラミング)",
     "text": "制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1761(青)です(PASTは88点・上級)。",
     "tags": [
-      {"name": "C++", "type": "primary"},
-      {"name": "競技プログラミング", "type": "info"}
+      { "name": "C++", "type": "primary" },
+      { "name": "競技プログラミング", "type": "info" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://atcoder.jp/users/aya_se"},
-      {"name": "Blog", "link": "https://qiita.com/aya_se/items/3c8446cd2f64d5a272a2"}
+      { "name": "Website", "link": "https://atcoder.jp/users/aya_se" },
+      {
+        "name": "Blog",
+        "link": "https://qiita.com/aya_se/items/3c8446cd2f64d5a272a2"
+      }
     ],
     "image": "atcoder.png"
   },
@@ -138,49 +163,61 @@
     "title": "cpp-snippets",
     "text": "競技プログラミングのコンテストで用いる典型的なデータ構造・アルゴリズム・関数をVisual Studioのスニペットとして整備したものです。",
     "tags": [
-      {"name": "C++", "type": "primary"},
-      {"name": "Vim Snippet", "type": "info"},
-      {"name": "競技プログラミング", "type": "info"}
+      { "name": "C++", "type": "primary" },
+      { "name": "Vim Snippet", "type": "info" },
+      { "name": "競技プログラミング", "type": "info" }
     ],
     "buttons": [
-      {"name": "GitHub", "link": "https://github.com/aya-se/cpp-snippets"}
+      { "name": "GitHub", "link": "https://github.com/aya-se/cpp-snippets" }
     ],
     "image": "github.png"
+  },
+  {
+    "title": "東方弾幕風Ph3",
+    "text": "自分のプログラミングの原点ともいえるツールです。弾幕STGゲーム『東方Project』のボス戦を模したスクリプトを制作し、動画にしています。",
+    "tags": [
+      { "name": "独自言語", "type": "info" },
+      { "name": "ゲーム制作", "type": "info" }
+    ],
+    "buttons": [
+      {
+        "name": "Demo①",
+        "link": "https://www.youtube.com/watch?v=s5Vha6eoPCg"
+      },
+      {
+        "name": "Demo②",
+        "link": "https://www.youtube.com/watch?v=69MKvdxLfDs"
+      },
+      { "name": "Blog", "link": "https://trap.jp/post/799/" }
+    ],
+    "image": "touhou.png"
   },
   {
     "title": "Kaggle (分析コンペ)",
     "text": "データ分析のコンペに参加しようと思っています。Titanicのチュートリアル等をやりました。今後はコンペに参加していきたいと思います。",
     "tags": [
-      {"name": "Python", "type": "danger"},
-      {"name": "Pandas", "type": "warning"},
-      {"name": "scikit-learn", "type":"warning"},
-      {"name": "PyTorch", "type": "warning"}
+      { "name": "Python", "type": "danger" },
+      { "name": "Pandas", "type": "warning" },
+      { "name": "scikit-learn", "type": "warning" },
+      { "name": "PyTorch", "type": "warning" }
     ],
-    "buttons": [
-      {"name": "Website", "link": "https://www.kaggle.com/ayasse"}
-    ],
+    "buttons": [{ "name": "Website", "link": "https://www.kaggle.com/ayasse" }],
     "image": "kaggle.png"
   },
   {
     "title": "Qiita (記事投稿)",
     "text": "今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。まだほとんど書いていません。",
-    "tags": [
-      {"name": "その他", "type": "info"}
-    ],
-    "buttons": [
-      {"name": "Website", "link": "https://qiita.com/aya_se"}
-    ],
+    "tags": [{ "name": "その他", "type": "info" }],
+    "buttons": [{ "name": "Website", "link": "https://qiita.com/aya_se" }],
     "image": "qiita.png"
   },
   {
     "title": "東京工業大学デジタル創作同好会traP",
     "text": "大学で所属しているサークルです。主に趣味のDTMや競技プログラミング等を中心に活動しています。",
-    "tags": [
-      {"name": "その他", "type": "info"}
-    ],
+    "tags": [{ "name": "その他", "type": "info" }],
     "buttons": [
-      {"name": "Website", "link": "https://trap.jp/"},
-      {"name": "Blog", "link": "https://trap.jp/author/aya_se/"}
+      { "name": "Website", "link": "https://trap.jp/" },
+      { "name": "Blog", "link": "https://trap.jp/author/aya_se/" }
     ],
     "image": "traP.png"
   },
@@ -188,11 +225,14 @@
     "title": "岡崎研究室 (Okazaki Lab)",
     "text": "大学の学士特定課題研究で所属している研究室です。自然言語処理(NLP)の勉強・研究を進めていく予定です。",
     "tags": [
-       {"name": "自然言語処理", "type": "danger"},
-      {"name": "その他", "type": "info"}
+      { "name": "自然言語処理", "type": "danger" },
+      { "name": "その他", "type": "info" }
     ],
     "buttons": [
-      {"name": "Website", "link": "https://www.nlp.c.titech.ac.jp/index.ja.html"}
+      {
+        "name": "Website",
+        "link": "https://www.nlp.c.titech.ac.jp/index.ja.html"
+      }
     ],
     "image": "okazaki-lab.svg"
   }
