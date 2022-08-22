@@ -126,8 +126,8 @@
       { "name": "自然言語処理", "type": "danger" }
     ],
     "buttons": [
-      { "name": "GitHub", "link": "" },
-      { "name": "Website", "link": "" }
+      { "name": "Website", "link": "" },
+      { "name": "GitHub", "link": "" }
     ],
     "image": "nikkei-frontier.png"
   },
