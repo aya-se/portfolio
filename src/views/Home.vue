@@ -8,7 +8,7 @@
     >
       <h1 id="top-title">aya_se's portfolio</h1></a
     >
-    <img class="top-icon" src="../assets/hattori.jpg" />
+    <img class="top-icon" src="../assets/icon.png" />
 
     <div id="about">
       <h1><i class="el-icon-info" /> About</h1>
