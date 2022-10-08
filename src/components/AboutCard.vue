@@ -14,8 +14,8 @@ export default defineComponent({
   props: {
     title: String,
     text: String,
-    icon: String
-  }
+    icon: String,
+  },
 });
 </script>
 
