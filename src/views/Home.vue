@@ -72,8 +72,22 @@
           :color="item.color"
           :size="item.size"
           :timestamp="item.timestamp"
+          placement="top"
         >
-          {{ item.content }}
+          <div class="experience-card">
+            <img
+              class="experience-image"
+              :src="require(`@/assets/github.png`)"
+            />
+            <div class="experience-content">
+              <div class="experience-title">
+                {{ item.content }}
+              </div>
+              <div class="experience-text">
+                これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。
+              </div>
+            </div>
+          </div>
         </el-timeline-item>
       </el-timeline>
     </div>
@@ -201,13 +215,42 @@ export default defineComponent({
 .top-icon:hover {
   opacity: 0.7;
 }
+.experience-card {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
 
-.timeline {
-  width: auto;
-  height: auto;
-  font-size: 20px;
-  padding-top: 20px;
-  margin-right: 20px;
+#experience .el-timeline-item__timestamp {
+  text-align: left !important;
+}
+.experience-image {
+  width: 100px;
+  height: 100px;
+}
+.experience-content {
+  max-width: 860px;
+  margin: 0 0 0 40px;
+}
+.experience-title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 175%;
+}
+.experience-text {
+  text-align: left;
+  font-size: 14px;
+  color: #4f4f4f;
+  line-height: 175%;
+}
+@media screen and (max-width: 640px) {
+  #experience .el-timeline {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 .tag {
   margin-left: 5px;
