@@ -132,6 +132,18 @@
     "image": "nikkei-frontier.png"
   },
   {
+    "title": "Yahoo! 知恵袋",
+    "text": "ヤフー株式会社のQ&Aサービスです。長期インターンシップで、Next.jsによる、フロントエンドの新プロトタイプ制作を行いました。",
+    "tags": [
+      { "name": "React.js", "type": "primary" },
+      { "name": "Next.js", "type": "primary" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://chiebukuro.yahoo.co.jp/" }
+    ],
+    "image": "yahoo_chiebukuro.png"
+  },
+  {
     "title": "ISUCON",
     "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12にチーム『Fine Tuning』で初出場し、5412点でした (学生19位)。",
     "tags": [

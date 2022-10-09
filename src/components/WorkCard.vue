@@ -8,7 +8,7 @@
       :type="item.type"
       >{{ item.name }}</el-tag
     >
-    <h3>{{ title }}</h3>
+    <h3 class="work-title">{{ title }}</h3>
     <p class="work-text">
       {{ text }}
     </p>
@@ -51,6 +51,38 @@ export default defineComponent({
 </script>
 
 <style>
+.work-title {
+  color: #333333;
+}
+.work-text {
+  font-size: 14px;
+  color: #4f4f4f;
+}
+.work-card {
+  display: inline-block;
+  width: 360px;
+  height: auto;
+  margin: 10px;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.el-tag {
+  font-size: 11px !important;
+  padding: 0 10px !important;
+  margin: 5px 5px 0 !important;
+}
+.work-image {
+  height: 160px;
+  max-width: 90%;
+}
+.work-button {
+  margin-bottom: 5px !important;
+}
+.work-card .el-button {
+  margin: 5px 5px !important;
+  padding: 0 15px !important;
+}
+
 @media screen and (max-width: 480px) {
   .work-card {
     display: inline-block;
@@ -58,35 +90,5 @@ export default defineComponent({
     height: auto;
     margin: 10px;
   }
-}
-
-@media screen and (min-width: 480px) {
-  .work-card {
-    display: inline-block;
-    width: 360px;
-    height: auto;
-    margin: 10px;
-  }
-}
-
-.el-tag {
-  font-size: 11px !important;
-  padding: 0 10px !important;
-  margin: 5px 5px 0 !important;
-}
-
-.work-text {
-  color: #4f4f4f;
-  font-size: 14px;
-  white-space: pre-wrap;
-}
-
-.work-image {
-  height: 160px;
-  max-width: 90%;
-}
-
-.work-button {
-  margin-bottom: 5px !important;
 }
 </style>

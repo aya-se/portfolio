@@ -87,13 +87,13 @@
 @media screen and (max-width: 640px) {
   .menu-item {
     width: 33.3333%;
-    height: 32px !important;
+    height: 36px !important;
   }
   .link-content {
-    font-size: 12px;
+    font-size: 14px;
     margin: auto 0 !important;
-    height: 32px !important;
-    line-height: 30px;
+    height: 36px !important;
+    line-height: 32px;
   }
 }
 </style>
