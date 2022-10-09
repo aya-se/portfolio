@@ -15,6 +15,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
   margin: 0px;
 }
