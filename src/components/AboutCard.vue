@@ -1,9 +1,9 @@
 <template>
   <el-card class="about-card">
-    <h3 class="card-title">
+    <h3 class="about-title">
       <span> <i :class="'el-icon-' + icon" /> {{ title }} </span>
     </h3>
-    <p class="card-text">{{ text }}</p>
+    <p class="about-text">{{ text }}</p>
   </el-card>
 </template>
 
@@ -20,10 +20,10 @@ export default defineComponent({
 </script>
 
 <style>
-.card-title {
+.about-title {
   color: #333333;
 }
-.card-text {
+.about-text {
   font-size: 14px;
   color: #4f4f4f;
 }
@@ -36,7 +36,7 @@ export default defineComponent({
   border-radius: 0 !important;
 }
 
-.el-card__body {
+.about-card .el-card__body {
   padding: 10px !important;
 }
 
@@ -45,10 +45,10 @@ export default defineComponent({
     width: 100%;
     margin: 5px 0;
   }
-  .el-card__body {
+  .about-card .el-card__body {
     padding: 5px 10px !important;
   }
-  .card-title {
+  .about-title {
     font-size: 16px;
   }
 }
