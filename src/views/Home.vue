@@ -65,7 +65,7 @@
       <el-timeline>
         <el-timeline-item
           class="timeline"
-          v-for="(item, index) in activities"
+          v-for="(item, index) in experiences"
           :key="index"
           :icon="item.icon"
           :type="item.type"
@@ -132,7 +132,7 @@ import CustomHeader from "@/components/Header.vue";
 import AboutCard from "@/components/AboutCard.vue";
 import SkillCard from "@/components/SkillCard.vue";
 import WorkCard from "@/components/WorkCard.vue";
-import activities from "@/data/activities.json";
+import experiences from "@/data/experiences.json";
 import abouts from "@/data/abouts.json";
 import skills from "@/data/skills.json";
 import works from "@/data/works.json";
@@ -141,7 +141,7 @@ export default defineComponent({
   data() {
     return {
       abouts: abouts,
-      activities: activities,
+      experiences: experiences,
       skills: skills,
       works: works,
     };

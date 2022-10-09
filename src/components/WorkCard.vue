@@ -57,6 +57,7 @@ export default defineComponent({
 .work-text {
   font-size: 14px;
   color: #4f4f4f;
+  line-height: 175%;
 }
 .work-card {
   display: inline-block;

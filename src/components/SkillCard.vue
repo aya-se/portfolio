@@ -34,8 +34,9 @@ export default defineComponent({
 
 .skill-text {
   font-size: 14px;
-  height: 60px;
+  height: 72px;
   color: #4f4f4f;
+  line-height: 175%;
 }
 
 .skill-card {
