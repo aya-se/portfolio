@@ -21,6 +21,7 @@ export default defineComponent({
 
 <style>
 .card-text {
+  font-size: 14px;
   color: #4f4f4f;
 }
 @media screen and (max-width: 480px) {

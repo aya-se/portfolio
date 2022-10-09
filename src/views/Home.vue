@@ -1,15 +1,22 @@
 <template>
   <div id="home">
     <CustomHeader />
-    <a
-      class="link-content"
-      href="#home"
-      v-smooth-scroll="{ duration: 800, offset: -100 }"
-    >
-      <h1 id="top-title">aya_se's portfolio</h1></a
-    >
-    <img class="top-icon" src="../assets/icon.png" />
-
+    <div id="top">
+      <h1 class="top-title">KAKERU HATTORI</h1>
+      <div class="top-text">
+        東京工業大学<br />情報理工学院 情報工学系 学部4年<br />岡崎研究室
+      </div>
+      <img class="top-icon" src="../assets/icon.png" />
+      <p class="top-description">
+        岡崎研究室所属の服部と申します。
+        <br />
+        現在は、自然言語処理のさまざまな分野のうち、議事録をはじめとした長い文書の要約をテーマに研究を行っています。ただ要約するだけではなく、読者が真に理解しやすい要約とは何か？という問題に注目して、より良い要約のあり方を探りたいと考えています。
+        <br />
+        研究以外では、Webプログラミングにも興味があります。フロントエンド領域を中心に、個人開発・長期のインターンシップ・ハッカソンでの開発経験があります。今後は、インフラやバックエンドの分野にも、もっと取り組んでいきたいと思っています。
+        <br />
+        その他、趣味で競技プログラミングをやったり（AtCoder青色・Highest1761）、パソコン上で作曲（DTM)した曲をサークルのCDとしてM3（同人音楽即売会）で頒布したりしています。
+      </p>
+    </div>
     <div id="about">
       <h1><i class="el-icon-info" /> About</h1>
       <AboutCard
@@ -81,14 +88,6 @@
       <p><b>Gmail： </b>kakkeno1@gmail.com</p>
       <p><b>Twitter： </b>@Hakuba_snow</p>
     </div>
-
-    <a
-      class="link-content"
-      href="#home"
-      v-smooth-scroll="{ duration: 800, offset: -100 }"
-    >
-      <h2>aya_se's portfolio</h2></a
-    >
   </div>
 </template>
 
@@ -127,6 +126,10 @@ export default defineComponent({
 #home {
   overflow: hidden;
 }
+#top {
+  padding: 10px 20px 30px;
+  background: #fafafa;
+}
 .tab {
   position: fixed;
   top: 0px;
@@ -134,19 +137,34 @@ export default defineComponent({
   z-index: 100;
   background-color: white;
 }
+.top-title {
+  font-size: 36px;
+  font-family: "Open Sans", serif;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+}
+.top-text {
+  color: #4f4f4f;
+  margin: 20px 0;
+  line-height: 175%;
+}
+.top-description {
+  text-align: left;
+  color: #4f4f4f;
+  margin: 20px 20px;
+  line-height: 175%;
+}
 .top-icon {
-  border-radius: 3rem;
+  border-radius: 2rem;
   transition: 0.3s all ease;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
 }
 .top-icon:hover {
   opacity: 0.7;
 }
+
 @media screen and (max-width: 640px) {
-  #top-title {
-    padding-top: 50px;
-  }
   .menu-item {
     width: 33.3333%;
     overflow: hidden;

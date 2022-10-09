@@ -15,6 +15,9 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+body {
+  margin: 0px;
+}
 #app {
   font-family: "Noto Sans JP", serif;
   /*font-family: "Avenir", Helvetica, Arial, sans-serif;*/
