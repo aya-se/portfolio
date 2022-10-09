@@ -41,6 +41,7 @@ export default defineComponent({
 
 .skill-text {
   color: #4f4f4f;
+  font-size: 16px;
   height: 80px;
 }
 </style>

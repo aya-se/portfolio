@@ -63,14 +63,21 @@ export default defineComponent({
 @media screen and (min-width: 480px) {
   .work-card {
     display: inline-block;
-    width: 400px;
+    width: 360px;
     height: auto;
     margin: 10px;
   }
 }
 
+.el-tag {
+  font-size: 11px !important;
+  padding: 0 10px !important;
+  margin: 5px 5px 0 !important;
+}
+
 .work-text {
   color: #4f4f4f;
+  font-size: 14px;
   white-space: pre-wrap;
 }
 

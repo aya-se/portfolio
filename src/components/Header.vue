@@ -14,7 +14,7 @@
         ><a
           class="link-content"
           href="#about"
-          v-smooth-scroll="{ duration: 800, offset: -80 }"
+          v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
           ABOUT</a
         ></el-menu-item
@@ -22,8 +22,8 @@
       <el-menu-item index="3" class="menu-item"
         ><a
           class="link-content"
-          href="#account"
-          v-smooth-scroll="{ duration: 800, offset: -80 }"
+          href="#experience"
+          v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
           EXPERIENCE</a
         ></el-menu-item
@@ -32,7 +32,7 @@
         ><a
           class="link-content"
           href="#skill"
-          v-smooth-scroll="{ duration: 800, offset: -80 }"
+          v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
           SKILLS</a
         ></el-menu-item
@@ -41,7 +41,7 @@
         ><a
           class="link-content"
           href="#work"
-          v-smooth-scroll="{ duration: 800, offset: -80 }"
+          v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
           WORKS</a
         ></el-menu-item
@@ -50,7 +50,7 @@
         ><a
           class="link-content"
           href="#contact"
-          v-smooth-scroll="{ duration: 800, offset: -80 }"
+          v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
           CONTACT</a
         ></el-menu-item
@@ -91,6 +91,9 @@
   }
   .link-content {
     font-size: 12px;
+    margin: auto 0 !important;
+    height: 32px !important;
+    line-height: 30px;
   }
 }
 </style>

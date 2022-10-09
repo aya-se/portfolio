@@ -40,13 +40,13 @@
         </ul>
       </div>
       <p class="top-description">
-        岡崎研究室所属の服部と申します。
+        東京工業大学&nbsp;岡崎研究室所属の服部と申します。
         <br />
         現在は、自然言語処理のさまざまな分野のうち、議事録をはじめとした長い文書の要約をテーマに研究を行っています。ただ要約するだけではなく、読者が真に理解しやすい要約とは何か？という問題に注目して、より良い要約のあり方を探りたいと考えています。
         <br />
-        研究以外では、Webプログラミングにも興味があります。フロントエンド領域を中心に、個人開発・長期のインターンシップ・ハッカソンでの開発経験があります。今後は、インフラやバックエンドの分野にも、もっと取り組んでいきたいと思っています。
+        研究以外では、Webプログラミングにも興味があります。フロントエンド領域を中心に、個人・インターンシップ・ハッカソンでの開発経験があります。今後は、インフラやバックエンドの分野にも、もっと取り組んでいきたいと思っています。
         <br />
-        その他、趣味で競技プログラミングをやったり（AtCoder青色・Highest1761）、パソコン上で作曲（DTM)した曲をサークルのCDとしてM3（同人音楽即売会）で頒布したりしています。
+        その他、趣味で競技プログラミングをしたり（AtCoder青色・Highest1761）、パソコン上で作曲（DTM)した曲をサークルのCDとしてM3（同人音楽即売会）で頒布したりしています。
       </p>
     </div>
     <div id="about">
@@ -60,8 +60,8 @@
       />
     </div>
 
-    <div id="history">
-      <h2 class="subtitle"><i class="el-icon-s-data" />HISTORY</h2>
+    <div id="experience">
+      <h2 class="subtitle"><i class="el-icon-s-data" />EXPERIENCE</h2>
       <el-timeline>
         <el-timeline-item
           class="timeline"
@@ -146,13 +146,12 @@ export default defineComponent({
 }
 #top,
 #experience,
-#skill,
 #contact {
   padding: 10px 20px 30px;
   background: #fafafa;
 }
 #about,
-#history,
+#skill,
 #work {
   padding: 10px 20px 30px;
 }
@@ -165,7 +164,7 @@ export default defineComponent({
 }
 .subtitle {
   color: #333333;
-  font-size: 36px;
+  font-size: 32px;
   font-family: "Open Sans", serif;
   letter-spacing: 0.05em;
   font-weight: normal;
@@ -215,6 +214,15 @@ export default defineComponent({
   margin-right: 5px;
   margin-top: 5px;
 }
+
+@media screen and (max-width: 640px) {
+  .top-description {
+    margin: 20px 0px;
+    font-size: 14px;
+    line-height: 175%;
+  }
+}
+
 .sns-links {
   list-style: none;
   overflow: hidden;
