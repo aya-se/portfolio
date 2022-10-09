@@ -203,28 +203,6 @@ export default defineComponent({
   opacity: 0.7;
 }
 
-@media screen and (max-width: 640px) {
-  .menu-item {
-    width: 33.3333%;
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 640px) {
-  .menu-item {
-    width: 16.6666%;
-    overflow: hidden;
-  }
-}
-.link-content {
-  text-decoration: none;
-  color: #2c3e50;
-}
-.link-content:visited {
-  color: #2c3e50;
-}
-.link-content:hover {
-  color: #00acee;
-}
 .timeline {
   width: auto;
   height: auto;
