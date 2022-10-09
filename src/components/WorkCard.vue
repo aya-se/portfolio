@@ -45,8 +45,8 @@ export default defineComponent({
     tags: Array,
     buttons: Array,
     image: String,
-    onClick: Function
-  }
+    onClick: Function,
+  },
 });
 </script>
 
@@ -70,6 +70,7 @@ export default defineComponent({
 }
 
 .work-text {
+  color: #4f4f4f;
   white-space: pre-wrap;
 }
 

@@ -22,8 +22,8 @@ export default defineComponent({
     title: String,
     level: Number,
     text: String,
-    image: String
-  }
+    image: String,
+  },
 });
 </script>
 
@@ -40,6 +40,7 @@ export default defineComponent({
 }
 
 .skill-text {
+  color: #4f4f4f;
   height: 80px;
 }
 </style>

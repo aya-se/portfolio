@@ -3,7 +3,7 @@
     <h3>
       <span> <i :class="'el-icon-' + icon" /> {{ title }} </span>
     </h3>
-    <p>{{ text }}</p>
+    <p class="card-text">{{ text }}</p>
   </el-card>
 </template>
 
@@ -20,6 +20,9 @@ export default defineComponent({
 </script>
 
 <style>
+.card-text {
+  color: #4f4f4f;
+}
 @media screen and (max-width: 480px) {
   .about-card {
     display: inline-block;
