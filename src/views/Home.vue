@@ -64,19 +64,11 @@
     <div id="experience">
       <h2 class="subtitle"><i class="el-icon-s-data" />EXPERIENCE</h2>
       <Timeline :list="experiences" />
-      <Timeline :list="histories" />
     </div>
 
-    <div id="skill">
-      <h2 class="subtitle"><i class="el-icon-s-opportunity" />SKILL</h2>
-      <SkillCard
-        v-for="(item, index) in skills"
-        :key="index"
-        :title="item.title"
-        :level="item.level"
-        :text="item.text"
-        :image="item.image"
-      />
+    <div id="history">
+      <h2 class="subtitle"><i class="el-icon-success" />HISTORY</h2>
+      <Timeline :list="histories" />
     </div>
 
     <div id="work">
@@ -105,14 +97,14 @@
 import { defineComponent } from "vue";
 import CustomHeader from "@/components/Header.vue";
 import AboutCard from "@/components/AboutCard.vue";
-import SkillCard from "@/components/SkillCard.vue";
+// import SkillCard from "@/components/SkillCard.vue";
 import Timeline from "@/components/Timeline.vue";
 import WorkCard from "@/components/WorkCard.vue";
 import abouts from "@/data/abouts.json";
 import educations from "@/data/educations.json";
 import histories from "@/data/histories.json";
 import experiences from "@/data/experiences.json";
-import skills from "@/data/skills.json";
+// import skills from "@/data/skills.json";
 import works from "@/data/works.json";
 export default defineComponent({
   name: "HomeView",
@@ -122,11 +114,17 @@ export default defineComponent({
       educations: educations,
       experiences: experiences,
       histories: histories,
-      skills: skills,
+      // skills: skills,
       works: works,
     };
   },
-  components: { CustomHeader, AboutCard, Timeline, SkillCard, WorkCard },
+  components: {
+    CustomHeader,
+    AboutCard,
+    Timeline,
+    // SkillCard,
+    WorkCard,
+  },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
@@ -145,7 +143,7 @@ export default defineComponent({
   background: #fafafa;
 }
 #about,
-#skill,
+#history,
 #work {
   padding: 10px 20px 30px;
 }

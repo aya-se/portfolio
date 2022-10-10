@@ -31,10 +31,10 @@
       <el-menu-item index="4" class="menu-item"
         ><a
           class="link-content"
-          href="#skill"
+          href="#history"
           v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
-          SKILL</a
+          HISTORY</a
         ></el-menu-item
       >
       <el-menu-item index="5" class="menu-item"
