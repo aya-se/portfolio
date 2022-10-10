@@ -34,7 +34,7 @@
           href="#skill"
           v-smooth-scroll="{ duration: 800, offset: -60 }"
         >
-          SKILLS</a
+          SKILL</a
         ></el-menu-item
       >
       <el-menu-item index="5" class="menu-item"

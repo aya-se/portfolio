@@ -62,21 +62,7 @@
 
     <div id="experience">
       <h2 class="subtitle"><i class="el-icon-s-data" />EXPERIENCE</h2>
-      <el-timeline>
-        <el-timeline-item
-          class="timeline"
-          v-for="(item, index) in experiences"
-          :key="index"
-          :timestamp="item.timestamp"
-          placement="top"
-        >
-          <ExperienceCard
-            :image="item.image"
-            :title="item.title"
-            :text="item.text"
-          />
-        </el-timeline-item>
-      </el-timeline>
+      <Timeline :list="experiences" />
     </div>
 
     <div id="skill">
@@ -118,7 +104,7 @@ import { defineComponent } from "vue";
 import CustomHeader from "@/components/Header.vue";
 import AboutCard from "@/components/AboutCard.vue";
 import SkillCard from "@/components/SkillCard.vue";
-import ExperienceCard from "@/components/ExperienceCard.vue";
+import Timeline from "@/components/Timeline.vue";
 import WorkCard from "@/components/WorkCard.vue";
 import experiences from "@/data/experiences.json";
 import abouts from "@/data/abouts.json";
@@ -134,7 +120,7 @@ export default defineComponent({
       works: works,
     };
   },
-  components: { CustomHeader, AboutCard, ExperienceCard, SkillCard, WorkCard },
+  components: { CustomHeader, AboutCard, Timeline, SkillCard, WorkCard },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
@@ -203,7 +189,6 @@ export default defineComponent({
 .top-icon:hover {
   opacity: 0.7;
 }
-
 .tag {
   margin-left: 5px;
   margin-right: 5px;
@@ -248,30 +233,15 @@ export default defineComponent({
   text-align: center;
   width: 42px; /* Button width */
 }
-.sns-links li a[href*="facebook.com"]::before {
-  border-color: #3b5998;
-  background-color: #3b5998;
-  content: "\f09a";
-}
 .sns-links li a[href*="github.com"]::before {
   border-color: #181717;
   background-color: #181717;
   content: "\f09b";
 }
-.sns-links li a[href*="plus.google.com"]::before {
-  border-color: #dc4e41;
-  background-color: #dc4e41;
-  content: "\f0d5";
-}
 .sns-links li a[href*="linkedin.com"]::before {
   border-color: #0077b5;
   background-color: #0077b5;
   content: "\f0e1";
-}
-.sns-links li a[href*="slideshare.net"]::before {
-  border-color: #2d2d2d;
-  background-color: #2d2d2d;
-  content: "\f1e7";
 }
 .sns-links li a[href*="twitter.com"]::before {
   border-color: #55acee;
@@ -286,20 +256,11 @@ export default defineComponent({
 .sns-links li a:hover::before {
   background-color: #fff;
 }
-.sns-links li a[href*="facebook.com"]:hover::before {
-  color: #3b5998;
-}
 .sns-links li a[href*="github.com"]:hover::before {
   color: #181717;
 }
-.sns-links li a[href*="plus.google.com"]:hover::before {
-  color: #dc4e41;
-}
 .sns-links li a[href*="linkedin.com"]:hover::before {
   color: #0077b5;
-}
-.sns-links li a[href*="slideshare.net"]:hover::before {
-  color: #2d2d2d;
 }
 .sns-links li a[href*="twitter.com"]:hover::before {
   color: #55acee;
