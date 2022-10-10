@@ -41,7 +41,7 @@ export default defineComponent({
   margin: auto;
 }
 
-.timeline .el-timeline-item__timestamp {
+.el-timeline-item__timestamp {
   text-align: left !important;
 }
 .timeline-image {
@@ -66,9 +66,30 @@ export default defineComponent({
   line-height: 175%;
 }
 @media screen and (max-width: 640px) {
-  .timeline .el-timeline {
-    margin: 0 !important;
+  .el-timeline {
     padding: 0 !important;
+  }
+  .timeline-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .timeline-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .timeline-content {
+    width: 100%;
+    margin: 0;
+  }
+  .timeline-title {
+    font-size: 16px;
+  }
+  .timeline-text {
+    font-size: 14px;
   }
 }
 </style>

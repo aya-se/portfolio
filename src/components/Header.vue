@@ -93,7 +93,7 @@
     font-size: 14px;
     margin: auto 0 !important;
     height: 36px !important;
-    line-height: 32px;
+    line-height: 36px;
   }
 }
 </style>

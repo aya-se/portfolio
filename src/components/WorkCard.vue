@@ -87,9 +87,13 @@ export default defineComponent({
 @media screen and (max-width: 480px) {
   .work-card {
     display: inline-block;
-    width: 90%;
+    width: 100%;
+    max-width: 360px;
     height: auto;
-    margin: 10px;
+    margin: 10px 0;
+  }
+  .el-card__body {
+    padding: 10px !important;
   }
 }
 </style>

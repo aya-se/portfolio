@@ -148,7 +148,7 @@ export default defineComponent({
   padding: 10px 20px 30px;
 }
 .educations {
-  padding-top: 40px;
+  padding-top: 40px !important;
 }
 .tab {
   position: fixed;
