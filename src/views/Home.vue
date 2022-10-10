@@ -215,6 +215,12 @@ export default defineComponent({
 }
 
 @media screen and (max-width: 640px) {
+  .top-title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
   .top-description {
     margin: 20px 0px;
     font-size: 14px;
