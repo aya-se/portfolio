@@ -72,19 +72,20 @@
           :color="item.color"
           :size="item.size"
           :timestamp="item.timestamp"
+          :image="item.image"
           placement="top"
         >
           <div class="experience-card">
             <img
               class="experience-image"
-              :src="require(`@/assets/github.png`)"
+              :src="require(`@/assets/${item.image}`)"
             />
             <div class="experience-content">
               <div class="experience-title">
-                {{ item.content }}
+                {{ item.title }}
               </div>
               <div class="experience-text">
-                これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。これは説明です。
+                {{ item.text }}
               </div>
             </div>
           </div>
@@ -229,6 +230,7 @@ export default defineComponent({
 .experience-image {
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 .experience-content {
   max-width: 860px;
