@@ -58,6 +58,7 @@
         :text="item.text"
         :icon="item.icon"
       />
+      <Timeline :list="educations" class="educations" />
     </div>
 
     <div id="experience">
@@ -106,8 +107,9 @@ import AboutCard from "@/components/AboutCard.vue";
 import SkillCard from "@/components/SkillCard.vue";
 import Timeline from "@/components/Timeline.vue";
 import WorkCard from "@/components/WorkCard.vue";
-import experiences from "@/data/experiences.json";
 import abouts from "@/data/abouts.json";
+import educations from "@/data/educations.json";
+import experiences from "@/data/experiences.json";
 import skills from "@/data/skills.json";
 import works from "@/data/works.json";
 export default defineComponent({
@@ -115,6 +117,7 @@ export default defineComponent({
   data() {
     return {
       abouts: abouts,
+      educations: educations,
       experiences: experiences,
       skills: skills,
       works: works,
@@ -142,6 +145,9 @@ export default defineComponent({
 #skill,
 #work {
   padding: 10px 20px 30px;
+}
+.educations {
+  padding-top: 40px;
 }
 .tab {
   position: fixed;
