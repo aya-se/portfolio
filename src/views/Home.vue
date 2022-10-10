@@ -90,6 +90,11 @@
       <p><b>Gmail： </b>kakkeno1@gmail.com</p>
       <p><b>Twitter： </b>@Hakuba_snow</p>
     </div>
+    <div id="copyright">
+      <p>
+        Copyright&nbsp;©&nbsp;KAKERU&nbsp;HATTORI.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -146,6 +151,13 @@ export default defineComponent({
 #history,
 #work {
   padding: 10px 20px 30px;
+}
+#copyright {
+  color: #fafafa;
+  font-size: 12px;
+  font-family: "Open Sans", serif;
+  padding: 10px 20px 10px;
+  background: #4f4f4f;
 }
 .educations {
   padding-top: 40px !important;
