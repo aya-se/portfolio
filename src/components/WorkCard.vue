@@ -52,6 +52,7 @@ export default defineComponent({
 
 <style>
 .work-title {
+  font-size: 18px;
   color: #333333;
 }
 .work-text {
@@ -82,9 +83,13 @@ export default defineComponent({
 .work-card .el-button {
   margin: 5px 5px !important;
   padding: 0 15px !important;
+  border-radius: 0 !important;
 }
 
 @media screen and (max-width: 480px) {
+  .work-title {
+    font-size: 16px;
+  }
   .work-card {
     display: inline-block;
     width: 100%;
