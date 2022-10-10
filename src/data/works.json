@@ -145,7 +145,7 @@
   },
   {
     "title": "ISUCON",
-    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12にチーム『Fine Tuning』で初出場し、5412点でした (学生19位)。",
+    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12にチーム『Fine Tuning』で初出場し、5412点でした (学生18位)。",
     "tags": [
       { "name": "Go", "type": "primary" },
       { "name": "SQL", "type": "danger" },

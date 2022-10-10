@@ -64,6 +64,7 @@ export default defineComponent({
   font-size: 14px;
   color: #4f4f4f;
   line-height: 175%;
+  white-space: pre-wrap;
 }
 @media screen and (max-width: 640px) {
   .el-timeline {
