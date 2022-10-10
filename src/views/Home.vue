@@ -64,6 +64,7 @@
     <div id="experience">
       <h2 class="subtitle"><i class="el-icon-s-data" />EXPERIENCE</h2>
       <Timeline :list="experiences" />
+      <Timeline :list="histories" />
     </div>
 
     <div id="skill">
@@ -109,6 +110,7 @@ import Timeline from "@/components/Timeline.vue";
 import WorkCard from "@/components/WorkCard.vue";
 import abouts from "@/data/abouts.json";
 import educations from "@/data/educations.json";
+import histories from "@/data/histories.json";
 import experiences from "@/data/experiences.json";
 import skills from "@/data/skills.json";
 import works from "@/data/works.json";
@@ -119,6 +121,7 @@ export default defineComponent({
       abouts: abouts,
       educations: educations,
       experiences: experiences,
+      histories: histories,
       skills: skills,
       works: works,
     };

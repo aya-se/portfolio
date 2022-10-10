@@ -1,7 +1,7 @@
 [
   {
     "title": "ポートフォリオサイト",
-    "text": "このWebサイトです。\nVue.jsを用いて制作しました。\nElementやsmoothscrollerなどを用いています。",
+    "text": "このWebサイトです。\nVue.jsを用いて制作しました。\nElementやsmoothscrollerなどを用いています。2022年10月に大幅リニューアルしました！",
     "tags": [{ "name": "Vue.js", "type": "success" }],
     "buttons": [
       { "name": "Website", "link": "https://aya-se.vercel.app/" },
