@@ -1,5 +1,11 @@
 [
   {
+    "title": "日本経済新聞社 長期インターンシップ",
+    "text": "SREチームに所属し、GCP(GKE)・Kubernetes・Terraformなど、インフラ系の技術に取り組んでいます。主に、日経のアプリケーション基盤である『Vessel』のプロジェクトに携わっていく予定です。",
+    "timestamp": "2022年12月～現在",
+    "image": "nikkei.jpeg"
+  },
+  {
     "title": "東京工業大学 Research Assistant",
     "text": "10月より、大学のResearch Assistantとして雇用されました。",
     "timestamp": "2022年10月～現在",
