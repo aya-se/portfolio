@@ -225,8 +225,8 @@ header {
 
 .menu li {
   border-top: 1px solid #2c3e50;
-  padding: 10px 0;
-  margin: 0 30px;
+  padding: 7.5px 0;
+  margin: 0 20px;
   opacity: 0;
 }
 
