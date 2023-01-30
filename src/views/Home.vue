@@ -11,7 +11,7 @@
         <ul class="sns-links">
           <li>
             <a
-              href="https://twitter.com/Hakuba_snow"
+              href="https://twitter.com/ayase_lab"
               target="_blank"
               rel="noreferrer"
             ></a>
