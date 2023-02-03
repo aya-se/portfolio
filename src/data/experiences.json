@@ -1,7 +1,7 @@
 [
   {
     "title": "日本経済新聞社 長期インターンシップ",
-    "text": "SREチームに所属し、GCP(GKE)・Kubernetes・Terraformなど、インフラ系の技術に取り組んでいます。主に、日経のアプリケーション基盤である『Vessel』のプロジェクトに携わっていく予定です。",
+    "text": "SREチームに所属し、GKE・Kubernetes・Terraform・ArgoCDなど、インフラ系の技術に取り組んでいます。主に、社内のアプリケーション基盤である『Vessel』のプロジェクトに参加し、様々な新技術の導入検証や実装を行っています。",
     "timestamp": "2022年12月～現在",
     "image": "nikkei.jpeg"
   },

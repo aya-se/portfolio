@@ -18,13 +18,6 @@
           </li>
           <li>
             <a
-              href="https://www.youtube.com/channel/UCW4FH8oKhHE8vIRnr0StJ8g"
-              target="_blank"
-              rel="noreferrer"
-            ></a>
-          </li>
-          <li>
-            <a
               href="https://github.com/aya-se"
               target="_blank"
               rel="noreferrer"
@@ -88,7 +81,7 @@
     <div id="contact">
       <h2 class="subtitle"><i class="el-icon-s-comment" />CONTACT</h2>
       <p><b>Gmail： </b>kakkeno1@gmail.com</p>
-      <p><b>Twitter： </b>@Hakuba_snow</p>
+      <p><b>Twitter： </b>@ayase_lab</p>
     </div>
     <div id="copyright">
       <p>
