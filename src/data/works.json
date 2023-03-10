@@ -10,103 +10,6 @@
     "image": "portfolio.png"
   },
   {
-    "title": "Twitterクローン",
-    "text": "Twitterを模したWebアプリです。\nVue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。",
-    "tags": [
-      { "name": "Vue.js", "type": "success" },
-      { "name": "Go", "type": "primary" },
-      { "name": "MySQL", "type": "danger" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "" },
-      {
-        "name": "GitHub①",
-        "link": "https://github.com/aya-se/naro-portal-client"
-      },
-      {
-        "name": "GitHub②",
-        "link": "https://github.com/aya-se/naro-portal-server"
-      }
-    ],
-    "image": "twitter.png"
-  },
-  {
-    "title": "自作曲の紹介Webサイト",
-    "text": "趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。独自の試聴プレイヤーやタグなどによる検索機能にこだわりました。",
-    "tags": [{ "name": "Vue.js", "type": "success" }],
-    "buttons": [
-      { "name": "Website", "link": "http://ayase-music.vercel.app/" },
-      { "name": "GitHub", "link": "https://github.com/aya-se/my-music" }
-    ],
-    "image": "ayase-music.png"
-  },
-  {
-    "title": "ウマ娘レースプランナー",
-    "text": "ウマ娘のレース一覧の閲覧、レース計画のレコメンドができるサイトです。Googleアカウントごとの進捗管理が可能です。",
-    "tags": [
-      { "name": "Vue.js", "type": "success" },
-      { "name": "Firebase", "type": "warning" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://umamusume-trophies.vercel.app/" },
-      {
-        "name": "GitHub",
-        "link": "https://github.com/aya-se/umamusume-trophies"
-      },
-      { "name": "Blog", "link": "https://trap.jp/post/1367/" }
-    ],
-    "image": "umamusume-trophies.png"
-  },
-  {
-    "title": "One Poll",
-    "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
-    "tags": [
-      { "name": "Vue.js", "type": "success" },
-      { "name": "Go", "type": "primary" },
-      { "name": "MySQL", "type": "danger" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://one-poll.mazrean.com/" },
-      { "name": "GitHub", "link": "" }
-    ],
-    "image": "one-poll.png"
-  },
-  {
-    "title": "Wordle Blob Solver",
-    "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。",
-    "tags": [
-      { "name": "React.js", "type": "primary" },
-      { "name": "Next.js", "type": "primary" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://wordle-solver-ayase.vercel.app/" },
-      { "name": "GitHub", "link": "https://github.com/aya-se/wordle-solver" }
-    ],
-    "image": "wordle-solver-blob.png"
-  },
-  {
-    "title": "100knock Translation",
-    "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
-    "tags": [
-      { "name": "Next.js", "type": "primary" },
-      { "name": "FastAPI", "type": "success" },
-      { "name": "fairseq", "type": "warning" },
-      { "name": "自然言語処理", "type": "danger" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://100knock-translation.vercel.app/" },
-      {
-        "name": "GitHub①",
-        "link": "https://github.com/aya-se/100knock-translation"
-      },
-      {
-        "name": "GitHub②",
-        "link": "https://github.com/aya-se/100knock-translation-backend"
-      }
-    ],
-    "image": "100knock-translation.png"
-  },
-  {
     "title": "QSS Demo",
     "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を、ブラウザ上でわかりやすく閲覧できるデモサイトです。",
     "tags": [
@@ -141,6 +44,103 @@
       }
     ],
     "image": "cloud-run-sns.png"
+  },
+  {
+    "title": "100knock Translation",
+    "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
+    "tags": [
+      { "name": "Next.js", "type": "primary" },
+      { "name": "FastAPI", "type": "success" },
+      { "name": "fairseq", "type": "warning" },
+      { "name": "自然言語処理", "type": "danger" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://100knock-translation.vercel.app/" },
+      {
+        "name": "GitHub①",
+        "link": "https://github.com/aya-se/100knock-translation"
+      },
+      {
+        "name": "GitHub②",
+        "link": "https://github.com/aya-se/100knock-translation-backend"
+      }
+    ],
+    "image": "100knock-translation.png"
+  },
+  {
+    "title": "ウマ娘レースプランナー",
+    "text": "ウマ娘のレース一覧の閲覧、レース計画のレコメンドができるサイトです。Googleアカウントごとの進捗管理が可能です。",
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Firebase", "type": "warning" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://umamusume-trophies.vercel.app/" },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/aya-se/umamusume-trophies"
+      },
+      { "name": "Blog", "link": "https://trap.jp/post/1367/" }
+    ],
+    "image": "umamusume-trophies.png"
+  },
+  {
+    "title": "Wordle Blob Solver",
+    "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。",
+    "tags": [
+      { "name": "React.js", "type": "primary" },
+      { "name": "Next.js", "type": "primary" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://wordle-solver-ayase.vercel.app/" },
+      { "name": "GitHub", "link": "https://github.com/aya-se/wordle-solver" }
+    ],
+    "image": "wordle-solver-blob.png"
+  },
+  {
+    "title": "自作曲の紹介Webサイト",
+    "text": "趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。独自の試聴プレイヤーやタグなどによる検索機能にこだわりました。",
+    "tags": [{ "name": "Vue.js", "type": "success" }],
+    "buttons": [
+      { "name": "Website", "link": "http://ayase-music.vercel.app/" },
+      { "name": "GitHub", "link": "https://github.com/aya-se/my-music" }
+    ],
+    "image": "ayase-music.png"
+  },
+  {
+    "title": "Twitterクローン",
+    "text": "Twitterを模したWebアプリです。\nVue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。",
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Go", "type": "primary" },
+      { "name": "MySQL", "type": "danger" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "" },
+      {
+        "name": "GitHub①",
+        "link": "https://github.com/aya-se/naro-portal-client"
+      },
+      {
+        "name": "GitHub②",
+        "link": "https://github.com/aya-se/naro-portal-server"
+      }
+    ],
+    "image": "twitter.png"
+  },
+  {
+    "title": "One Poll",
+    "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Go", "type": "primary" },
+      { "name": "MySQL", "type": "danger" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://one-poll.mazrean.com/" },
+      { "name": "GitHub", "link": "" }
+    ],
+    "image": "one-poll.png"
   },
   {
     "title": "マイナビジョブサーチ",
@@ -254,7 +254,7 @@
   },
   {
     "title": "Qiita (記事投稿)",
-    "text": "今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。まだほとんど書いていません。",
+    "text": "今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。主に、競プロやWeb開発に関する内容を執筆しています。",
     "tags": [{ "name": "その他", "type": "info" }],
     "buttons": [{ "name": "Website", "link": "https://qiita.com/aya_se" }],
     "image": "qiita.png"
@@ -271,7 +271,7 @@
   },
   {
     "title": "岡崎研究室 (Okazaki Lab)",
-    "text": "大学の学士特定課題研究で所属している研究室です。自然言語処理(NLP)の勉強・研究を進めていく予定です。",
+    "text": "大学で所属している研究室です。自然言語処理（NLP）のうち、特に文書自動要約をはじめとした生成タスクに取り組んでいます。",
     "tags": [
       { "name": "自然言語処理", "type": "danger" },
       { "name": "その他", "type": "info" }
