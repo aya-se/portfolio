@@ -107,6 +107,42 @@
     "image": "100knock-translation.png"
   },
   {
+    "title": "QSS Demo",
+    "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を、ブラウザ上でわかりやすく閲覧できるデモサイトです。",
+    "tags": [
+      { "name": "Next.js", "type": "primary" },
+      { "name": "自然言語処理", "type": "danger" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://qss-demo.vercel.app/" },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/aya-se/qss-demo"
+      }
+    ],
+    "image": "qss-demo.png"
+  },
+  {
+    "title": "Cloud Run SNS",
+    "text": "Google Cloudを用いた実践的なWebサービスを構築・デプロイする手順を、Skill Boostの自作ハンズオン風にまとめたプロジェクトです。",
+    "tags": [
+      { "name": "Next.js", "type": "primary" },
+      { "name": "FastAPI", "type": "success" },
+      { "name": "Google Cloud", "type": "warning" }
+    ],
+    "buttons": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/aya-se/cloud-run-sns"
+      },
+      {
+        "name": "Blog",
+        "link": ""
+      }
+    ],
+    "image": "cloud-run-sns.png"
+  },
+  {
     "title": "マイナビジョブサーチ",
     "text": "株式会社マイナビの総合求人検索サービスです。長期インターンシップで、フロントエンドの開発に参加しました。",
     "tags": [
