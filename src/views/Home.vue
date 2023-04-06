@@ -4,7 +4,7 @@
     <div id="top">
       <h1 class="top-title">KAKERU HATTORI</h1>
       <div class="top-text">
-        東京工業大学<br />情報理工学院 情報工学系 学部4年<br />岡崎研究室
+        東京工業大学<br />情報理工学院 情報工学系 修士課程1年<br />岡崎研究室
       </div>
       <img class="top-icon" src="../assets/icon.png" />
       <div class="sns-links-list">
