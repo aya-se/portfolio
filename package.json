@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.18.2",
     "core-js": "^3.23.3",
-    "element-plus": "^1.0.2-beta.28",
+    "element-plus": "^2.1.0",
     "vue": "^3.2.36",
     "vue-router": "^4.1.1",
     "vue2-smooth-scroll": "^1.6.0",
