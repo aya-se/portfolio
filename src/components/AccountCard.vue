@@ -16,8 +16,8 @@ export default defineComponent({
   props: {
     title: String,
     link: String,
-    image: String
-  }
+    image: String,
+  },
 });
 </script>
 

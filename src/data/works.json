@@ -13,7 +13,7 @@
     "title": "QSS Demo",
     "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を、ブラウザ上でわかりやすく閲覧できるデモサイトです。",
     "tags": [
-      { "name": "Next.js", "type": "primary" },
+      { "name": "Next.js", "type": "" },
       { "name": "自然言語処理", "type": "danger" }
     ],
     "buttons": [
@@ -29,7 +29,7 @@
     "title": "Cloud Run SNS",
     "text": "Google Cloudを用いた実践的なWebサービスを構築・デプロイする手順を、Skill Boostの自作ハンズオン風にまとめたプロジェクトです。",
     "tags": [
-      { "name": "Next.js", "type": "primary" },
+      { "name": "Next.js", "type": "" },
       { "name": "FastAPI", "type": "success" },
       { "name": "Google Cloud", "type": "warning" }
     ],
@@ -49,7 +49,7 @@
     "title": "100knock Translation",
     "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
     "tags": [
-      { "name": "Next.js", "type": "primary" },
+      { "name": "Next.js", "type": "" },
       { "name": "FastAPI", "type": "success" },
       { "name": "fairseq", "type": "warning" },
       { "name": "自然言語処理", "type": "danger" }
@@ -88,8 +88,8 @@
     "title": "Wordle Blob Solver",
     "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。",
     "tags": [
-      { "name": "React.js", "type": "primary" },
-      { "name": "Next.js", "type": "primary" }
+      { "name": "React.js", "type": "" },
+      { "name": "Next.js", "type": "" }
     ],
     "buttons": [
       { "name": "Website", "link": "https://wordle-solver-ayase.vercel.app/" },
@@ -112,7 +112,7 @@
     "text": "Twitterを模したWebアプリです。\nVue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。",
     "tags": [
       { "name": "Vue.js", "type": "success" },
-      { "name": "Go", "type": "primary" },
+      { "name": "Go", "type": "" },
       { "name": "MySQL", "type": "danger" }
     ],
     "buttons": [
@@ -133,7 +133,7 @@
     "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
     "tags": [
       { "name": "Vue.js", "type": "success" },
-      { "name": "Go", "type": "primary" },
+      { "name": "Go", "type": "" },
       { "name": "MySQL", "type": "danger" }
     ],
     "buttons": [
@@ -146,8 +146,8 @@
     "title": "マイナビジョブサーチ",
     "text": "株式会社マイナビの総合求人検索サービスです。長期インターンシップで、フロントエンドの開発に参加しました。",
     "tags": [
-      { "name": "React.js", "type": "primary" },
-      { "name": "Next.js", "type": "primary" }
+      { "name": "React.js", "type": "" },
+      { "name": "Next.js", "type": "" }
     ],
     "buttons": [{ "name": "Website", "link": "https://jobsearch.mynavi.jp/" }],
     "image": "mynavi-jobsearch.svg"
@@ -156,9 +156,9 @@
     "title": "NIKKEI Frontier",
     "text": "日経の短期インターンで制作したWebサービスです。自然言語処理を活用し、セレンディピティを考慮した記事推薦とその可視化を行いました。",
     "tags": [
-      { "name": "Next.js", "type": "primary" },
+      { "name": "Next.js", "type": "" },
       { "name": "FastAPI", "type": "success" },
-      { "name": "BigQuery", "type": "primary" },
+      { "name": "BigQuery", "type": "" },
       { "name": "自然言語処理", "type": "danger" }
     ],
     "buttons": [
@@ -171,8 +171,8 @@
     "title": "Yahoo! 知恵袋",
     "text": "ヤフー株式会社のQ&Aサービスです。長期インターンシップで、Next.jsによる、フロントエンドの新プロトタイプ制作を行いました。",
     "tags": [
-      { "name": "React.js", "type": "primary" },
-      { "name": "Next.js", "type": "primary" }
+      { "name": "React.js", "type": "" },
+      { "name": "Next.js", "type": "" }
     ],
     "buttons": [
       { "name": "Website", "link": "https://chiebukuro.yahoo.co.jp/" }
@@ -183,7 +183,7 @@
     "title": "ISUCON",
     "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12にチーム『Fine Tuning』で初出場し、5412点でした (学生18位)。",
     "tags": [
-      { "name": "Go", "type": "primary" },
+      { "name": "Go", "type": "" },
       { "name": "SQL", "type": "danger" },
       { "name": "nginx", "type": "info" },
       { "name": "Ubuntu", "type": "info" }
@@ -195,7 +195,7 @@
     "title": "AtCoder (競技プログラミング)",
     "text": "制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1761(青)です(PASTは88点・上級)。",
     "tags": [
-      { "name": "C++", "type": "primary" },
+      { "name": "C++", "type": "" },
       { "name": "競技プログラミング", "type": "info" }
     ],
     "buttons": [
@@ -211,7 +211,7 @@
     "title": "cpp-snippets",
     "text": "競技プログラミングのコンテストで用いる典型的なデータ構造・アルゴリズム・関数をVisual Studioのスニペットとして整備したものです。",
     "tags": [
-      { "name": "C++", "type": "primary" },
+      { "name": "C++", "type": "" },
       { "name": "Vim Snippet", "type": "info" },
       { "name": "競技プログラミング", "type": "info" }
     ],

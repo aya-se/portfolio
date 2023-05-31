@@ -3,6 +3,7 @@
     <el-tag
       effect="plain"
       class="tag"
+      size="large"
       v-for="(item, index) in tags"
       :key="index"
       :type="item.type"
@@ -28,6 +29,7 @@
           : 'info'
       "
       :disabled="item.link === ''"
+      size="large"
       class="work-button"
       @click="onClick(item.link)"
       >{{ item.name }}</el-button
@@ -38,7 +40,7 @@
 <script>
 import { defineComponent } from "vue";
 export default defineComponent({
-  name: "SkillCardComponent",
+  name: "WorkCardComponent",
   props: {
     title: String,
     text: String,
