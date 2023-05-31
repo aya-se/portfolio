@@ -166,6 +166,7 @@ header {
 }
 .menu-item:hover {
   background: #f5f5f5;
+  border-bottom: 2px solid hotpink;
 }
 .link-content {
   width: 100%;
@@ -205,6 +206,9 @@ header {
   .menu-item {
     width: 100%;
     height: 50px;
+  }
+  .menu-item:hover {
+    border-bottom: none;
   }
   .link-content {
     width: 100%;

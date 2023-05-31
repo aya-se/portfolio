@@ -2,31 +2,31 @@
   {
     "title": "氏名",
     "text": "服部翔（Kakeru Hattori）",
-    "icon": "edit"
+    "icon": "tag-fill"
   },
   {
     "title": "学校",
     "text": "東京工業大学 情報理工学院 情報工学系",
-    "icon": "school"
+    "icon": "building"
   },
   {
     "title": "生年月日",
     "text": "2000年7月29日",
-    "icon": "date"
+    "icon": "calendar3"
   },
   {
     "title": "趣味",
-    "text": "DTM, 競技プログラミング, 旅行, Web開発 etc.",
-    "icon": "s-platform"
+    "text": "DTM，競技プログラミング，旅行，Web開発 etc.",
+    "icon": "heart-fill"
   },
   {
     "title": "資格",
-    "text": "英検2級, 基本情報技術者, G検定, PAST上級",
-    "icon": "success"
+    "text": "英検2級，基本情報技術者，G検定，PAST上級，PCA",
+    "icon": "patch-check-fill"
   },
   {
     "title": "興味・関心",
-    "text": "自然言語処理, アルゴリズム, インフラ基盤 etc.",
-    "icon": "star-off"
+    "text": "自然言語処理，アルゴリズム，インフラ基盤 etc.",
+    "icon": "star-fill"
   }
 ]

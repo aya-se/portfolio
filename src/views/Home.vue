@@ -43,7 +43,7 @@
       </p>
     </div>
     <div id="about">
-      <h2 class="subtitle"><i class="el-icon-info" />ABOUT</h2>
+      <h2 class="subtitle"><i class="bi bi-info-circle-fill" />&nbsp;ABOUT</h2>
       <AboutCard
         v-for="(item, index) in abouts"
         :key="index"
@@ -55,17 +55,19 @@
     </div>
 
     <div id="experience">
-      <h2 class="subtitle"><i class="el-icon-s-data" />EXPERIENCE</h2>
+      <h2 class="subtitle">
+        <i class="bi bi-bar-chart-fill" />&nbsp;EXPERIENCE
+      </h2>
       <Timeline :list="experiences" />
     </div>
 
     <div id="history">
-      <h2 class="subtitle"><i class="el-icon-success" />HISTORY</h2>
+      <h2 class="subtitle"><i class="bi bi-clock-fill" />&nbsp;HISTORY</h2>
       <Timeline :list="histories" />
     </div>
 
     <div id="work">
-      <h2 class="subtitle"><i class="el-icon-s-claim" />WORKS</h2>
+      <h2 class="subtitle"><i class="bi bi-check-circle-fill" />&nbsp;WORKS</h2>
       <WorkCard
         v-for="(item, index) in works"
         :key="index"
@@ -79,9 +81,11 @@
     </div>
 
     <div id="contact">
-      <h2 class="subtitle"><i class="el-icon-s-comment" />CONTACT</h2>
-      <p><b>Gmail： </b>kakkeno1@gmail.com</p>
-      <p><b>Twitter： </b>@ayase_lab</p>
+      <h2 class="subtitle">
+        <i class="bi bi-chat-square-dots-fill" />&nbsp;CONTACT
+      </h2>
+      <p><i class="bi bi-envelope-fill" />&nbsp;&nbsp;kakkeno1@gmail.com</p>
+      <p><i class="bi bi-twitter" />&nbsp;&nbsp;@ayase_lab</p>
     </div>
     <div id="copyright">
       <p>

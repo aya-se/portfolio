@@ -1,7 +1,7 @@
 <template>
   <el-card class="about-card">
     <h3 class="about-title">
-      <span> <i :class="'el-icon-' + icon" /> {{ title }} </span>
+      <span> <i :class="'bi bi-' + icon" />&nbsp;{{ title }} </span>
     </h3>
     <p class="about-text">{{ text }}</p>
   </el-card>
