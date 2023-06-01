@@ -134,7 +134,7 @@ export default defineComponent({
   },
 });
 </script>
-<style>
+<style lang="scss">
 #home {
   overflow: hidden;
 }
@@ -270,11 +270,6 @@ export default defineComponent({
   background-color: #55acee;
   content: "\f099";
 }
-.sns-links li a[href*="youtube.com"]::before {
-  border-color: #cd201f;
-  background-color: #cd201f;
-  content: "\f16a";
-}
 .sns-links li a:hover::before {
   background-color: #fff;
 }
@@ -286,8 +281,5 @@ export default defineComponent({
 }
 .sns-links li a[href*="twitter.com"]:hover::before {
   color: #55acee;
-}
-.sns-links li a[href*="youtube.com"]:hover::before {
-  color: #cd201f;
 }
 </style>

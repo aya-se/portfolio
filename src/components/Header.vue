@@ -125,7 +125,7 @@
     </div>
   </header>
 </template>
-<style>
+<style lang="scss">
 header {
   position: fixed;
   top: 0;
@@ -163,27 +163,27 @@ header {
   padding: auto;
   width: 16.6666%;
   height: 60px;
-}
-.menu-item:hover {
-  background: #f5f5f5;
-  border-bottom: 2px solid hotpink;
+  &:hover {
+    background: #f5f5f5;
+    border-bottom: 2px solid hotpink;
+  }
 }
 .link-content {
   width: 100%;
   padding: 18px 0;
   font-size: 16px;
   text-decoration: none;
-  color: #333333 !important;
+  color: #333333;
   font-family: "Open Sans", serif;
   letter-spacing: 0.05em;
   transition: all 0.1s ease;
-}
-.link-content:visited {
-  color: #333333 !important;
-}
-.link-content:hover {
-  color: hotpink !important;
-  font-weight: bold;
+  &:visited {
+    color: #333333;
+  }
+  &:hover {
+    color: hotpink;
+    font-weight: bold;
+  }
 }
 @media screen and (max-width: 640px) {
   .menu {
@@ -202,52 +202,40 @@ header {
     transform: scale(1, 0);
     transform-origin: top;
     border-bottom: 1px solid #ddd;
-  }
-  .menu-item {
-    width: 100%;
-    height: 50px;
-  }
-  .menu-item:hover {
-    border-bottom: none;
-  }
-  .link-content {
-    width: 100%;
-    padding: 16px 0;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  /* Hamburger menu button */
-  .menu-btn:checked ~ .menu {
-    transform: scale(1, 1);
-    transform-origin: top;
-    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  }
-
-  /* Hamburger menbu text */
-  .menu a {
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ddd;
-    opacity: 0;
-  }
-
-  .menu li {
-    border-top: 1px solid #2c3e50;
-    margin: 0 20px;
-    opacity: 0;
-  }
-
-  .menu-btn:checked ~ .menu a,
-  .menu-btn:checked ~ .menu li {
-    opacity: 1;
-    transition: color 0.1s ease, weight 0.1s ease;
+    .menu-item {
+      width: 100%;
+      height: 50px;
+      border-top: 1px solid #2c3e50;
+      margin: 0 20px;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+    .link-content {
+      width: 100%;
+      padding: 16px 0;
+      font-size: 16px;
+      line-height: 18px;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+    }
   }
 
   .menu-btn {
     display: none;
+    &:checked {
+      ~ .menu {
+        transform: scale(1, 1);
+        transform-origin: top;
+        transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+        a,
+        li {
+          opacity: 1;
+          transition: color 0.1s ease, weight 0.1s ease;
+        }
+      }
+    }
   }
 
   .menu-icon {
@@ -266,50 +254,45 @@ header {
     width: 28px;
     position: relative;
     transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: #ccc;
+      transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    }
+    &:before {
+      top: 9px;
+    }
 
-  .navicon:before,
-  .navicon:after {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: #ccc;
-    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
-  }
-
-  .navicon:before {
-    top: 9px;
-  }
-
-  .navicon:after {
-    bottom: 9px;
-  }
-
-  /* Hamburger Menu Animation Start */
-  .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-
-  .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
-    top: 0;
-  }
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    bottom: 0;
+    &:after {
+      bottom: 9px;
+    }
   }
 
   .menu-btn:checked ~ .menu-icon .navicon {
     background: rgba(0, 0, 0, 0);
     transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
   }
-  /* Hamburger Menu Animation End */
 
-  /* Navbar Container */
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon {
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+  }
+
   .navtext-container {
     width: 100%;
     height: 60px;
@@ -318,12 +301,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  /* Navbar Text */
-  .navtext {
-    letter-spacing: 0.05em;
-    font-size: 20px;
+    .navtext {
+      letter-spacing: 0.05em;
+      font-size: 20px;
+    }
   }
 }
 </style>

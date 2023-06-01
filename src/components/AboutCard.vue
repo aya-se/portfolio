@@ -19,7 +19,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss">
 .about-title {
   color: #333333;
 }
@@ -34,19 +34,18 @@ export default defineComponent({
   margin: 10px;
   box-shadow: none !important;
   border-radius: 0 !important;
-}
-
-.about-card .el-card__body {
-  padding: 10px !important;
+  .el-card__body {
+    padding: 10px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .about-card {
     width: 100%;
     margin: 5px 0;
-  }
-  .about-card .el-card__body {
-    padding: 5px 10px !important;
+    .el-card__body {
+      padding: 5px 10px !important;
+    }
   }
   .about-title {
     font-size: 16px;

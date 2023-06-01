@@ -32,40 +32,41 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss">
 .timeline-card {
   display: flex;
   justify-content: left;
   width: 100%;
   max-width: 1000px;
   margin: auto;
+  .timeline-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .timeline-content {
+    max-width: 860px;
+    margin: 0 0 0 40px;
+    .timeline-title {
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 175%;
+    }
+    .timeline-text {
+      text-align: left;
+      font-size: 14px;
+      color: #4f4f4f;
+      line-height: 175%;
+      white-space: pre-wrap;
+    }
+  }
 }
 
 .el-timeline-item__timestamp {
   text-align: left !important;
 }
-.timeline-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-.timeline-content {
-  max-width: 860px;
-  margin: 0 0 0 40px;
-}
-.timeline-title {
-  text-align: left;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 175%;
-}
-.timeline-text {
-  text-align: left;
-  font-size: 14px;
-  color: #4f4f4f;
-  line-height: 175%;
-  white-space: pre-wrap;
-}
+
 @media screen and (max-width: 640px) {
   .el-timeline {
     padding: 0 !important;
@@ -76,21 +77,18 @@ export default defineComponent({
     justify-content: left;
     width: 100%;
     max-width: 1000px;
-  }
-  .timeline-image {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-  }
-  .timeline-content {
-    width: 100%;
-    margin: 0;
-  }
-  .timeline-title {
-    font-size: 16px;
-  }
-  .timeline-text {
-    font-size: 14px;
+    .timeline-image {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+    .timeline-content {
+      width: 100%;
+      margin: 0;
+      .timeline-title {
+        font-size: 16px;
+      }
+    }
   }
 }
 </style>

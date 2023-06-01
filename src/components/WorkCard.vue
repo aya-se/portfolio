@@ -52,16 +52,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
-.work-title {
-  font-size: 18px;
-  color: #333333;
-}
-.work-text {
-  font-size: 14px;
-  color: #4f4f4f;
-  line-height: 175%;
-}
+<style lang="scss">
 .work-card {
   display: inline-block;
   width: 360px;
@@ -69,35 +60,44 @@ export default defineComponent({
   margin: 10px;
   box-shadow: none !important;
   border-radius: 0 !important;
-}
-.el-tag {
-  font-size: 11px !important;
-  padding: 0 10px !important;
-  margin: 5px 5px 0 !important;
-}
-.work-image {
-  height: 160px;
-  max-width: 90%;
-}
-.work-button {
-  margin-bottom: 5px !important;
-}
-.work-card .el-button {
-  margin: 5px 5px !important;
-  padding: 0 15px !important;
-  border-radius: 0 !important;
+  .el-tag {
+    font-size: 11px !important;
+    padding: 0 10px !important;
+    margin: 5px 5px 0 !important;
+  }
+  .el-button {
+    margin: 5px 5px !important;
+    padding: 0 15px !important;
+    border-radius: 0 !important;
+  }
+  .work-image {
+    height: 160px;
+    max-width: 90%;
+  }
+  .work-button {
+    margin-bottom: 5px !important;
+  }
+  .work-title {
+    font-size: 18px;
+    color: #333333;
+  }
+  .work-text {
+    font-size: 14px;
+    color: #333333;
+    line-height: 175%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .work-title {
-    font-size: 16px;
-  }
   .work-card {
     display: inline-block;
     width: 100%;
     max-width: 360px;
     height: auto;
     margin: 10px 0;
+    .work-title {
+      font-size: 16px;
+    }
   }
   .el-card__body {
     padding: 10px !important;

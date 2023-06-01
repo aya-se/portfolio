@@ -21,7 +21,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss">
 .account-card {
   display: inline-block;
   width: 260px;

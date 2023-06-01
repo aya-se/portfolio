@@ -27,7 +27,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss">
 .skill-title {
   color: #333333;
 }
