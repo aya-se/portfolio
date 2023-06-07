@@ -14,7 +14,7 @@
       {{ text }}
     </p>
     <p>
-      <img class="work-image" :src="require(`@/assets/${image}`)" />
+      <img class="work-image" :src="`/${image}`" />
     </p>
     <el-button
       v-for="(item, index) in buttons"

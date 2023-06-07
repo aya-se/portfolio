@@ -3,14 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite",
+    "build": "vite build",
+    "lint": "eslint lint src"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.21.8",
+    "@vitejs/plugin-vue": "^4.2.3",
     "core-js": "^3.30.2",
     "element-plus": "^2.3.5",
+    "vite": "^4.3.9",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2",
     "vue2-smooth-scroll": "^1.6.0",
@@ -18,11 +20,6 @@
     "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-plugin-router": "^5.0.8",
-    "@vue/cli-plugin-vuex": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-prettier": "^7.1.0",
     "eslint": "^8.41.0",
     "eslint-plugin-prettier": "^4.2.1",

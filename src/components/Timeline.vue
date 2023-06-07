@@ -8,7 +8,7 @@
       placement="top"
     >
       <div class="timeline-card">
-        <img class="timeline-image" :src="require(`@/assets/${item.image}`)" />
+        <img class="timeline-image" :src="`/${item.image}`" />
         <div class="timeline-content">
           <div class="timeline-title">
             {{ item.title }}

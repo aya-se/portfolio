@@ -6,7 +6,7 @@
       <div class="top-text">
         東京工業大学<br />情報理工学院 情報工学系 修士課程1年<br />岡崎研究室
       </div>
-      <img class="top-icon" src="../assets/icon.png" />
+      <img class="top-icon" src="/icon.png" />
       <div class="sns-links-list">
         <ul class="sns-links">
           <li>
@@ -97,17 +97,15 @@
 
 <script>
 import { defineComponent } from "vue";
-import CustomHeader from "@/components/Header.vue";
-import AboutCard from "@/components/AboutCard.vue";
-// import SkillCard from "@/components/SkillCard.vue";
-import Timeline from "@/components/Timeline.vue";
-import WorkCard from "@/components/WorkCard.vue";
-import abouts from "@/data/abouts.json";
-import educations from "@/data/educations.json";
-import histories from "@/data/histories.json";
-import experiences from "@/data/experiences.json";
-// import skills from "@/data/skills.json";
-import works from "@/data/works.json";
+import CustomHeader from "/src/components/Header.vue";
+import AboutCard from "/src/components/AboutCard.vue";
+import Timeline from "/src/components/Timeline.vue";
+import WorkCard from "/src/components/WorkCard.vue";
+import abouts from "/src/data/abouts.json";
+import educations from "/src/data/educations.json";
+import histories from "/src/data/histories.json";
+import experiences from "/src/data/experiences.json";
+import works from "/src/data/works.json";
 export default defineComponent({
   name: "HomeView",
   data() {
@@ -116,7 +114,6 @@ export default defineComponent({
       educations: educations,
       experiences: experiences,
       histories: histories,
-      // skills: skills,
       works: works,
     };
   },
@@ -124,7 +121,6 @@ export default defineComponent({
     CustomHeader,
     AboutCard,
     Timeline,
-    // SkillCard,
     WorkCard,
   },
   methods: {
