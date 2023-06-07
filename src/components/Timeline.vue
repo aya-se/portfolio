@@ -48,6 +48,7 @@ export default defineComponent({
     max-width: 860px;
     margin: 0 0 0 40px;
     .timeline-title {
+      color: #333333;
       text-align: left;
       font-size: 18px;
       font-weight: bold;
@@ -56,7 +57,7 @@ export default defineComponent({
     .timeline-text {
       text-align: left;
       font-size: 14px;
-      color: #4f4f4f;
+      color: #333333;
       line-height: 175%;
       white-space: pre-wrap;
     }

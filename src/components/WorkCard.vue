@@ -1,5 +1,5 @@
 <template>
-  <el-card class="work-card">
+  <div class="work-card">
     <el-tag
       effect="plain"
       class="tag"
@@ -34,7 +34,7 @@
       @click="onClick(item.link)"
       >{{ item.name }}</el-button
     >
-  </el-card>
+  </div>
 </template>
 
 <script>
@@ -54,12 +54,11 @@ export default defineComponent({
 
 <style lang="scss">
 .work-card {
-  display: inline-block;
-  width: 360px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 320px;
   height: auto;
   margin: 10px;
-  box-shadow: none !important;
-  border-radius: 0 !important;
   .el-tag {
     font-size: 11px !important;
     padding: 0 10px !important;
@@ -90,7 +89,6 @@ export default defineComponent({
 
 @media screen and (max-width: 480px) {
   .work-card {
-    display: inline-block;
     width: 100%;
     max-width: 360px;
     height: auto;

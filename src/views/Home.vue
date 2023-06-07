@@ -137,12 +137,16 @@ export default defineComponent({
 #top,
 #experience,
 #contact {
-  padding: 10px 20px 30px;
   background: #fafafa;
+  padding: 10px 20px 30px;
 }
 #about,
+#experience,
 #history,
 #work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 10px 20px 30px;
 }
 #copyright {
@@ -153,6 +157,8 @@ export default defineComponent({
   background: #4f4f4f;
 }
 .educations {
+  width: 100%;
+  max-width: 1028px;
   padding-top: 40px !important;
 }
 .tab {
@@ -163,6 +169,7 @@ export default defineComponent({
   background-color: white;
 }
 .subtitle {
+  width: 100%;
   color: #333333;
   font-size: 32px;
   font-family: "Open Sans", serif;
@@ -170,13 +177,16 @@ export default defineComponent({
   font-weight: normal;
 }
 .top-title {
+  width: 100%;
+  color: #333333;
   font-size: 36px;
   font-family: "Open Sans", serif;
   letter-spacing: 0.05em;
   font-weight: normal;
 }
 .top-text {
-  color: #4f4f4f;
+  width: 100%;
+  color: #333333;
   margin: 20px 0;
   line-height: 175%;
 }
@@ -188,7 +198,7 @@ export default defineComponent({
 }
 .top-description {
   text-align: left;
-  color: #4f4f4f;
+  color: #333333;
   margin: 20px 20px;
   line-height: 175%;
 }
