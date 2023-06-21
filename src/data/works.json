@@ -2,7 +2,10 @@
   {
     "title": "ポートフォリオサイト",
     "text": "このWebサイトです。\nVue.jsを用いて制作しました。\nElementやsmoothscrollerなどを用いています。2022年10月に大幅リニューアルしました！",
-    "tags": [{ "name": "Vue.js", "type": "success" }],
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Vite", "type": "success" }
+    ],
     "buttons": [
       { "name": "Website", "link": "https://aya-se.vercel.app/" },
       { "name": "GitHub", "link": "https://github.com/aya-se/portfolio" }
@@ -44,6 +47,42 @@
       }
     ],
     "image": "cloud-run-sns.png"
+  },
+  {
+    "title": "いかしかめかアクティビティズ",
+    "text": "所属サークルの部内ハッカソンで制作したWebブラウザゲームです。フロントエンドを担当しました。参加者による投票で優秀賞を受賞しました！",
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Vite", "type": "success" },
+      { "name": "Go", "type": "primary" },
+      { "name": "Echo", "type": "primary" },
+      { "name": "MySQL", "type": "danger" }
+    ],
+    "buttons": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/traP-jp/h23s_01"
+      },
+      {
+        "name": "Blog",
+        "link": ""
+      }
+    ],
+    "image": "ikashikameka.png"
+  },
+  {
+    "title": "One Poll",
+    "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Go", "type": "" },
+      { "name": "MySQL", "type": "danger" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://one-poll.mazrean.com/" },
+      { "name": "GitHub", "link": "" }
+    ],
+    "image": "one-poll.png"
   },
   {
     "title": "100knock Translation",
@@ -127,20 +166,6 @@
       }
     ],
     "image": "twitter.png"
-  },
-  {
-    "title": "One Poll",
-    "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
-    "tags": [
-      { "name": "Vue.js", "type": "success" },
-      { "name": "Go", "type": "" },
-      { "name": "MySQL", "type": "danger" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://one-poll.mazrean.com/" },
-      { "name": "GitHub", "link": "" }
-    ],
-    "image": "one-poll.png"
   },
   {
     "title": "マイナビジョブサーチ",
