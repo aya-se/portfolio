@@ -72,7 +72,7 @@
   },
   {
     "title": "One Poll",
-    "text": "大学のチーム開発の講義で開発したWebサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
+    "text": "大学のチーム開発の講義で制作したSNSサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Go", "type": "" },
@@ -83,6 +83,20 @@
       { "name": "GitHub", "link": "" }
     ],
     "image": "one-poll.png"
+  },
+  {
+    "title": "KABE打",
+    "text": "大学のチーム開発の講義で制作したプレゼン練習サービスです。発表を録音するだけで、AIが文字起こしやアドバイス・想定質問集を提供します。",
+    "tags": [
+      { "name": "Next.js", "type": "primary" },
+      { "name": "ChatGPT", "type": "success" },
+      { "name": "Wisper", "type": "success" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "" },
+      { "name": "GitHub", "link": "https://github.com/itsp-pbl-2023/kagayaki" }
+    ],
+    "image": "kabeda.png"
   },
   {
     "title": "100knock Translation",
