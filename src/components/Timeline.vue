@@ -2,7 +2,7 @@
   <el-timeline>
     <el-timeline-item
       class="timeline"
-      v-for="(item, index) in list"
+      v-for="(item, index) in list.filter((item) => item.disabled !== true)"
       :key="index"
       :timestamp="item.timestamp"
       placement="top"
