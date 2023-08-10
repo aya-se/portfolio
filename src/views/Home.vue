@@ -32,25 +32,31 @@
           </li>
         </ul>
       </div>
-      <p class="top-description">
-        東京工業大学&nbsp;岡崎研究室所属の服部と申します。
-        <br />
-        現在は、自然言語処理のさまざまな分野のうち、議事録をはじめとした長い文書の要約をテーマに研究を行っています。ただ要約するだけではなく、読者が真に理解しやすい要約とは何か？という問題に注目して、より良い要約のあり方を探りたいと考えています。
-        <br />
-        研究以外では、Webプログラミングにも興味があります。フロントエンド領域を中心に、個人・インターンシップ・ハッカソンでの開発経験があります。今後は、インフラやバックエンドの分野にも、もっと取り組んでいきたいと思っています。
-        <br />
-        その他、趣味で競技プログラミングをしたり（AtCoder青色・Highest1761）、パソコン上で作曲（DTM)した曲をサークルのCDとしてM3（同人音楽即売会）で頒布したりしています。
-      </p>
+      <div class="top-description-container">
+        <p class="top-description">
+          東京工業大学&nbsp;岡崎研究室所属の服部と申します。
+          <br />
+          現在は、自然言語処理のさまざまな分野のうち、議事録をはじめとした長い文書の要約をテーマに研究を行っています。ただ要約するだけではなく、読者が真に理解しやすい要約とは何か？という問題に注目して、より良い要約のあり方を探りたいと考えています。
+          <br />
+          研究以外では、Webプログラミングにも興味があります。フロントエンド領域を中心に、個人・インターンシップ・ハッカソンでの開発経験があります。今後は、インフラやバックエンドの分野にも、もっと取り組んでいきたいと思っています。
+          <br />
+          その他、趣味で競技プログラミングをしたり（AtCoder青色・Highest1761）、パソコン上で作曲（DTM)した曲をサークルのCDとしてM3（同人音楽即売会）で頒布したりしています。
+        </p>
+      </div>
     </div>
     <div id="about">
       <h2 class="subtitle"><i class="bi bi-info-circle-fill" />&nbsp;ABOUT</h2>
-      <AboutCard
-        v-for="(item, index) in abouts"
-        :key="index"
-        :title="item.title"
-        :text="item.text"
-        :icon="item.icon"
-      />
+      <div class="about-cards-container">
+        <div class="about-cards">
+          <AboutCard
+            v-for="(item, index) in abouts"
+            :key="index"
+            :title="item.title"
+            :text="item.text"
+            :icon="item.icon"
+          />
+        </div>
+      </div>
       <Timeline :list="educations" class="educations" />
     </div>
 
@@ -156,6 +162,17 @@ export default defineComponent({
   padding: 10px 20px 10px;
   background: #4f4f4f;
 }
+.about-cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+}
 .educations {
   width: 100%;
   max-width: 1028px;
@@ -196,11 +213,16 @@ export default defineComponent({
   flex-wrap: warp;
   justify-content: center;
 }
+.top-description-container {
+  display: flex;
+  justify-content: center;
+}
 .top-description {
   text-align: left;
   color: #333333;
   margin: 20px 20px;
   line-height: 175%;
+  max-width: 1920px;
 }
 .top-icon {
   border-radius: 2rem;
