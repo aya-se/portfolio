@@ -1,13 +1,6 @@
 [
   {
-    "title": "リクルートプログラミングコンテスト：PIGICON 2023に出場",
-    "text": "株式会社リクルート主催のプログラミングコンテストであるPIGICONに、同大学サークルのメンバー2人と出場しました。機械学習による多クラス分類問題を解く高速・高精度なAPIサーバーを改善するという内容のコンテストで、Web開発から機械学習まで幅広い知識を要求される難しい課題でした。",
-    "timestamp": "2023年10月下旬",
-    "image": "recruit.jpeg",
-    "disabled": true
-  },
-  {
-    "title": "Google Cloud認定資格 Professional Cloud Architectを取得",
+    "title": "Google Cloud認定資格 Professional Cloud Architect を取得",
     "text": "Google Cloudの認定資格であるProfessional Cloud Architectを取得しました。Google Cloudのサービスを用いたアーキテクチャ設計や、クラウド全般に関する知識を習得する良い機会になりました。",
     "timestamp": "2023年5月下旬",
     "image": "pca.png"

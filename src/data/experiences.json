@@ -1,8 +1,8 @@
 [
   {
-    "title": "RECRUIT Internship for Engineers, Data Specialists（長期）",
-    "text": "データスペシャリストコースのうち、ソフトウェアエンジニアとして、大規模なデータを扱うクラウド環境におけるアプリケーション開発に取り組みます。特に、Google CloudのBigQueryを重点的に取り扱う案件に携わる予定です。",
-    "timestamp": "2022年10月下旬～12月上旬（予定）",
+    "title": "RECRUIT Internship for Engineers, Data Specialists 2023",
+    "text": "データスペシャリストコースのソフトウェアエンジニアとして、Google CloudのBigQueryの全社的なスロット利用状況を可視化するツールの制作に取り組みました。Looker Studioでダッシュボードを作成し、Terraform・GitHub・droneでIaC・CI/CDを実現しました。スケジュールドクエリやデータマートを活用することで、標準のモニタリング機能と比較して大幅に高いユーザ体験を達成したほか、実際の業務に結び付く実用的な判断材料を提供できるようなツールの設計にこだわりました。",
+    "timestamp": "2022年10月下旬～12月上旬",
     "image": "recruit.jpeg"
   },
   {
@@ -50,7 +50,7 @@
   {
     "title": "東京工業大学 岡崎研究室（Okazaki Lab）",
     "text": "学士特定課題研究に伴い配属された研究室です。自然言語処理全般の研究を行っている研究室ですが、現在自分は、特に文書の要約をテーマに研究を行っています。修士課程でも引き続き所属しています。",
-    "timestamp": "2022年4月〜現在",
+    "timestamp": "2022年4月〜2025年3月（予定）",
     "image": "okazakilab.svg"
   },
   {
