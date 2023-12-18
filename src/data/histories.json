@@ -1,5 +1,11 @@
 [
   {
+    "title": "TokyoTech-LLMプロジェクトで大規模言語モデルSwallowを公開",
+    "text": "東京工業大学の岡崎研究室と横田研究室で大規模言語モデル（LLM）を開発するプロジェクトに参加しました。自分は日本語の事前学習コーパス構築や大規模バッチ管理の一部を担当し、AWSのサービス選定やインフラ基盤の構築を行いました。",
+    "timestamp": "2023年12月中旬",
+    "image": "swallow.png"
+  },
+  {
     "title": "Google Cloud認定資格 Professional Cloud Architect を取得",
     "text": "Google Cloudの認定資格であるProfessional Cloud Architectを取得しました。Google Cloudのサービスを用いたアーキテクチャ設計や、クラウド全般に関する知識を習得する良い機会になりました。",
     "timestamp": "2023年5月下旬",

@@ -182,6 +182,31 @@
     "image": "twitter.png"
   },
   {
+    "title": "TokyoTech-LLM（Swallow）",
+    "text": "東工大での大規模言語モデル開発プロジェクトです。自分は日本語Web事前学習コーパス構築のための大規模バッチ処理を担当しました。",
+    "tags": [
+      { "name": "AWS Batch", "type": "warning" },
+      { "name": "自然言語処理", "type": "danger" },
+      { "name": "インフラ構築", "type": "info" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://chokkan.org/temp/tokyotech-llm/" },
+      { "name": "GitHub", "link": "https://github.com/nlp-titech/jalm-corpus" }
+    ],
+    "image": "swallow.png"
+  },
+  {
+    "title": "LooQ",
+    "text": "インターンシップで開発した、リクルートの全社的なBigQueryスロット利用状況を高速＆高粒度で可視化するオリジナルのツールです。",
+    "tags": [
+      { "name": "BigQuery", "type": "" },
+      { "name": "Looker Studio", "type": "success" },
+      { "name": "Terraform", "type": "info" }
+    ],
+    "buttons": [{ "name": "Blog", "link": "" }],
+    "image": "recruit.jpeg"
+  },
+  {
     "title": "Vessel",
     "text": "日本経済新聞社の社内インフラ基盤です。長期インターンシップで、新技術の導入検証や運用改善などのタスクに取り組んでいます。",
     "tags": [
