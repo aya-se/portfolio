@@ -185,7 +185,6 @@
     "title": "TokyoTech-LLM（Swallow）",
     "text": "東工大での大規模言語モデル開発プロジェクトです。自分は日本語Web事前学習コーパス構築のための大規模バッチ処理を担当しました。",
     "tags": [
-      { "name": "AWS Batch", "type": "warning" },
       { "name": "自然言語処理", "type": "danger" },
       { "name": "インフラ構築", "type": "info" }
     ],
@@ -203,8 +202,13 @@
       { "name": "Looker Studio", "type": "success" },
       { "name": "Terraform", "type": "info" }
     ],
-    "buttons": [{ "name": "Blog", "link": "" }],
-    "image": "recruit.jpeg"
+    "buttons": [
+      {
+        "name": "Blog",
+        "link": "https://www.recruit.co.jp/employment/students/engineers/report/student-report-7/"
+      }
+    ],
+    "image": "looq.png"
   },
   {
     "title": "Vessel",
