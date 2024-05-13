@@ -1,7 +1,7 @@
 [
   {
     "title": "ポートフォリオサイト",
-    "text": "このWebサイトです。\nVue.jsを用いて制作しました。\nElementやsmoothscrollerなどを用いています。2022年10月に大幅リニューアルしました！",
+    "text": "このWebサイトです．\nVue.jsを用いて制作しました．\nElementやsmoothscrollerなどを用いています．2022年10月に大幅リニューアルしました！",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Vite", "type": "success" }
@@ -14,7 +14,7 @@
   },
   {
     "title": "QSS Demo",
-    "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を、ブラウザ上でわかりやすく閲覧できるデモサイトです。",
+    "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を，ブラウザ上でわかりやすく閲覧できるデモサイトです．",
     "tags": [
       { "name": "Next.js", "type": "primary" },
       { "name": "自然言語処理", "type": "danger" }
@@ -30,7 +30,7 @@
   },
   {
     "title": "Cloud Run SNS",
-    "text": "Google Cloudを用いた実践的なWebサービスを構築・デプロイする手順を、Skill Boostの自作ハンズオン風にまとめたプロジェクトです。",
+    "text": "Google Cloudを用いた実践的なWebサービスを構築・デプロイする手順を，Skill Boostの自作ハンズオン風にまとめたプロジェクトです．",
     "tags": [
       { "name": "Next.js", "type": "primary" },
       { "name": "FastAPI", "type": "success" },
@@ -50,7 +50,7 @@
   },
   {
     "title": "いかしかめかアクティビティズ",
-    "text": "所属サークルの部内ハッカソンで制作したWebブラウザゲームです。フロントエンドを担当しました。参加者による投票で優秀賞を受賞しました！",
+    "text": "所属サークルの部内ハッカソンで制作したWebブラウザゲームです．フロントエンドを担当しました．参加者による投票で優秀賞を受賞しました！",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Vite", "type": "success" },
@@ -72,7 +72,7 @@
   },
   {
     "title": "One Poll",
-    "text": "大学のチーム開発の講義で制作したSNSサービスです。投票形式の『Yahoo!知恵袋』を目指しました。講義内で最優秀賞に表彰されました。",
+    "text": "大学のチーム開発の講義で制作したSNSサービスです．投票形式の『Yahoo!知恵袋』を目指しました．講義内で最優秀賞に表彰されました．",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Go", "type": "primary" },
@@ -86,7 +86,7 @@
   },
   {
     "title": "KABE打",
-    "text": "大学のチーム開発の講義で制作したプレゼン練習サービスです。発表を録音するだけで、AIが文字起こしやアドバイス・想定質問集を提供します。",
+    "text": "大学のチーム開発の講義で制作したプレゼン練習サービスです．発表を録音するだけで，AIが文字起こしやアドバイス・想定質問集を提供します．",
     "tags": [
       { "name": "Next.js", "type": "primary" },
       { "name": "ChatGPT", "type": "success" },
@@ -100,7 +100,7 @@
   },
   {
     "title": "100knock Translation",
-    "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを、ブラウザ上で体験することができます。UIはDeepL翻訳を強く意識しています。",
+    "text": "『自然言語処理100本ノック』で作成した自作機械翻訳モデルを，ブラウザ上で体験することができます．UIはDeepL翻訳を強く意識しています．",
     "tags": [
       { "name": "Next.js", "type": "primary" },
       { "name": "FastAPI", "type": "success" },
@@ -122,7 +122,7 @@
   },
   {
     "title": "ウマ娘レースプランナー",
-    "text": "ウマ娘のレース一覧の閲覧、レース計画のレコメンドができるサイトです。Googleアカウントごとの進捗管理が可能です。",
+    "text": "ウマ娘のレース一覧の閲覧，レース計画のレコメンドができるサイトです．Googleアカウントごとの進捗管理が可能です．",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Firebase", "type": "warning" }
@@ -139,7 +139,7 @@
   },
   {
     "title": "Wordle Blob Solver",
-    "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです。実装したアルゴリズムの紹介ページ、完全レスポンシブ対応なども特徴です。",
+    "text": "『Wordle』の答えをかわいいBlobが一緒に考えてくれるサイトです．実装したアルゴリズムの紹介ページ，完全レスポンシブ対応なども特徴です．",
     "tags": [
       { "name": "React.js", "type": "primary" },
       { "name": "Next.js", "type": "primary" }
@@ -152,7 +152,7 @@
   },
   {
     "title": "自作曲の紹介Webサイト",
-    "text": "趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです。独自の試聴プレイヤーやタグなどによる検索機能にこだわりました。",
+    "text": "趣味のDTMで制作した自作曲を試聴・DLすることができるWebサイトです．独自の試聴プレイヤーやタグなどによる検索機能にこだわりました．",
     "tags": [{ "name": "Vue.js", "type": "success" }],
     "buttons": [
       { "name": "Website", "link": "http://ayase-music.vercel.app/" },
@@ -162,7 +162,7 @@
   },
   {
     "title": "Twitterクローン",
-    "text": "Twitterを模したWebアプリです。\nVue.jsの他にGoやMySQLを用いて、フォロー・いいねなど基本的な機能を実装しました。",
+    "text": "Twitterを模したWebアプリです．\nVue.jsの他にGoやMySQLを用いて，フォロー・いいねなど基本的な機能を実装しました．",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Go", "type": "primary" },
@@ -183,7 +183,7 @@
   },
   {
     "title": "TokyoTech-LLM（Swallow）",
-    "text": "東工大での大規模言語モデル開発プロジェクトです。自分は日本語Web事前学習コーパス構築のための大規模バッチ処理を担当しました。",
+    "text": "東工大での大規模言語モデル開発プロジェクトです．自分は日本語Web事前学習コーパス構築のための大規模バッチ処理を担当しました．",
     "tags": [
       { "name": "自然言語処理", "type": "danger" },
       { "name": "インフラ構築", "type": "info" }
@@ -196,7 +196,7 @@
   },
   {
     "title": "LooQ",
-    "text": "インターンシップで開発した、リクルートの全社的なBigQueryスロット利用状況を高速＆高粒度で可視化するオリジナルのツールです。",
+    "text": "インターンシップで開発した，リクルートの全社的なBigQueryスロット利用状況を高速＆高粒度で可視化するオリジナルのツールです．",
     "tags": [
       { "name": "BigQuery", "type": "primary" },
       { "name": "Looker Studio", "type": "success" },
@@ -212,7 +212,7 @@
   },
   {
     "title": "Vessel",
-    "text": "日本経済新聞社の社内インフラ基盤です。長期インターンシップで、新技術の導入検証や運用改善などのタスクに取り組んでいます。",
+    "text": "日本経済新聞社の社内インフラ基盤です．長期インターンシップで，新技術の導入検証や運用改善などのタスクに取り組んでいました．",
     "tags": [
       { "name": "GKE", "type": "warning" },
       { "name": "Kubernetes", "type": "primary" },
@@ -220,13 +220,20 @@
       { "name": "Terraform", "type": "info" }
     ],
     "buttons": [
-      { "name": "Blog", "link": "https://hack.nikkei.com/blog/advent20211222/" }
+      {
+        "name": "Blog①",
+        "link": "https://hack.nikkei.com/blog/advent20211222/"
+      },
+      {
+        "name": "Blog②",
+        "link": "https://hack.nikkei.com/blog/sre_intern_descheduler_k8s/"
+      }
     ],
     "image": "nikkei.jpeg"
   },
   {
     "title": "Yahoo! 知恵袋",
-    "text": "ヤフー株式会社のQ&Aサービスです。長期インターンシップで、Next.jsによる、フロントエンドの新プロトタイプ制作を行いました。",
+    "text": "ヤフー株式会社のQ&Aサービスです．長期インターンシップで，Next.jsによる，フロントエンドの新プロトタイプ制作を行いました．",
     "tags": [
       { "name": "React.js", "type": "primary" },
       { "name": "Next.js", "type": "primary" }
@@ -238,7 +245,7 @@
   },
   {
     "title": "NIKKEI Frontier",
-    "text": "日経の短期インターンで制作したWebサービスです。自然言語処理を活用し、セレンディピティを考慮した記事推薦とその可視化を行いました。",
+    "text": "日経の短期インターンで制作したWebサービスです．自然言語処理を活用し，セレンディピティを考慮した記事推薦とその可視化を行いました．",
     "tags": [
       { "name": "Next.js", "type": "primary" },
       { "name": "FastAPI", "type": "success" },
@@ -253,7 +260,7 @@
   },
   {
     "title": "マイナビジョブサーチ",
-    "text": "株式会社マイナビの総合求人検索サービスです。長期インターンシップで、フロントエンドの開発に参加しました。",
+    "text": "株式会社マイナビの総合求人検索サービスです．長期インターンシップで，フロントエンドの開発に参加しました．",
     "tags": [
       { "name": "React.js", "type": "primary" },
       { "name": "Next.js", "type": "primary" }
@@ -263,7 +270,7 @@
   },
   {
     "title": "ISUCON",
-    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです。ISUCON12にチーム『Fine Tuning』で初出場し、5412点でした (学生18位)。",
+    "text": "LINE株式会社が主催するパフォーマンスチューニングコンテストです．ISUCON12にチーム『Fine Tuning』で初出場し，5412点でした (学生18位)．",
     "tags": [
       { "name": "Go", "type": "primary" },
       { "name": "SQL", "type": "danger" },
@@ -275,7 +282,7 @@
   },
   {
     "title": "AtCoder (競技プログラミング)",
-    "text": "制作物…とは少し違いますが、プログラミングコンテストによく参加しています。現在のレートはHighest1761(青)です(PASTは88点・上級)。",
+    "text": "制作物…とは少し違いますが，プログラミングコンテストによく参加しています．現在のレートはHighest1761(青)です(PASTは88点・上級)．",
     "tags": [
       { "name": "C++", "type": "primary" },
       { "name": "競技プログラミング", "type": "info" }
@@ -291,7 +298,7 @@
   },
   {
     "title": "cpp-snippets",
-    "text": "競技プログラミングのコンテストで用いる典型的なデータ構造・アルゴリズム・関数をVisual Studioのスニペットとして整備したものです。",
+    "text": "競技プログラミングのコンテストで用いる典型的なデータ構造・アルゴリズム・関数をVisual Studioのスニペットとして整備したものです．",
     "tags": [
       { "name": "C++", "type": "primary" },
       { "name": "Vim Snippet", "type": "info" },
@@ -304,7 +311,7 @@
   },
   {
     "title": "東方弾幕風Ph3",
-    "text": "自分のプログラミングの原点ともいえるツールです。弾幕STGゲーム『東方Project』のボス戦を模したスクリプトを制作し、動画にしています。",
+    "text": "自分のプログラミングの原点ともいえるツールです．弾幕STGゲーム『東方Project』のボス戦を模したスクリプトを制作し，動画にしています．",
     "tags": [
       { "name": "独自言語", "type": "info" },
       { "name": "ゲーム制作", "type": "info" }
@@ -314,7 +321,7 @@
   },
   {
     "title": "Kaggle (分析コンペ)",
-    "text": "データ分析のコンペに参加しようと思っています。Titanicのチュートリアル等をやりました。今後はコンペに参加していきたいと思います。",
+    "text": "データ分析のコンペに参加しようと思っています．Titanicのチュートリアル等をやりました．今後はコンペに参加していきたいと思います．",
     "tags": [
       { "name": "Python", "type": "danger" },
       { "name": "Pandas", "type": "warning" },
@@ -326,14 +333,14 @@
   },
   {
     "title": "Qiita (記事投稿)",
-    "text": "今後、何か制作などをした際は不定期に記事を投稿していきたいと思っています。主に、競プロやWeb開発に関する内容を執筆しています。",
+    "text": "今後，何か制作などをした際は不定期に記事を投稿していきたいと思っています．主に，競プロやWeb開発に関する内容を執筆しています．",
     "tags": [{ "name": "その他", "type": "info" }],
     "buttons": [{ "name": "Website", "link": "https://qiita.com/aya_se" }],
     "image": "qiita.png"
   },
   {
     "title": "東京工業大学デジタル創作同好会traP",
-    "text": "大学で所属しているサークルです。主に趣味のDTMや競技プログラミング等を中心に活動しています。",
+    "text": "大学で所属しているサークルです．主に趣味のDTMや競技プログラミング等を中心に活動しています．",
     "tags": [{ "name": "その他", "type": "info" }],
     "buttons": [
       { "name": "Website", "link": "https://trap.jp/" },
@@ -343,7 +350,7 @@
   },
   {
     "title": "岡崎研究室 (Okazaki Lab)",
-    "text": "大学で所属している研究室です。自然言語処理（NLP）のうち、特に文書自動要約をはじめとした生成タスクに取り組んでいます。",
+    "text": "大学で所属している研究室です．現在は大規模言語モデル（LLM）の事前学習コーパスに関する研究に取り組んでいます．",
     "tags": [
       { "name": "自然言語処理", "type": "danger" },
       { "name": "その他", "type": "info" }
