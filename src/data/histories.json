@@ -1,5 +1,11 @@
 [
   {
+    "title": "Google Cloud認定資格 Professional Data Engineer を初めて取得",
+    "text": "Google Cloudの認定資格であるProfessional Data Engineerを取得しました．Dataflow（Apache Beam）やDataplex（データメッシュ）をはじめ，これまであまり知らなかったデータ処理・分析・共有の領域について幅広く知る良い機会になりました．",
+    "timestamp": "2024年5月下旬",
+    "image": "pde.png"
+  },
+  {
     "title": "第6回 Data-Centric AI勉強会でSwallowコーパスについて発表",
     "text": "AI開発における「データ」に着目した取り組みについて共有する有志主催の勉強会であるData-Centric AI勉強会に参加し，「東工大Swallowプロジェクトにおける大規模日本語Webコーパスの構築」というタイトルで発表を行いました．",
     "timestamp": "2024年2月上旬",
@@ -12,7 +18,7 @@
     "image": "swallow.png"
   },
   {
-    "title": "Google Cloud認定資格 Professional Cloud Architect を取得",
+    "title": "Google Cloud認定資格 Professional Cloud Architect を初めて取得",
     "text": "Google Cloudの認定資格であるProfessional Cloud Architectを取得しました．Google Cloudのサービスを用いたアーキテクチャ設計や，クラウド全般に関する知識を習得する良い機会になりました．",
     "timestamp": "2023年5月下旬",
     "image": "pca.png"
