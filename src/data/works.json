@@ -50,7 +50,7 @@
   },
   {
     "title": "いかしかめかアクティビティズ",
-    "text": "所属サークルの部内ハッカソンで制作したWebブラウザゲームです．フロントエンドを担当しました．参加者による投票で優秀賞を受賞しました！",
+    "text": "サークルの部内ハッカソンで制作したWebブラウザゲームです．チーム代表とフロントエンドをを担当し，参加者投票で優秀賞を受賞しました！",
     "tags": [
       { "name": "Vue.js", "type": "success" },
       { "name": "Vite", "type": "success" },
@@ -69,6 +69,27 @@
       }
     ],
     "image": "ikashikameka.png"
+  },
+  {
+    "title": "Encounter",
+    "text": "サークルの部内ハッカソンで制作したタグベースのユーザー検索サービスです．フロントエンドを担当し，参加者投票ではUI賞を受賞しました！",
+    "tags": [
+      { "name": "Vue.js", "type": "success" },
+      { "name": "Vite", "type": "success" },
+      { "name": "Go", "type": "primary" },
+      { "name": "MySQL", "type": "danger" }
+    ],
+    "buttons": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/traP-jp/h24s_18"
+      },
+      {
+        "name": "Blog",
+        "link": ""
+      }
+    ],
+    "image": "encounter.png"
   },
   {
     "title": "One Poll",
