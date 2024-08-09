@@ -1,21 +1,27 @@
 [
   {
+    "title": "産業総合研究所(AIST) Research Assistant ",
+    "text": "10月より，産総研のResearch Assistantとして雇用されました．Swallowプロジェクトにて，大規模言語モデルの開発を進めていきます．",
+    "timestamp": "2024年8月～2025年3月（予定）",
+    "image": "aist.jpg"
+  },
+  {
     "title": "東京工業大学 岡崎研究室（Okazaki Lab）",
     "text": "学士特定課題研究に伴い配属された，自然言語処理全般の研究を行っている研究室です．学部時代は，特に文書の要約をテーマに研究を行っていました．修士課程では，大規模言語モデル（LLM）『Swallow』の構築プロジェクトに参加し，事前学習コーパスについての研究を行っています．",
     "timestamp": "2022年4月〜2025年3月（予定）",
     "image": "okazakilab.svg"
   },
   {
-    "title": "日本経済新聞社 長期インターンシップ",
-    "text": "SREチームに所属し，GKE・Kubernetes・Terraform・ArgoCDなど，インフラ系の技術に取り組んでいました．主に，社内のアプリケーション基盤である『Vessel』のプロジェクトに参加し，様々な新技術の導入検証や実装を行いました．",
-    "timestamp": "2022年12月～2024年4月",
-    "image": "nikkei.jpeg"
-  },
-  {
     "title": "東京工業大学 Research Assistant",
     "text": "10月より，大学のResearch Assistantとして雇用されました．",
     "timestamp": "2022年10月～2025年3月（予定）",
     "image": "tokyotech.jpeg"
+  },
+  {
+    "title": "日本経済新聞社 長期インターンシップ",
+    "text": "SREチームに所属し，GKE・Kubernetes・Terraform・ArgoCDなど，インフラ系の技術に取り組んでいました．主に，社内のアプリケーション基盤である『Vessel』のプロジェクトに参加し，様々な新技術の導入検証や実装を行いました．",
+    "timestamp": "2022年12月～2024年4月",
+    "image": "nikkei.jpeg"
   },
   {
     "title": "RECRUIT Internship for Engineers, Data Specialists 2023",
@@ -27,7 +33,8 @@
     "title": "NTTドコモ 現場受け入れ型インターンシップ（10Days）",
     "text": "『お客様に具体的な価値を提供するAIテキスト分析プロダクトの開発』というポストで，自然言語処理を活用したWebサービスの開発に取り組みました．顧客のテキストデータからインサイトを抽出するWebサービスの機能改善に携わり，アルゴリズムの提案からWebフロントエンドへの実装まで行いました．",
     "timestamp": "2023年8月下旬～9月上旬",
-    "image": "docomo.jpeg"
+    "image": "docomo.jpeg",
+    "disabled": true
   },
   {
     "title": "野村総合研究所（NRI） DXエキスパートコース（10Days）",
@@ -51,7 +58,8 @@
     "title": "日本経済新聞社 短期インターンシップ 2022（5Days）",
     "text": "社内のAPIを利用した新規サービスを2人1組で開発するハッカソン形式のインターンシップでした．自分のチームは，自然言語処理の技術を利用した記事の推薦サービスの制作に取り組みました．現地開催ならではの交流も含めて，非常に良い経験となりました．",
     "timestamp": "2022年8月中旬",
-    "image": "nikkei.jpeg"
+    "image": "nikkei.jpeg",
+    "disabled": true
   },
   {
     "title": "株式会社マイナビ 就業型インターンシップ（長期）",
@@ -63,13 +71,15 @@
     "title": "三井住友信託銀行 アクチュアリーインターンシップ（1Day）",
     "text": "アクチュアリーとしての業務を体験する，ワークショップ形式のインターンシップでした．エンジニア系のプログラムとはまた違った雰囲気や難しさがあり，新鮮な経験となりました．",
     "timestamp": "2021年12月下旬",
-    "image": "mitsuisumitomo.jpeg"
+    "image": "mitsuisumitomo.jpeg",
+    "disabled": true
   },
   {
     "title": "Mynavi Engineer Internship 2021（4Days）",
     "text": "3〜4人のチームでのハッカソン形式で，期間内にお題となるアプリケーションを改善するという内容のインターンシップでした．独自の改善項目やプレゼンテーションが評価されたことも幸いして，自分のチームは最優秀賞に表彰されました．",
     "timestamp": "2021年9月下旬",
-    "image": "mynavi.jpeg"
+    "image": "mynavi.jpeg",
+    "disabled": true
   },
   {
     "title": "株式会社Libry データ分析・教材作成のアルバイト",

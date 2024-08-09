@@ -1,5 +1,18 @@
 [
   {
+    "title": "YANS2024（第19回YANSシンポジウム）に参加",
+    "text": "テキスト",
+    "timestamp": "2024年9月上旬",
+    "image": "yans.png",
+    "disabled": true
+  },
+  {
+    "title": "TokyoAI Advanced AI（TAI AAI）に登壇",
+    "text": "AIに関するグローバルコミュニティであるTokyoAIのAdvanced AI（TAI AAI）で登壇しました．大規模言語モデルSwallowやSwallowコーパスの構築について発表を行いました．自分にとっては，英語で本格的なプレゼンテーションを行う初めての経験となりました．",
+    "timestamp": "2024年8月上旬",
+    "image": "tokyoai.jpg"
+  },
+  {
     "title": "Google Cloud認定資格 Professional Data Engineer を初めて取得",
     "text": "Google Cloudの認定資格であるProfessional Data Engineerを取得しました．Dataflow（Apache Beam）やDataplex（データメッシュ）をはじめ，これまであまり知らなかったデータ処理・分析・共有の領域について幅広く知る良い機会になりました．",
     "timestamp": "2024年5月下旬",

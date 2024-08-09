@@ -13,40 +13,60 @@
     "image": "portfolio.png"
   },
   {
-    "title": "QSS Demo",
-    "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を，ブラウザ上でわかりやすく閲覧できるデモサイトです．",
+    "title": "TokyoTech-LLM（Swallow）",
+    "text": "東工大での大規模言語モデル開発プロジェクトです．自分は事前学習コーパス構築・強化とモデル評価の一部を担当しています．",
     "tags": [
-      { "name": "Next.js", "type": "primary" },
-      { "name": "自然言語処理", "type": "danger" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://qss-demo.vercel.app/" },
-      {
-        "name": "GitHub",
-        "link": "https://github.com/aya-se/qss-demo"
-      }
-    ],
-    "image": "qss-demo.png"
-  },
-  {
-    "title": "Cloud Run SNS",
-    "text": "Google Cloudを用いた実践的なWebサービスを構築・デプロイする手順を，Skill Boostの自作ハンズオン風にまとめたプロジェクトです．",
-    "tags": [
-      { "name": "Next.js", "type": "primary" },
-      { "name": "FastAPI", "type": "success" },
-      { "name": "Google Cloud", "type": "warning" }
+      { "name": "自然言語処理", "type": "danger" },
+      { "name": "LLM", "type": "info" }
     ],
     "buttons": [
       {
-        "name": "GitHub",
-        "link": "https://github.com/aya-se/cloud-run-sns"
+        "name": "Website",
+        "link": "https://swallow-llm.github.io/index.ja.html"
       },
       {
-        "name": "Blog",
-        "link": ""
+        "name": "Paper",
+        "link": "https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/A6-1.pdf"
       }
     ],
-    "image": "cloud-run-sns.png"
+    "image": "swallow.png"
+  },
+  {
+    "title": "LooQ",
+    "text": "インターンシップで開発した，リクルートの全社的なBigQueryスロット利用状況を高速＆高粒度で可視化するオリジナルのツールです．",
+    "tags": [
+      { "name": "BigQuery", "type": "primary" },
+      { "name": "Looker Studio", "type": "success" },
+      { "name": "Terraform", "type": "info" }
+    ],
+    "buttons": [
+      {
+        "name": "Blog",
+        "link": "https://www.recruit.co.jp/employment/students/engineers/report/student-report-7/"
+      }
+    ],
+    "image": "looq.png"
+  },
+  {
+    "title": "Vessel",
+    "text": "日本経済新聞社の社内インフラ基盤です．長期インターンシップで，新技術の導入検証や運用改善などのタスクに取り組んでいました．",
+    "tags": [
+      { "name": "GKE", "type": "warning" },
+      { "name": "Kubernetes", "type": "primary" },
+      { "name": "ArgoCD", "type": "danger" },
+      { "name": "Terraform", "type": "info" }
+    ],
+    "buttons": [
+      {
+        "name": "Blog①",
+        "link": "https://hack.nikkei.com/blog/advent20211222/"
+      },
+      {
+        "name": "Blog②",
+        "link": "https://hack.nikkei.com/blog/sre_intern_descheduler_k8s/"
+      }
+    ],
+    "image": "nikkei.jpeg"
   },
   {
     "title": "いかしかめかアクティビティズ",
@@ -118,6 +138,42 @@
       { "name": "GitHub", "link": "https://github.com/itsp-pbl-2023/kagayaki" }
     ],
     "image": "kabeda.png"
+  },
+  {
+    "title": "QSS Demo",
+    "text": "言語処理学会で発表した文書自動要約についての研究の提案タスクや手法を，ブラウザ上でわかりやすく閲覧できるデモサイトです．",
+    "tags": [
+      { "name": "Next.js", "type": "primary" },
+      { "name": "自然言語処理", "type": "danger" }
+    ],
+    "buttons": [
+      { "name": "Website", "link": "https://qss-demo.vercel.app/" },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/aya-se/qss-demo"
+      }
+    ],
+    "image": "qss-demo.png"
+  },
+  {
+    "title": "Cloud Run SNS",
+    "text": "Google Cloudを用いた実践的なWebサービスを構築・デプロイする手順を，Skill Boostの自作ハンズオン風にまとめたプロジェクトです．",
+    "tags": [
+      { "name": "Next.js", "type": "primary" },
+      { "name": "FastAPI", "type": "success" },
+      { "name": "Google Cloud", "type": "warning" }
+    ],
+    "buttons": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/aya-se/cloud-run-sns"
+      },
+      {
+        "name": "Blog",
+        "link": ""
+      }
+    ],
+    "image": "cloud-run-sns.png"
   },
   {
     "title": "100knock Translation",
@@ -201,56 +257,6 @@
       }
     ],
     "image": "twitter.png"
-  },
-  {
-    "title": "TokyoTech-LLM（Swallow）",
-    "text": "東工大での大規模言語モデル開発プロジェクトです．自分は日本語Web事前学習コーパス構築のための大規模バッチ処理を担当しました．",
-    "tags": [
-      { "name": "自然言語処理", "type": "danger" },
-      { "name": "インフラ構築", "type": "info" }
-    ],
-    "buttons": [
-      { "name": "Website", "link": "https://chokkan.org/temp/tokyotech-llm/" },
-      { "name": "GitHub", "link": "https://github.com/nlp-titech/jalm-corpus" }
-    ],
-    "image": "swallow.png"
-  },
-  {
-    "title": "LooQ",
-    "text": "インターンシップで開発した，リクルートの全社的なBigQueryスロット利用状況を高速＆高粒度で可視化するオリジナルのツールです．",
-    "tags": [
-      { "name": "BigQuery", "type": "primary" },
-      { "name": "Looker Studio", "type": "success" },
-      { "name": "Terraform", "type": "info" }
-    ],
-    "buttons": [
-      {
-        "name": "Blog",
-        "link": "https://www.recruit.co.jp/employment/students/engineers/report/student-report-7/"
-      }
-    ],
-    "image": "looq.png"
-  },
-  {
-    "title": "Vessel",
-    "text": "日本経済新聞社の社内インフラ基盤です．長期インターンシップで，新技術の導入検証や運用改善などのタスクに取り組んでいました．",
-    "tags": [
-      { "name": "GKE", "type": "warning" },
-      { "name": "Kubernetes", "type": "primary" },
-      { "name": "ArgoCD", "type": "danger" },
-      { "name": "Terraform", "type": "info" }
-    ],
-    "buttons": [
-      {
-        "name": "Blog①",
-        "link": "https://hack.nikkei.com/blog/advent20211222/"
-      },
-      {
-        "name": "Blog②",
-        "link": "https://hack.nikkei.com/blog/sre_intern_descheduler_k8s/"
-      }
-    ],
-    "image": "nikkei.jpeg"
   },
   {
     "title": "Yahoo! 知恵袋",
