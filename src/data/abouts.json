@@ -6,7 +6,7 @@
   },
   {
     "title": "学校",
-    "text": "東京工業大学 情報理工学院 情報工学系",
+    "text": "東京科学大学 情報理工学院 情報工学系",
     "icon": "building"
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "title": "趣味",
-    "text": "DTM，競技プログラミング，旅行，Web開発 etc.",
+    "text": "旅行，御朱印集め，スキー，Web開発，DTM etc.",
     "icon": "heart-fill"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "title": "興味・関心",
-    "text": "自然言語処理，アルゴリズム，インフラ基盤 etc.",
+    "text": "自然言語処理，LLM，クラウド，DevOps etc.",
     "icon": "star-fill"
   }
 ]
