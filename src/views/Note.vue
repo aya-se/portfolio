@@ -2,13 +2,14 @@
   <div id="note">
     <div id="notes">
       <Subtitle icon="bi-stack" text="記事" />
-      工事中......
+      <MarkdownNote />
     </div>
   </div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
+import MarkdownNote from "./MarkdownNote.vue";
 import Subtitle from "/src/components/Subtitle.vue";
 export default defineComponent({
   name: "NoteView",
@@ -16,6 +17,7 @@ export default defineComponent({
     return {};
   },
   components: {
+    MarkdownNote,
     Subtitle,
   },
   methods: {
@@ -35,8 +37,7 @@ export default defineComponent({
 #notes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  width: 100%;
-  padding: 10px 20px 30px;
+  justify-content: center;
+  margin: 10px 20px 30px;
 }
 </style>
