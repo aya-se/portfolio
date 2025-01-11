@@ -1,13 +1,16 @@
 <template>
   <header>
     <div class="header-sp">
-      <div class="navtext-container">
-        <div class="navtext">KAKERU HATTORI</div>
+      <a class="header-title" href="">
+        <img src="icon.png" alt="header-icon" class="header-icon" />
+        AYASE Lab
+      </a>
+      <div class="header-button">
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon"
+          ><span class="navicon"></span
+        ></label>
       </div>
-      <input type="checkbox" class="menu-btn" id="menu-btn" />
-      <label for="menu-btn" class="menu-icon"
-        ><span class="navicon"></span
-      ></label>
       <ul class="menu">
         <li class="menu-item">
           <a
@@ -66,23 +69,18 @@
       </ul>
     </div>
     <div class="header-pc">
+      <router-link class="header-title" to="/">
+        <img src="icon.png" alt="header-icon" class="header-icon" />
+        AYASE Lab
+      </router-link>
       <ul class="menu">
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#top"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            TOP</a
-          >
-        </li>
         <li index="2" class="menu-item">
           <a
             class="link-content"
-            href="#about"
+            href="/"
             v-smooth-scroll="{ duration: 800, offset: -60 }"
           >
-            ABOUT</a
+            プロフィール</a
           >
         </li>
         <li index="3" class="menu-item">
@@ -130,25 +128,59 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 70px;
   background: white;
   z-index: 100;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .header-pc {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 100%;
+  max-width: 1152px;
 }
 .header-sp {
   display: none;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1000px) {
   .header-pc {
     display: none;
   }
   .header-sp {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    .header-button {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      width: calc(100% - 220px);
+    }
   }
 }
+.header-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 200px;
+  font-size: 24px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ff9900;
+  .header-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -156,36 +188,37 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 60px;
-}
-.menu-item {
-  display: flex;
-  padding: auto;
-  width: 16.6666%;
-  height: 60px;
-  &:hover {
-    background: #f5f5f5;
-    border-bottom: 2px solid hotpink;
+  height: 100%;
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    &:hover {
+      background: #f5f5f5;
+      border-bottom: 2px solid #ff9900;
+    }
+    .link-content {
+      width: 100%;
+      padding: 18px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #333333;
+      font-family: "Open Sans", serif;
+      letter-spacing: 0.05em;
+      transition: all 0.1s ease;
+      &:visited {
+        color: #333333;
+      }
+      &:hover {
+        color: #ff9900;
+        font-weight: bold;
+      }
+    }
   }
 }
-.link-content {
-  width: 100%;
-  padding: 18px 0;
-  font-size: 16px;
-  text-decoration: none;
-  color: #333333;
-  font-family: "Open Sans", serif;
-  letter-spacing: 0.05em;
-  transition: all 0.1s ease;
-  &:visited {
-    color: #333333;
-  }
-  &:hover {
-    color: hotpink;
-    font-weight: bold;
-  }
-}
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 1000px) {
   .menu {
     display: flex;
     flex-wrap: wrap;

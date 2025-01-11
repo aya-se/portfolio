@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <Home />
+    <CustomHeader />
+    <main><Home /></main>
   </div>
 </template>
 
 <script>
 import Home from "./views/Home.vue";
+import CustomHeader from "./components/Header.vue";
 export default {
   name: "app",
-  components: { Home },
+  components: { Home, CustomHeader },
   methods: {},
 };
 </script>
@@ -16,6 +18,7 @@ export default {
 <style lang="scss">
 body {
   margin: 0px;
+  background-color: #f0f0f5;
 }
 #app {
   font-family: "Noto Sans JP", serif;
@@ -24,6 +27,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #333333;
-  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 70px;
+  max-width: 1152px;
 }
 </style>

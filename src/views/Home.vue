@@ -1,6 +1,5 @@
 <template>
   <div id="home">
-    <CustomHeader />
     <div id="top">
       <h1 class="top-title">KAKERU HATTORI</h1>
       <div class="top-text">
@@ -103,7 +102,6 @@
 
 <script>
 import { defineComponent } from "vue";
-import CustomHeader from "/src/components/Header.vue";
 import AboutCard from "/src/components/AboutCard.vue";
 import Timeline from "/src/components/Timeline.vue";
 import WorkCard from "/src/components/WorkCard.vue";
@@ -124,7 +122,6 @@ export default defineComponent({
     };
   },
   components: {
-    CustomHeader,
     AboutCard,
     Timeline,
     WorkCard,
@@ -139,11 +136,12 @@ export default defineComponent({
 <style lang="scss">
 #home {
   overflow: hidden;
+  padding: 0 20px;
+  margin: 0 20px;
 }
 #top,
 #experience,
 #contact {
-  background: #fafafa;
   padding: 10px 20px 30px;
 }
 #about,
@@ -186,7 +184,11 @@ export default defineComponent({
   background-color: white;
 }
 .subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
   width: 100%;
+  margin: 20px;
   color: #333333;
   font-size: 32px;
   font-family: "Open Sans", serif;
