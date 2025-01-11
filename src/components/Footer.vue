@@ -2,7 +2,7 @@
   <footer>
     <div class="footer-copyright">
       <p>
-        Copyright&nbsp;©&nbsp;KAKERU&nbsp;HATTORI.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+        Copyright&nbsp;©&nbsp;Kakeru&nbsp;HATTORI.&nbsp;All&nbsp;Rights&nbsp;Reserved.
       </p>
     </div>
   </footer>

@@ -74,51 +74,10 @@
         AYASE Lab
       </router-link>
       <ul class="menu">
-        <li index="2" class="menu-item">
-          <a
-            class="link-content"
-            href="/"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            プロフィール</a
-          >
-        </li>
-        <li index="3" class="menu-item">
-          <a
-            class="link-content"
-            href="#experience"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            EXPERIENCE</a
-          >
-        </li>
-        <li index="4" class="menu-item">
-          <a
-            class="link-content"
-            href="#history"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            HISTORY</a
-          >
-        </li>
-        <li index="5" class="menu-item">
-          <a
-            class="link-content"
-            href="#work"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            WORKS</a
-          >
-        </li>
-        <li index="6" class="menu-item">
-          <a
-            class="link-content"
-            href="#contact"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            CONTACT</a
-          >
-        </li>
+        <router-link to="/" class="menu-item"> プロフィール </router-link>
+        <router-link to="/background" class="menu-item"> 経歴 </router-link>
+        <router-link to="/note" class="menu-item"> 記事 </router-link>
+        <router-link to="/work" class="menu-item"> 作品 </router-link>
       </ul>
     </div>
   </header>
@@ -169,6 +128,7 @@ header {
   justify-content: left;
   align-items: center;
   width: 200px;
+  height: 100%;
   font-size: 24px;
   margin-right: 20px;
   text-decoration: none;
@@ -192,28 +152,21 @@ header {
   .menu-item {
     display: flex;
     align-items: center;
-    margin: 0;
     height: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333333;
+    font-family: "Open Sans", serif;
+    letter-spacing: 0.05em;
+    transition: all 0.1s ease;
     &:hover {
-      background: #f5f5f5;
-      border-bottom: 2px solid #ff9900;
+      color: #ed7100 !important;
+      font-weight: bold;
+      border-bottom: 2px solid #ed7100;
     }
-    .link-content {
-      width: 100%;
-      padding: 18px 20px;
-      font-size: 16px;
-      text-decoration: none;
+    &:visited {
       color: #333333;
-      font-family: "Open Sans", serif;
-      letter-spacing: 0.05em;
-      transition: all 0.1s ease;
-      &:visited {
-        color: #333333;
-      }
-      &:hover {
-        color: #ff9900;
-        font-weight: bold;
-      }
     }
   }
 }

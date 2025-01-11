@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <CustomHeader />
-    <main><Home /></main>
+    <main><router-view /></main>
     <CustomFooter />
   </div>
 </template>
 
 <script>
-import Home from "./views/Home.vue";
 import CustomHeader from "./components/Header.vue";
 import CustomFooter from "./components/Footer.vue";
 export default {
   name: "app",
-  components: { Home, CustomHeader, CustomFooter },
+  components: { CustomHeader, CustomFooter },
   methods: {},
 };
 </script>
@@ -23,6 +22,7 @@ body {
   background-color: #f0f0f5;
 }
 #app {
+  width: 100%;
   font-family: "Noto Sans JP", serif;
   /*font-family: "Avenir", Helvetica, Arial, sans-serif;*/
   -webkit-font-smoothing: antialiased;
@@ -41,6 +41,7 @@ main {
   width: 100%;
   background-color: #ffffff;
   padding-top: 70px;
+  width: 100%;
   max-width: 1152px;
 }
 </style>
