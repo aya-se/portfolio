@@ -1,72 +1,22 @@
 <template>
   <header>
     <div class="header-sp">
-      <a class="header-title" href="">
+      <router-link class="header-title" to="/">
         <img src="icon.png" alt="header-icon" class="header-icon" />
         AYASE Lab
-      </a>
+      </router-link>
       <div class="header-button">
         <input type="checkbox" class="menu-btn" id="menu-btn" />
         <label for="menu-btn" class="menu-icon"
           ><span class="navicon"></span
         ></label>
+        <ul class="menu">
+          <router-link to="/" class="menu-item"> プロフィール </router-link>
+          <router-link to="/background" class="menu-item"> 経歴 </router-link>
+          <router-link to="/note" class="menu-item"> 記事 </router-link>
+          <router-link to="/work" class="menu-item"> 作品 </router-link>
+        </ul>
       </div>
-      <ul class="menu">
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#top"
-            v-smooth-scroll="{ duration: 800, offset: -80 }"
-          >
-            TOP</a
-          >
-        </li>
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#about"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            ABOUT</a
-          >
-        </li>
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#experience"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            EXPERIENCE</a
-          >
-        </li>
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#history"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            HISTORY</a
-          >
-        </li>
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#work"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            WORKS</a
-          >
-        </li>
-        <li class="menu-item">
-          <a
-            class="link-content"
-            href="#contact"
-            v-smooth-scroll="{ duration: 800, offset: -60 }"
-          >
-            CONTACT</a
-          >
-        </li>
-      </ul>
     </div>
     <div class="header-pc">
       <router-link class="header-title" to="/">
@@ -180,7 +130,7 @@ header {
     width: 100%;
     height: auto;
     top: 0;
-    margin-top: 60px;
+    margin-top: 70px;
     padding: 0 0 0 0;
     clear: both;
     background: white;
@@ -191,7 +141,7 @@ header {
     .menu-item {
       width: 100%;
       height: 50px;
-      border-top: 1px solid #2c3e50;
+      border-top: 1px solid #ddd;
       margin: 0 20px;
       &:hover {
         border-bottom: none;
@@ -234,7 +184,7 @@ header {
   }
 
   .navicon {
-    background: #ccc;
+    background: #ddd;
     display: block;
     height: 3px;
     width: 28px;
@@ -247,7 +197,7 @@ header {
       height: 100%;
       width: 100%;
       position: absolute;
-      background: #ccc;
+      background: #ddd;
       transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
     }
     &:before {
@@ -276,20 +226,6 @@ header {
     }
     &:after {
       bottom: 0;
-    }
-  }
-
-  .navtext-container {
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .navtext {
-      letter-spacing: 0.05em;
-      font-size: 20px;
     }
   }
 }

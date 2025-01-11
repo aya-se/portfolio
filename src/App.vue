@@ -23,6 +23,7 @@ body {
 }
 #app {
   width: 100%;
+  min-height: 100vh;
   font-family: "Noto Sans JP", serif;
   /*font-family: "Avenir", Helvetica, Arial, sans-serif;*/
   -webkit-font-smoothing: antialiased;
@@ -43,5 +44,6 @@ main {
   padding-top: 70px;
   width: 100%;
   max-width: 1152px;
+  min-height: calc(100vh - 140px);
 }
 </style>
