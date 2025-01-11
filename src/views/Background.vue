@@ -5,9 +5,7 @@
       <Timeline :list="educations" />
     </div>
     <div id="publication">
-      <h2 class="subtitle">
-        <i class="bi bi-file-text-fill"></i>&nbsp;論文・発表
-      </h2>
+      <Subtitle icon="bi-file-text-fill" text="論文・発表" />
       <ol>
         <li v-for="item in publications" :key="item.title">
           <PublicationCard
@@ -24,13 +22,11 @@
       </ol>
     </div>
     <div id="experience">
-      <h2 class="subtitle">
-        <i class="bi bi-bar-chart-fill" />&nbsp;インターン・アルバイト
-      </h2>
+      <Subtitle icon="bi-bar-chart-fill" text="インターン・アルバイト" />
       <Timeline :list="experiences" />
     </div>
     <div id="history">
-      <h2 class="subtitle"><i class="bi bi-clock-fill" />&nbsp;その他</h2>
+      <Subtitle icon="bi-clock-fill" text="その他" />
       <Timeline :list="histories" />
     </div>
   </div>
@@ -40,6 +36,7 @@
 import { defineComponent } from "vue";
 import Timeline from "/src/components/Timeline.vue";
 import PublicationCard from "../components/PublicationCard.vue";
+import Subtitle from "/src/components/Subtitle.vue";
 import educations from "/src/data/educations.json";
 import publications from "/src/data/publications.json";
 import experiences from "/src/data/experiences.json";
@@ -57,6 +54,7 @@ export default defineComponent({
   components: {
     Timeline,
     PublicationCard,
+    Subtitle,
   },
   methods: {
     onClick(url) {
@@ -82,17 +80,5 @@ export default defineComponent({
   width: 100%;
   max-width: 1028px;
   padding-top: 40px !important;
-}
-.subtitle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  width: 100%;
-  margin: 20px;
-  color: #333333;
-  font-size: 32px;
-  font-family: "Open Sans", serif;
-  letter-spacing: 0.05em;
-  font-weight: normal;
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
   <div id="home">
     <div id="about">
-      <h2 class="subtitle">
-        <i class="bi bi-info-circle-fill" />&nbsp;プロフィール
-      </h2>
+      <Subtitle icon="bi-info-circle-fill" text="プロフィール" />
       <div class="about-cards-container">
         <div class="about-cards">
           <AboutCard
@@ -18,9 +16,7 @@
       </div>
     </div>
     <div id="contact">
-      <h2 class="subtitle">
-        <i class="bi bi-chat-square-dots-fill" />&nbsp;連絡先
-      </h2>
+      <Subtitle icon="bi-chat-square-dots-fill" text="連絡先" />
       <p class="contact-item">
         <i class="bi bi-envelope-fill" />&nbsp;&nbsp;kakkeno1@gmail.com
       </p>
@@ -59,6 +55,7 @@
 import { defineComponent } from "vue";
 import AboutCard from "/src/components/AboutCard.vue";
 import Timeline from "/src/components/Timeline.vue";
+import Subtitle from "/src/components/Subtitle.vue";
 import abouts from "/src/data/abouts.json";
 export default defineComponent({
   name: "HomeView",
@@ -70,6 +67,7 @@ export default defineComponent({
   components: {
     AboutCard,
     Timeline,
+    Subtitle,
   },
   methods: {
     onClick(url) {
@@ -102,18 +100,6 @@ export default defineComponent({
     justify-content: center;
     max-width: 1400px;
   }
-}
-.subtitle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  width: 100%;
-  margin: 20px;
-  color: #333333;
-  font-size: 32px;
-  font-family: "Open Sans", serif;
-  letter-spacing: 0.05em;
-  font-weight: normal;
 }
 .sns-links {
   display: flex;

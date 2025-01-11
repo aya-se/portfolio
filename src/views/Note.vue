@@ -1,7 +1,7 @@
 <template>
   <div id="note">
     <div id="notes">
-      <h2 class="subtitle"><i class="bi bi-stack" />&nbsp;記事</h2>
+      <Subtitle icon="bi-stack" text="記事" />
       工事中......
     </div>
   </div>
@@ -9,12 +9,15 @@
 
 <script>
 import { defineComponent } from "vue";
+import Subtitle from "/src/components/Subtitle.vue";
 export default defineComponent({
   name: "NoteView",
   data() {
     return {};
   },
-  components: {},
+  components: {
+    Subtitle,
+  },
   methods: {
     onClick(url) {
       window.open(url, "_blank");
@@ -35,17 +38,5 @@ export default defineComponent({
   justify-content: left;
   width: 100%;
   padding: 10px 20px 30px;
-}
-.subtitle {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  width: 100%;
-  margin: 20px;
-  color: #333333;
-  font-size: 32px;
-  font-family: "Open Sans", serif;
-  letter-spacing: 0.05em;
-  font-weight: normal;
 }
 </style>
