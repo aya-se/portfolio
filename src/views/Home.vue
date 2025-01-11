@@ -1,11 +1,24 @@
 <template>
   <div id="home">
-    <div id="top">
-      <h1 class="top-title">KAKERU HATTORI</h1>
-      <div class="top-text">
-        東京科学大学<br />情報理工学院 情報工学系 修士課程2年<br />岡崎研究室
+    <div id="about">
+      <h2 class="subtitle">
+        <i class="bi bi-info-circle-fill" />&nbsp;プロフィール
+      </h2>
+      <div class="about-cards-container">
+        <div class="about-cards">
+          <AboutCard
+            v-for="(item, index) in abouts"
+            :key="index"
+            :title="item.title"
+            :text="item.text"
+            :icon="item.icon"
+            :color="item.color"
+          />
+        </div>
       </div>
-      <img class="top-icon" src="/icon.png" />
+      <Timeline :list="educations" class="educations" />
+    </div>
+    <div id="top">
       <div class="sns-links-list">
         <ul class="sns-links">
           <li>
@@ -31,32 +44,6 @@
           </li>
         </ul>
       </div>
-      <div class="top-description-container">
-        <p class="top-description">
-          学部時代は，自然言語処理のさまざまな分野のうち，議事録をはじめとした長い文書の要約をテーマに研究を行っていました．ただ要約するだけではなく，読者が真に理解しやすい要約とは何か？という問題に注目して，FAQのような形で要約を提供するシステムを提案しました．
-          <br /><br />
-          修士課程では，大規模言語モデル（LLM）『Swallow』の構築プロジェクトに参加し，事前学習コーパスについての研究を行っています．特に，どのようなテキスト・データがLLMのどのようなタスクの性能に影響を与えているのか，といった細かな解析やコーパスの品質改善に取り組みたいと考えています．
-          <br /><br />
-          研究以外では，Webプログラミングにも興味があります．フロントエンド領域やクラウド・インフラ領域を中心に，個人・インターンシップ・ハッカソンでの開発経験があります．Webシステム全体の設計・開発・運用に興味があり，さまざまな場面で適切な技術を選択し，構築することができるエンジニアを目指したいと思っています．
-          <br /><br />
-          その他，趣味で競技プログラミングをしたり（AtCoder青色・Highest1761），パソコン上で作曲（DTM)した曲をサークルのCDとしてM3（同人音楽即売会）で頒布したりしています．
-        </p>
-      </div>
-    </div>
-    <div id="about">
-      <h2 class="subtitle"><i class="bi bi-info-circle-fill" />&nbsp;ABOUT</h2>
-      <div class="about-cards-container">
-        <div class="about-cards">
-          <AboutCard
-            v-for="(item, index) in abouts"
-            :key="index"
-            :title="item.title"
-            :text="item.text"
-            :icon="item.icon"
-          />
-        </div>
-      </div>
-      <Timeline :list="educations" class="educations" />
     </div>
 
     <div id="experience">
@@ -91,11 +78,6 @@
       </h2>
       <p><i class="bi bi-envelope-fill" />&nbsp;&nbsp;kakkeno1@gmail.com</p>
       <p><i class="bi bi-twitter" />&nbsp;&nbsp;@ayase_lab</p>
-    </div>
-    <div id="copyright">
-      <p>
-        Copyright&nbsp;©&nbsp;KAKERU&nbsp;HATTORI.&nbsp;All&nbsp;Rights&nbsp;Reserved.
-      </p>
     </div>
   </div>
 </template>
@@ -152,13 +134,6 @@ export default defineComponent({
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px 20px 30px;
-}
-#copyright {
-  color: #fafafa;
-  font-size: 12px;
-  font-family: "Open Sans", serif;
-  padding: 10px 20px 10px;
-  background: #4f4f4f;
 }
 .about-cards-container {
   display: flex;

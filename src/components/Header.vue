@@ -172,7 +172,7 @@ header {
   font-size: 24px;
   margin-right: 20px;
   text-decoration: none;
-  color: #ff9900;
+  color: #ed7100;
   .header-icon {
     width: 50px;
     height: 50px;

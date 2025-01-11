@@ -2,15 +2,17 @@
   <div id="app">
     <CustomHeader />
     <main><Home /></main>
+    <CustomFooter />
   </div>
 </template>
 
 <script>
 import Home from "./views/Home.vue";
 import CustomHeader from "./components/Header.vue";
+import CustomFooter from "./components/Footer.vue";
 export default {
   name: "app",
-  components: { Home, CustomHeader },
+  components: { Home, CustomHeader, CustomFooter },
   methods: {},
 };
 </script>

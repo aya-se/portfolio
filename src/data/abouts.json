@@ -1,32 +1,32 @@
 [
   {
-    "title": "氏名",
-    "text": "服部翔（Kakeru Hattori）",
-    "icon": "tag-fill"
+    "title": "基本情報",
+    "text": "氏名：服部翔（Kakeru Hattori）\n生年月日：2000年7月29日",
+    "icon": "tag-fill",
+    "color": "#ed7100"
   },
   {
-    "title": "学校",
-    "text": "東京科学大学 情報理工学院 情報工学系",
-    "icon": "building"
-  },
-  {
-    "title": "生年月日",
-    "text": "2000年7月29日",
-    "icon": "calendar3"
-  },
-  {
-    "title": "趣味",
-    "text": "旅行，御朱印集め，スキー，Web開発，DTM etc.",
-    "icon": "heart-fill"
-  },
-  {
-    "title": "資格",
-    "text": "英検2級，基本情報技術者，G検定，PAST上級，GCP",
-    "icon": "patch-check-fill"
+    "title": "所属",
+    "text": "東京科学大学情報理工学院 情報工学系 修士2年",
+    "icon": "building",
+    "color": "#2aa88d"
   },
   {
     "title": "興味・関心",
-    "text": "自然言語処理，LLM，クラウド，DevOps etc.",
-    "icon": "star-fill"
+    "text": "学生時代は，フロントエンドやインフラ（クラウド）領域を中心としたWeb開発，大規模言語モデル（LLM）の開発に関する研究に取り組んできました．経験のある技術スタックとしては，例えば以下があります．\n・\tフロントエンド：React，Vue.js，Next.js\n・\tクラウド：Google Cloud，AWS\n・\t機械学習：PyTorch，vLLM，Transformers，Hugging Face，Ray Cluster，スパコン各種\n・\tその他：GitHub，Docker，Kubernetes，Terraform，Slack App，Looker Studio\n\nLLMについては，東京科学大学の『Swallow』プロジェクトを中心に，以下のようなことに取り組んできました．\n・\t事前学習Webコーパスのフィルタリング改善\n・\tLLMを用いた事前学習データの合成\n・\t広範なベンチマークを用いたモデル性能の網羅的な評価と分析\n\nこれらの経験を複合的に組み合わせた領域として，直近では以下のようなことに興味があります！\n・\tLLMの高速・スケーラブルな推論環境の構築\n・\tMLOps，MLOps，LLMOpsなど，AIを含むエコシステムのアーキテクチャや最適化\n・\t企業や組織が独自に保有するデータをLLMに活用する技術，戦略",
+    "icon": "star-fill",
+    "color": "#e7157b"
+  },
+  {
+    "title": "資格",
+    "text": "・\tTOEIC L&R　835点\n・\t英検2級\n・\tGoogle Cloud Certified - Professional Data Engineer\n・\tGoogle Cloud Certified - Professional Cloud Architect\n・\t基本情報技術者\n・\tG検定\n・\tアルゴリズム実技検定（PAST）上級（88点）",
+    "icon": "patch-check-fill",
+    "color": "#8c4fff"
+  },
+  {
+    "title": "趣味",
+    "text": "・\t旅行\n・\t御朱印集め\n・\tスキー\n・\tWeb開発\n・\t競技プログラミング（AtCoder）\n・\tDTM",
+    "icon": "heart-fill",
+    "color": "#7aa117"
   }
 ]
