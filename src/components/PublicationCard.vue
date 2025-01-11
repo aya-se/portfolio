@@ -39,7 +39,6 @@ export default defineComponent({
 
 <style lang="scss">
 .publication-card {
-  width: 100%;
   margin-left: 24px;
   margin-bottom: 10px;
   text-align: left;
