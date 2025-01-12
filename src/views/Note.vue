@@ -1,6 +1,6 @@
 <template>
-  <div id="note">
-    <div id="notes">
+  <Container>
+    <Wrapper>
       <Subtitle icon="bi-stack" text="記事" />
       <div class="top-border"></div>
       <template v-for="note in notes" :key="note.id">
@@ -51,11 +51,13 @@
           </div>
         </router-link>
       </template>
-    </div>
-  </div>
+    </Wrapper>
+  </Container>
 </template>
 
 <script setup>
+import Container from "/src/components/Container.vue";
+import Wrapper from "/src/components/Wrapper.vue";
 import Subtitle from "/src/components/Subtitle.vue";
 import notes from "/src/data/notes.json";
 
@@ -77,18 +79,6 @@ const getCategoryColor = (category) => {
 };
 </script>
 <style lang="scss">
-#note {
-  width: 100%;
-  overflow: hidden;
-  padding: 0 20px;
-  margin: 0 20px;
-}
-#notes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px 20px 30px;
-}
 .top-border {
   width: 100%;
   height: 1px;

@@ -1,6 +1,6 @@
 <template>
-  <div id="post">
-    <div class="post-info" v-if="postData">
+  <Container>
+    <Wrapper class="post-info" v-if="postData">
       <h1>{{ postData.title }}</h1>
       <div class="post-date">
         <i class="bi bi-calendar-check-fill" />{{ postData.date }}
@@ -11,12 +11,14 @@
           {{ tag }}
         </span>
       </div>
-    </div>
+    </Wrapper>
     <component :is="markdownFile" v-if="markdownFile" />
-  </div>
+  </Container>
 </template>
 
 <script setup>
+import Container from "../components/Container.vue";
+import Wrapper from "../components/Wrapper.vue";
 import { computed, onMounted, nextTick, shallowRef } from "vue";
 import { useRoute } from "vue-router";
 import hljs from "highlight.js";
@@ -103,16 +105,7 @@ const setupPreBlocks = () => {
 };
 </script>
 <style lang="scss">
-#post {
-  width: 100%;
-  overflow: hidden;
-  padding: 0 20px;
-  margin: 0 20px;
-}
 .post-info {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px 20px 30px;
   text-align: left;
   i {
     margin-right: 10px;

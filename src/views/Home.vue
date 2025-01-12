@@ -1,6 +1,6 @@
 <template>
-  <div id="home">
-    <div id="about">
+  <Container>
+    <Wrapper>
       <Subtitle icon="bi-info-circle-fill" text="プロフィール" />
       <div class="about-cards-container">
         <div class="about-cards">
@@ -14,8 +14,8 @@
           />
         </div>
       </div>
-    </div>
-    <div id="contact">
+    </Wrapper>
+    <Wrapper>
       <Subtitle icon="bi-chat-square-dots-fill" text="連絡先" />
       <p class="contact-item">
         <i class="bi bi-envelope-fill" />&nbsp;&nbsp;kakkeno1@gmail.com
@@ -47,29 +47,18 @@
           ><i class="bi bi-linkedin" style="color: #0077b5"
         /></a>
       </p>
-    </div>
-  </div>
+    </Wrapper>
+  </Container>
 </template>
 
 <script setup>
+import Container from "/src/components/Container.vue";
+import Wrapper from "/src/components/Wrapper.vue";
 import AboutCard from "/src/components/AboutCard.vue";
 import Subtitle from "/src/components/Subtitle.vue";
 import abouts from "/src/data/abouts.json";
 </script>
 <style lang="scss">
-#home {
-  width: 100%;
-  overflow: hidden;
-  padding: 0 20px;
-  margin: 0 20px;
-}
-#about,
-#contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 20px 30px;
-}
 .about-cards-container {
   display: flex;
   justify-content: center;
@@ -82,11 +71,11 @@ import abouts from "/src/data/abouts.json";
   }
 }
 .sns-links {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin-left: 52px;
   .sns-link {
     text-decoration: none;
     margin: 0 10px;
