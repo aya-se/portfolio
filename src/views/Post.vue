@@ -1,25 +1,48 @@
 <template>
   <Container>
-    <Wrapper class="post-info" v-if="postData">
-      <h1>{{ postData.title }}</h1>
-      <div class="post-date">
-        <i class="bi bi-calendar-check-fill" />{{ postData.date }}
-      </div>
-      <div class="post-tags">
-        <i class="bi bi-tags-fill" />
-        <span v-for="tag in postData.tags" :key="tag" class="post-tag">
-          {{ tag }}
-        </span>
-      </div>
-    </Wrapper>
-    <component :is="markdownFile" v-if="markdownFile" />
+    <div class="post-layout">
+      <Wrapper class="post-content">
+        <Wrapper class="post-info" v-if="postData">
+          <h1>{{ postData.title }}</h1>
+          <div class="post-date">
+            <i class="bi bi-calendar-check-fill" />{{ postData.date }}
+          </div>
+          <div class="post-tags">
+            <i class="bi bi-tags-fill" />
+            <span v-for="tag in postData.tags" :key="tag" class="post-tag">
+              {{ tag }}
+            </span>
+          </div>
+        </Wrapper>
+        <component :is="markdownFile" v-if="markdownFile" />
+      </Wrapper>
+      <aside class="post-aside">
+        <div class="post-toc">
+          <h2>目次</h2>
+          <ul>
+            <li
+              v-for="(h, idx) in headings"
+              :key="idx"
+              :style="{
+                marginLeft: (h.level - 1) * 10 + 'px',
+                fontSize: 18 - h.level * 2 + 'px',
+              }"
+            >
+              <a :href="`#${h.id}`" @click.prevent="scrollToHeading(h.id)">{{
+                h.text
+              }}</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
   </Container>
 </template>
 
 <script setup>
 import Container from "../components/Container.vue";
 import Wrapper from "../components/Wrapper.vue";
-import { computed, onMounted, nextTick, shallowRef } from "vue";
+import { computed, onMounted, nextTick, shallowRef, ref } from "vue";
 import { useRoute } from "vue-router";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.css";
@@ -31,6 +54,7 @@ const route = useRoute();
 const id = route.params.id || "abci-introduction-vscode-anaconda";
 
 const markdownFile = shallowRef(null);
+const headings = ref([]);
 
 onMounted(async () => {
   const markdown = await import(`../notes/${id}.md`);
@@ -40,6 +64,7 @@ onMounted(async () => {
 
   setLinksTargetBlank();
   setupPreBlocks();
+  collectHeadings();
 });
 
 const setLinksTargetBlank = () => {
@@ -103,8 +128,73 @@ const setupPreBlocks = () => {
     hljs.highlightElement(code);
   });
 };
+
+const collectHeadings = () => {
+  const headingEls = document.querySelectorAll(
+    ".markdown-body h1, .markdown-body h2, .markdown-body h3"
+  );
+  const results = [];
+
+  headingEls.forEach((el, index) => {
+    const level = parseInt(el.tagName[1], 10);
+    el.id = `heading-${index}`;
+    const text = el.textContent.trim();
+    results.push({ level, text, id: el.id });
+  });
+
+  headings.value = results;
+};
+
+const scrollToHeading = (id) => {
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  const offset = 70;
+  const y = target.getBoundingClientRect().top + window.scrollY - offset;
+
+  window.scrollTo({ top: y, behavior: "smooth" });
+};
 </script>
 <style lang="scss">
+.post-layout {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  .post-content {
+    width: calc(100% - 330px);
+  }
+  .post-aside {
+    position: relative;
+    width: 250px;
+    padding: 10px 0 0 20px;
+    margin: 30px 0 30px 20px;
+    border-left: 1px solid #ddd;
+    .post-toc {
+      position: fixed;
+      top: 100px;
+      text-align: left;
+      width: 250px;
+      h2 {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          margin: 10px 0;
+          a {
+            text-decoration: none;
+            color: #333;
+            &:hover {
+              color: #ed7100;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .post-info {
   text-align: left;
   i {

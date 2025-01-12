@@ -42,7 +42,6 @@ main {
   width: 100%;
   background-color: #ffffff;
   padding-top: 70px;
-  width: 100%;
   max-width: 1152px;
   min-height: calc(100vh - 140px);
 }
