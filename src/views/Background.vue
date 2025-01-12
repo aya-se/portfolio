@@ -32,8 +32,7 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from "vue";
+<script setup>
 import Timeline from "/src/components/Timeline.vue";
 import PublicationCard from "../components/PublicationCard.vue";
 import Subtitle from "/src/components/Subtitle.vue";
@@ -41,27 +40,6 @@ import educations from "/src/data/educations.json";
 import publications from "/src/data/publications.json";
 import experiences from "/src/data/experiences.json";
 import histories from "/src/data/histories.json";
-export default defineComponent({
-  name: "BackgroundView",
-  data() {
-    return {
-      educations: educations,
-      publications: publications,
-      experiences: experiences,
-      histories: histories,
-    };
-  },
-  components: {
-    Timeline,
-    PublicationCard,
-    Subtitle,
-  },
-  methods: {
-    onClick(url) {
-      window.open(url, "_blank");
-    },
-  },
-});
 </script>
 <style lang="scss">
 #background {

@@ -16,28 +16,14 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from "vue";
+<script setup>
 import WorkCard from "/src/components/WorkCard.vue";
 import works from "/src/data/works.json";
 import Subtitle from "/src/components/Subtitle.vue";
-export default defineComponent({
-  name: "WorkView",
-  data() {
-    return {
-      works: works,
-    };
-  },
-  components: {
-    WorkCard,
-    Subtitle,
-  },
-  methods: {
-    onClick(url) {
-      window.open(url, "_blank");
-    },
-  },
-});
+
+const onClick = (url) => {
+  window.open(url, "_blank");
+};
 </script>
 <style lang="scss">
 #work {

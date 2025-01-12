@@ -129,8 +129,7 @@ const setupPreBlocks = () => {
       display: inline-block;
       margin-right: 10px;
       padding: 2px 10px;
-      background-color: #ed7100;
-      color: #fff;
+      background-color: #ededed;
       border-radius: 5px;
     }
   }

@@ -51,30 +51,10 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from "vue";
+<script setup>
 import AboutCard from "/src/components/AboutCard.vue";
-import Timeline from "/src/components/Timeline.vue";
 import Subtitle from "/src/components/Subtitle.vue";
 import abouts from "/src/data/abouts.json";
-export default defineComponent({
-  name: "HomeView",
-  data() {
-    return {
-      abouts: abouts,
-    };
-  },
-  components: {
-    AboutCard,
-    Timeline,
-    Subtitle,
-  },
-  methods: {
-    onClick(url) {
-      window.open(url, "_blank");
-    },
-  },
-});
 </script>
 <style lang="scss">
 #home {
