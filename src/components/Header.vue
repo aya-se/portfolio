@@ -2,7 +2,7 @@
   <header>
     <div class="header-sp">
       <router-link class="header-title" to="/">
-        <img src="icon.png" alt="header-icon" class="header-icon" />
+        <img src="/icon.png" alt="header-icon" class="header-icon" />
         AYASE Lab
       </router-link>
       <div class="header-button">
