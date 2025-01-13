@@ -26,4 +26,10 @@ export default defineComponent({
   letter-spacing: 0.05em;
   font-weight: normal;
 }
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 24px;
+    margin: 10px;
+  }
+}
 </style>

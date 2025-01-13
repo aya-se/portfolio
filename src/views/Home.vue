@@ -89,8 +89,18 @@ import abouts from "/src/data/abouts.json";
   width: 100%;
   margin-left: 52px;
   color: #333333;
-  font-size: 16px;
   letter-spacing: 0.05em;
   font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+  .sns-links {
+    margin: 10px 0px;
+    .sns-link {
+      font-size: 28px;
+    }
+  }
+  .contact-item {
+    margin: 10px 0px 10px 32px;
+  }
 }
 </style>

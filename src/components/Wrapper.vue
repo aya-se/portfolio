@@ -11,4 +11,9 @@
   justify-content: left;
   margin: 10px 20px 30px;
 }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin: 10px 10px 20px;
+  }
+}
 </style>

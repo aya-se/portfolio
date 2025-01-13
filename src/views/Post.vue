@@ -210,7 +210,7 @@ const scrollToHeading = (id) => {
     .post-tag {
       font-size: 14px;
       display: inline-block;
-      margin-right: 10px;
+      margin: 0 10px 5px 0;
       padding: 2px 10px;
       background-color: #ededed;
       border-radius: 5px;
@@ -262,6 +262,47 @@ const scrollToHeading = (id) => {
       border: none;
       padding: 0;
       margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .post-layout {
+    flex-wrap: wrap;
+    .post-content {
+      width: calc(100% - 20px);
+    }
+    .post-aside {
+      display: none;
+    }
+  }
+  .post-info {
+    h1 {
+      font-size: 24px;
+    }
+    .post-tags {
+      font-size: 14px;
+      .post-tag {
+        font-size: 12px;
+      }
+    }
+  }
+  .markdown-body {
+    padding: 10px;
+    font-size: 14px;
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    pre {
+      padding: 10px;
+      code {
+        font-size: 13px;
+      }
+    }
+    ul {
+      padding-left: 20px;
     }
   }
 }

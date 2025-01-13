@@ -45,4 +45,9 @@ main {
   max-width: 1152px;
   min-height: calc(100vh - 140px);
 }
+@media screen and (max-width: 768px) {
+  #app {
+    font-size: 14px;
+  }
+}
 </style>

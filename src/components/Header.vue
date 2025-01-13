@@ -55,7 +55,7 @@ header {
 .header-sp {
   display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .header-pc {
     display: none;
   }
@@ -121,7 +121,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .menu {
     display: flex;
     flex-wrap: wrap;

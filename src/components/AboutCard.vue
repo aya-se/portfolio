@@ -55,13 +55,19 @@ export default defineComponent({
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .about-card {
-    width: 100%;
-    margin: 5px 0;
-  }
-  .about-title {
-    font-size: 16px;
+    margin: 10px 10px;
+    .about-title {
+      font-size: 18px;
+      .about-icon {
+        font-size: 18px;
+        width: 28px;
+      }
+    }
+    .about-text {
+      margin: 10px 0px;
+    }
   }
 }
 </style>

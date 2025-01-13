@@ -118,10 +118,20 @@ const getCategoryColor = (category) => {
     .post-tag {
       font-size: 14px;
       display: inline-block;
-      margin-right: 10px;
+      margin: 0 10px 5px 0;
       padding: 2px 10px;
       background-color: #ededed;
       border-radius: 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .post-description {
+    margin: 10px 0;
+  }
+  .post-tags {
+    .post-tag {
+      font-size: 12px;
     }
   }
 }

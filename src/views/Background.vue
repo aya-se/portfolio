@@ -43,10 +43,4 @@ import publications from "/src/data/publications.json";
 import experiences from "/src/data/experiences.json";
 import histories from "/src/data/histories.json";
 </script>
-<style lang="scss">
-.educations {
-  width: 100%;
-  max-width: 1028px;
-  padding-top: 40px !important;
-}
-</style>
+<style lang="scss"></style>
