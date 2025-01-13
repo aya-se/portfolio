@@ -126,12 +126,15 @@ const getCategoryColor = (category) => {
   }
 }
 @media screen and (max-width: 768px) {
-  .post-description {
-    margin: 10px 0;
-  }
-  .post-tags {
-    .post-tag {
-      font-size: 12px;
+  .post-card {
+    padding: 10px;
+    .post-description {
+      margin: 10px 0;
+    }
+    .post-tags {
+      .post-tag {
+        font-size: 12px;
+      }
     }
   }
 }

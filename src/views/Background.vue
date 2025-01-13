@@ -43,4 +43,10 @@ import publications from "/src/data/publications.json";
 import experiences from "/src/data/experiences.json";
 import histories from "/src/data/histories.json";
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+@media screen and (max-width: 768px) {
+  ol {
+    padding-left: 20px;
+  }
+}
+</style>

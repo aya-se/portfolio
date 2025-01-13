@@ -22,14 +22,13 @@ export default defineComponent({
   margin: 20px;
   color: #333333;
   font-size: 32px;
-  font-family: "Open Sans", serif;
   letter-spacing: 0.05em;
   font-weight: normal;
 }
 @media screen and (max-width: 768px) {
   .subtitle {
     font-size: 24px;
-    margin: 10px;
+    margin: 10px 0;
   }
 }
 </style>

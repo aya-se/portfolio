@@ -2,7 +2,7 @@
   <Container>
     <div class="post-layout">
       <Wrapper class="post-content">
-        <Wrapper class="post-info" v-if="postData">
+        <div class="post-info" v-if="postData">
           <h1>{{ postData.title }}</h1>
           <div class="post-date">
             <i class="bi bi-calendar-check-fill" />{{ postData.date }}
@@ -13,7 +13,7 @@
               {{ tag }}
             </span>
           </div>
-        </Wrapper>
+        </div>
         <component :is="markdownFile" v-if="markdownFile" />
       </Wrapper>
       <aside class="post-aside">
@@ -287,8 +287,8 @@ const scrollToHeading = (id) => {
     }
   }
   .markdown-body {
-    padding: 10px;
-    font-size: 14px;
+    padding: 0;
+    font-size: 15px;
     h1 {
       font-size: 24px;
     }
