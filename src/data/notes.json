@@ -1,0 +1,52 @@
+[
+  {
+    "id": "nlp2025",
+    "title": "第31回言語処理学会年次大会（NLP2025）で2件の主著，1件の共著論文を発表します",
+    "category": "論文",
+    "tags": ["自然言語処理", "NLP2025", "LLM", "Swallowプロジェクト"],
+    "date": "2025-01-12",
+    "image_id": null,
+    "url": null,
+    "description": ""
+  },
+  {
+    "id": "portfolio-update-2025",
+    "title": "ポートフォリオにブログを導入しました！",
+    "category": "ニュース",
+    "tags": ["Vue.js", "JavaScript", "CSS", "Markdown"],
+    "date": "2025-01-12",
+    "image_id": null,
+    "url": null,
+    "description": "ポートフォリオにブログ機能を導入しました！記事はMarkdown形式で記述し，コードブロックなども綺麗に表示できます．"
+  },
+  {
+    "id": "nikkei-intern-descheduler-k8s",
+    "title": "【インターン体験記】Descheduler for Kubernetes の共通アプリケーション基盤への導入に向けた調査と検証",
+    "category": "技術ブログ",
+    "tags": ["Kubernetes", "Descheduler", "SRE", "長期インターン"],
+    "date": "2024-05-08",
+    "image_id": null,
+    "url": "https://hack.nikkei.com/blog/sre_intern_descheduler_k8s/",
+    "description": "日経電子版のSREチームでの長期インターンで取り組んだ，KubernetesのDeschedulerについての調査と検証の内容を紹介します．"
+  },
+  {
+    "id": "recruit-intern-bigquery-looker",
+    "title": "【リクルートインターン参加記】BigQueryの全社的なスロット利用状況を可視化するツールの制作",
+    "category": "技術ブログ",
+    "tags": ["BigQuery", "Google Cloud", "Looker Studio", "長期インターン"],
+    "date": "2024-01-24",
+    "image_id": null,
+    "url": "https://www.recruit.co.jp/employment/students/engineers/report/student-report-7/",
+    "description": "リクルートの長期インターンで取り組んだ，BigQueryの全社的なスロット利用状況を可視化するツールの制作について紹介します．"
+  },
+  {
+    "id": "abci-introduction-vscode-anaconda",
+    "title": "【ABCI】産総研スパコンに圧倒的入門するためのページ〜VSCode・Anacondaによる計算環境整備",
+    "category": "技術ブログ",
+    "tags": ["Python", "Anaconda", "VSCode", "スパコン", "ABCI"],
+    "date": "2022-11-04",
+    "image_id": null,
+    "url": null,
+    "description": "ABCIスパコンに圧倒的入門するためのページ．VSCode・Anacondaによる計算環境整備の手順を紹介します．"
+  }
+]
