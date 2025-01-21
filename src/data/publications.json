@@ -123,6 +123,31 @@
     "award_url": null
   },
   {
+    "category": "domestic",
+    "authors": [
+      "齋藤 幸史郎",
+      "水木 栄",
+      "大井 聖也",
+      "中村 泰士",
+      "塩谷 泰平",
+      "前田 航希",
+      "Youmi Ma",
+      "服部 翔",
+      "藤井 一喜",
+      "岡本 拓己",
+      "石田 茂樹",
+      "高村 大也",
+      "横田 理央",
+      "岡崎 直観"
+    ],
+    "title": "LLMに日本語テキストを学習させる意義",
+    "how_published": "情報処理学会 第261回自然言語処理研究会 研究報告 (2024-NL-261)",
+    "publish_date": "2024年9月",
+    "award": "優秀研究賞",
+    "url": "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=238505&item_no=1&page_id=13&block_id=8",
+    "award_url": "https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/%E6%8E%88%E8%B3%9E/outstanding?authuser=0#h.vh0bymejxdlt"
+  },
+  {
     "category": "others",
     "authors": ["Kakeru Hattori"],
     "title": "Building an Effective Pre-training Corpus for Japanese LLM",
