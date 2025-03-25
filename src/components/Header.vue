@@ -107,7 +107,6 @@ header {
     font-size: 16px;
     text-decoration: none;
     color: #333333;
-    font-family: "Open Sans", serif;
     letter-spacing: 0.05em;
     transition: all 0.1s ease;
     &:hover {
